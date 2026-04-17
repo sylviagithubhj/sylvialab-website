@@ -1169,6 +1169,78 @@ body.lang-switching [data-i18n] { opacity: 0.3; }
 .simple-list .title em { font-style: italic; color: var(--accent); }
 .simple-list .title strong { font-weight: 500; }
 
+.about-cta-section { padding: 40px 40px 0; border-top: 1px solid var(--line); }
+
+.about-cta {
+  padding: 48px 56px;
+  background: var(--ink);
+  color: var(--bg);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-cta::after {
+  content: '';
+  position: absolute;
+  top: -40%; right: -10%;
+  width: 460px; height: 460px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.about-cta-inner { position: relative; z-index: 1; }
+
+.about-cta-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent-soft);
+  margin-bottom: 16px;
+}
+
+.about-cta-text {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.about-cta-text em { font-style: italic; color: var(--accent-soft); }
+
+.about-cta-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 28px;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.about-cta-btn:hover {
+  background: var(--accent-soft);
+  transform: translate(2px, -2px);
+  box-shadow: -4px 4px 0 var(--bg);
+}
+
+.about-cta-btn .arrow { transition: transform 0.3s; }
+.about-cta-btn:hover .arrow { transform: translateX(4px); }
+
 @media (max-width: 900px) {
   nav { padding: 14px 16px; gap: 8px; }
   .nav-links { display: none; }
@@ -1203,4 +1275,8 @@ body.lang-switching [data-i18n] { opacity: 0.3; }
   .focus-quote { padding: 24px; font-size: 16px; }
   .program-grid { grid-template-columns: 1fr; }
   .simple-list .item { grid-template-columns: 1fr; gap: 4px; }
+  .about-cta-section { padding: 24px 20px 0; }
+  .about-cta { grid-template-columns: 1fr; padding: 32px; gap: 24px; text-align: center; }
+  .about-cta-text { font-size: 22px; }
+  .about-cta-btn { justify-self: center; }
 }
