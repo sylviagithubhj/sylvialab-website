@@ -794,6 +794,21 @@ section {
 }
 
 .news-form button:hover { background: var(--accent-soft); }
+.news-form button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.news-message {
+  max-width: 480px;
+  margin: 20px auto 0;
+  min-height: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-soft);
+  transition: opacity 0.3s;
+}
+
+.news-message.is-error { color: #ff9270; }
 
 footer {
   padding: 60px 40px 40px;

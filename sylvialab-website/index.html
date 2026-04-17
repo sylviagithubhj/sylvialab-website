@@ -310,10 +310,11 @@
     <div class="news-label" data-i18n="news.label"></div>
     <h2 class="news-title" data-i18n="news.title" data-i18n-html="true"></h2>
     <p class="news-sub" data-i18n="news.sub"></p>
-    <div class="news-form">
-      <input type="email" data-i18n-ph="news.placeholder">
-      <button type="button" data-i18n="news.btn"></button>
-    </div>
+    <form class="news-form" id="news-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
+      <input type="email" name="email" data-i18n-ph="news.placeholder" required autocomplete="email">
+      <button type="submit" data-i18n="news.btn"></button>
+    </form>
+    <div class="news-message" id="news-message" role="status" aria-live="polite"></div>
   </div>
 </section>
 
@@ -437,10 +438,13 @@
       "write.sub": "에세이, 필드 노트, 공개 서한.",
       "write.title": "최근 <em>글</em>.",
       "news.label": "◦ 월간 레터",
-      "news.title": "한 달에 <em>한 번</em>, 레터.",
-      "news.sub": "연구 노트, 멘토링 신청 공지, 가끔은 미완성의 생각. 스팸 없음, 트래킹 없음, 언제든 구독 취소.",
+      "news.title": "한 달에 <em>한 번</em>, 먼저 도착하는 미래.",
+      "news.sub": "로봇이 삶에 스며드는 시대에 필요한 UX 관점, 현장에서 먼저 본 장면들, 다음에 올 질문들 — <em>당신의 조직이 먼저 상상해야 할</em> 이야기들을 한 통의 편지에 담아 보냅니다.",
       "news.placeholder": "your@email.com",
       "news.btn": "구독하기",
+      "news.success": "◦ 구독이 완료됐습니다. 곧 뵙겠습니다.",
+      "news.error": "◦ 일시적 오류. 잠시 후 다시 시도해 주세요.",
+      "news.invalid": "◦ 올바른 이메일 주소를 입력해 주세요.",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
       "foot.role": "연구자 · 멘토 · 교육자",
       "foot.work": "활동",
@@ -533,10 +537,13 @@
       "write.sub": "Essays, field notes, and open letters.",
       "write.title": "Recent <em>dispatches</em>.",
       "news.label": "◦ Monthly Dispatch",
-      "news.title": "A letter, <em>once a month</em>.",
-      "news.sub": "Research notes, mentorship openings, and the occasional unfinished thought. No spam, no tracking, easy to leave.",
+      "news.title": "Once a month — <em>a future</em>, delivered early.",
+      "news.sub": "The UX perspectives we'll need when robots enter daily life, signals spotted in the field, and the questions coming next — <em>the scenes your organization needs to imagine first</em>, in a single letter.",
       "news.placeholder": "your@email.com",
       "news.btn": "Subscribe",
+      "news.success": "◦ You're in. See you in your inbox.",
+      "news.error": "◦ Something went wrong. Please try again.",
+      "news.invalid": "◦ Please enter a valid email address.",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
       "foot.role": "Researcher · Mentor · Educator",
       "foot.work": "Work",
@@ -629,10 +636,13 @@
       "write.sub": "随笔、田野笔记与公开信。",
       "write.title": "近期 <em>文章</em>。",
       "news.label": "◦ 每月通讯",
-      "news.title": "每月 <em>一封信</em>。",
-      "news.sub": "研究笔记、辅导名额通知,偶尔也有尚未完成的思考。无广告,无追踪,随时取消订阅。",
+      "news.title": "每月 <em>一封信</em>,提前到达的未来。",
+      "news.sub": "机器人融入日常时所需要的 UX 视角、从一线观察到的征兆、下一步要问的问题——<em>您的团队需要率先想象的</em>场景,浓缩在一封信里。",
       "news.placeholder": "your@email.com",
       "news.btn": "订阅",
+      "news.success": "◦ 订阅成功,我们很快见。",
+      "news.error": "◦ 暂时出错了,请稍后再试。",
+      "news.invalid": "◦ 请输入有效的邮箱地址。",
       "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
       "foot.role": "研究员 · 导师 · 教育者",
       "foot.work": "工作",
@@ -774,6 +784,50 @@
     });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const newsForm = document.getElementById('news-form');
+  const newsMsg = document.getElementById('news-message');
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function setNewsMessage(key, isError) {
+    const lang = document.documentElement.lang || 'ko';
+    newsMsg.textContent = (I18N[lang] && I18N[lang][key]) || '';
+    newsMsg.classList.toggle('is-error', !!isError);
+  }
+
+  newsForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const input = newsForm.querySelector('input[type="email"]');
+    const btn = newsForm.querySelector('button');
+    const email = input.value.trim();
+
+    if (!emailRe.test(email)) {
+      setNewsMessage('news.invalid', true);
+      input.focus();
+      return;
+    }
+
+    btn.disabled = true;
+    setNewsMessage('', false);
+
+    try {
+      const res = await fetch(newsForm.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ email, source: 'sylvialab.kr newsletter' })
+      });
+      if (res.ok) {
+        setNewsMessage('news.success', false);
+        newsForm.reset();
+      } else {
+        setNewsMessage('news.error', true);
+      }
+    } catch (err) {
+      setNewsMessage('news.error', true);
+    } finally {
+      btn.disabled = false;
+    }
+  });
 </script>
 
 </body>
