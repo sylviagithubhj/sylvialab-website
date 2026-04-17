@@ -749,9 +749,9 @@
       sliderNext.style.display = 'none';
       return;
     }
-    sliderTrack.innerHTML = GALLERY.map(item => `
+    sliderTrack.innerHTML = GALLERY.map((item, i) => `
       <div class="slide">
-        <img src="${item.src}" alt="${(item.caption && item.caption[lang]) || ''}" loading="lazy">
+        <img src="${item.src}" alt="${(item.caption && item.caption[lang]) || ''}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.parentElement.innerHTML='<div class=slide-empty>Image unavailable</div>'">
         ${item.caption ? `<div class="slide-caption">${item.caption[lang] || ''}</div>` : ''}
       </div>`).join('');
     sliderDots.innerHTML = GALLERY.map((_, i) => `<button class="slider-dot${i === 0 ? ' is-active' : ''}" data-idx="${i}" aria-label="Slide ${i + 1}"></button>`).join('');
