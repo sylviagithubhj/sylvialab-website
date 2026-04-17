@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Hee Ju Kang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand" data-i18n="brand" data-i18n-html="true"></a>
+  <div class="nav-links">
+    <a href="index.html#research" data-i18n="nav.research"></a>
+    <a href="index.html#conference" data-i18n="nav.conference"></a>
+    <a href="index.html#mentorship" data-i18n="nav.mentorship"></a>
+    <a href="index.html#teaching" data-i18n="nav.teaching"></a>
+    <a href="index.html#workshop" data-i18n="nav.workshop"></a>
+    <a href="index.html#writing" data-i18n="nav.writing"></a>
+    <a href="about.html" data-i18n="nav.about" style="color: var(--accent);"></a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-time" id="clock"></div>
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="ko">KO</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中</button>
+    </div>
+  </div>
+</nav>
+
+<section class="about-hero">
+  <div class="about-portrait">
+    <img src="profile.jpg" alt="Hee Ju Kang" loading="lazy">
+    <div class="about-portrait-caption">HEE JU KANG · 2026</div>
+  </div>
+  <div>
+    <div class="about-intro-label" data-i18n="about.label"></div>
+    <h1 class="about-intro-name" data-i18n="about.name" data-i18n-html="true"></h1>
+    <div class="about-intro-role" data-i18n="about.role"></div>
+    <p class="about-intro-bio" data-i18n="about.bio" data-i18n-html="true"></p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="about.exp.num"></div>
+      <div class="section-sub" data-i18n="about.exp.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="about.exp.title" data-i18n-html="true"></h2>
+  </div>
+  <div class="timeline" id="experience-list"></div>
+</section>
+
+<section id="publications">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="about.pub.num"></div>
+      <div class="section-sub" data-i18n="about.pub.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="about.pub.title" data-i18n-html="true"></h2>
+  </div>
+  <div class="pub-list" id="publications-list"></div>
+</section>
+
+<section id="speaking">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="about.talk.num"></div>
+      <div class="section-sub" data-i18n="about.talk.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="about.talk.title" data-i18n-html="true"></h2>
+  </div>
+  <div class="timeline" id="speaking-list"></div>
+</section>
+
+<footer>
+  <div class="foot-col">
+    <div class="foot-brand" data-i18n="foot.brand" data-i18n-html="true"></div>
+    <p style="margin-top: 12px; font-size: 14px; color: var(--ink-soft);" data-i18n="foot.role"></p>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.work"></h4>
+    <ul>
+      <li><a href="index.html#conference" data-i18n="nav.conference"></a></li>
+      <li><a href="index.html#mentorship" data-i18n="foot.bookm"></a></li>
+      <li><a href="index.html#teaching" data-i18n="nav.teaching"></a></li>
+      <li><a href="index.html#workshop" data-i18n="nav.workshop"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.connect"></h4>
+    <ul>
+      <li><a href="index.html#mentorship" data-i18n="foot.bookm"></a></li>
+      <li><a href="index.html#newsletter" data-i18n="foot.news"></a></li>
+      <li><a href="mailto:heejuk@mail.hongik.ac.kr" data-i18n="foot.speak"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.elsewhere"></h4>
+    <ul>
+      <li><a href="mailto:heejuk@mail.hongik.ac.kr">heejuk@mail.hongik.ac.kr</a></li>
+      <li><a href="https://sylvialab.kr" target="_blank">sylvialab.kr</a></li>
+      <li><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=%EA%B0%95%ED%9D%AC%EC%A3%BC&btnG=" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="https://brunch.co.kr/@sylviasolution/" target="_blank" rel="noopener noreferrer">Brunch</a></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <span data-i18n="foot.copy"></span>
+    <span data-i18n="foot.made"></span>
+  </div>
+</footer>
+
+<script>
+  const I18N = {
+    ko: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.research": "연구",
+      "nav.conference": "컨퍼런스",
+      "nav.mentorship": "멘토링",
+      "nav.teaching": "강의",
+      "nav.workshop": "워크숍",
+      "nav.writing": "글",
+      "nav.about": "소개",
+      "about.label": "◦ 소개",
+      "about.name": "강 <em>희주</em>",
+      "about.role": "테크 UX 디자이너 · HRI & Physical AI 연구자",
+      "about.bio": "<strong>서울을 기반으로 활동하는 HRI(인간-로봇 상호작용)와 Physical AI 연구자</strong>입니다. 젊은 빌더들을 위한 AI 컨퍼런스를 기획하고, 국내외 엔지니어들의 커리어를 멘토링하며, 디자인·마케팅·AI 리터러시를 가르칩니다.<br><br>디지털 경험을 통해 더 나은 세상을 만드는 것 — 그것이 제가 하는 모든 일의 출발점입니다.",
+      "about.exp.num": "§ 01 / 이력",
+      "about.exp.sub": "지금까지 걸어온 길.",
+      "about.exp.title": "<em>경력</em>.",
+      "about.pub.num": "§ 02 / 논문",
+      "about.pub.sub": "출판 및 발표.",
+      "about.pub.title": "<em>논문</em>.",
+      "about.talk.num": "§ 03 / 강연",
+      "about.talk.sub": "공개 발표와 패널.",
+      "about.talk.title": "<em>강연</em>.",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
+      "foot.role": "연구자 · 멘토 · 교육자",
+      "foot.work": "활동",
+      "foot.connect": "연결",
+      "foot.elsewhere": "다른 곳에서",
+      "foot.bookm": "멘토링 예약",
+      "foot.news": "뉴스레터",
+      "foot.speak": "강연 문의",
+      "foot.copy": "© 2026 강희주",
+      "foot.made": "서울에서 · 2026.04.17 업데이트"
+    },
+    en: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.research": "Research",
+      "nav.conference": "Conference",
+      "nav.mentorship": "Mentorship",
+      "nav.teaching": "Teaching",
+      "nav.workshop": "Workshop",
+      "nav.writing": "Writing",
+      "nav.about": "About",
+      "about.label": "◦ About",
+      "about.name": "Hee Ju <em>Kang</em>",
+      "about.role": "Tech UX Designer · HRI & Physical AI Researcher",
+      "about.bio": "A <strong>Human-Robot Interaction and Physical AI researcher based in Seoul.</strong> I run an AI conference for young builders, mentor engineers across Korea and abroad, and teach design, marketing, and AI literacy to students who are just getting started.<br><br>The through-line of everything I do: building a better world through digital experiences.",
+      "about.exp.num": "§ 01 / Experience",
+      "about.exp.sub": "The path so far.",
+      "about.exp.title": "<em>Career</em>.",
+      "about.pub.num": "§ 02 / Publications",
+      "about.pub.sub": "Papers and talks.",
+      "about.pub.title": "<em>Publications</em>.",
+      "about.talk.num": "§ 03 / Speaking",
+      "about.talk.sub": "Public talks and panels.",
+      "about.talk.title": "<em>Speaking</em>.",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
+      "foot.role": "Researcher · Mentor · Educator",
+      "foot.work": "Work",
+      "foot.connect": "Connect",
+      "foot.elsewhere": "Elsewhere",
+      "foot.bookm": "Book mentorship",
+      "foot.news": "Newsletter",
+      "foot.speak": "Speaking inquiry",
+      "foot.copy": "© 2026 Hee Ju Kang",
+      "foot.made": "Made in Seoul — last updated Apr 17"
+    },
+    zh: {
+      "brand": "姜希<em>周</em>",
+      "nav.research": "研究",
+      "nav.conference": "大会",
+      "nav.mentorship": "辅导",
+      "nav.teaching": "教学",
+      "nav.workshop": "工作坊",
+      "nav.writing": "文章",
+      "nav.about": "关于",
+      "about.label": "◦ 关于",
+      "about.name": "姜希 <em>周</em>",
+      "about.role": "技术 UX 设计师 · HRI 与具身智能研究员",
+      "about.bio": "<strong>常驻首尔的人机交互 HRI 与具身智能 Physical AI 研究员。</strong>为年轻的创造者们举办人工智能大会,为韩国与海外的工程师提供职业辅导,并为刚起步的学生讲授设计、市场营销与 AI 素养。<br><br>通过数字体验让世界更好一点——这是我所有工作的出发点。",
+      "about.exp.num": "§ 01 / 经历",
+      "about.exp.sub": "走过的路。",
+      "about.exp.title": "<em>经历</em>。",
+      "about.pub.num": "§ 02 / 论文",
+      "about.pub.sub": "发表与演讲。",
+      "about.pub.title": "<em>论文</em>。",
+      "about.talk.num": "§ 03 / 演讲",
+      "about.talk.sub": "公开演讲与对谈。",
+      "about.talk.title": "<em>演讲</em>。",
+      "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
+      "foot.role": "研究员 · 导师 · 教育者",
+      "foot.work": "工作",
+      "foot.connect": "联系",
+      "foot.elsewhere": "在别处",
+      "foot.bookm": "预约辅导",
+      "foot.news": "通讯",
+      "foot.speak": "演讲邀约",
+      "foot.copy": "© 2026 姜希周",
+      "foot.made": "首尔制作 · 2026 年 4 月 17 日更新"
+    }
+  };
+
+  const EXPERIENCE = [
+    { year: { ko: "2024 — 현재", en: "2024 — Present", zh: "2024 — 至今" },
+      title: { ko: "홍익대학교 국제디자인전문대학원 (IDAS)", en: "Hongik University IDAS", zh: "弘益大学国际设计专门大学院" },
+      role: { ko: "박사과정", en: "Ph.D. Candidate", zh: "博士研究生" } },
+    { year: { ko: "2023 — 현재", en: "2023 — Present", zh: "2023 — 至今" },
+      title: { ko: "부산과학기술대학교", en: "Busan Institute of Science and Technology", zh: "釜山科学技术大学" },
+      role: { ko: "겸임교수", en: "Adjunct Professor", zh: "客座教授" } }
+  ];
+
+  const PUBLICATIONS = [
+    { title: { ko: "(추후 논문 제목을 이곳에 추가하세요)", en: "(Add your paper titles here)", zh: "(在此处添加论文标题)" },
+      venue: "TBD" }
+  ];
+
+  const SPEAKING = [
+    { year: "2026",
+      title: { ko: "(강연 제목을 이곳에 추가하세요)", en: "(Add talk titles here)", zh: "(在此处添加演讲标题)" },
+      org: { ko: "주최자", en: "Host", zh: "主办方" } }
+  ];
+
+  function renderExperience(lang) {
+    const el = document.getElementById('experience-list');
+    el.innerHTML = EXPERIENCE.map(item => `
+      <div class="timeline-item">
+        <div class="timeline-year">${item.year[lang]}</div>
+        <div class="timeline-title">${item.title[lang]}</div>
+        <div class="timeline-org">${item.role[lang]}</div>
+      </div>
+    `).join('');
+  }
+
+  function renderPublications(lang) {
+    const el = document.getElementById('publications-list');
+    el.innerHTML = PUBLICATIONS.map((item, i) => `
+      <div class="pub-item">
+        <div class="pub-num">${String(i + 1).padStart(2, '0')}</div>
+        <div class="pub-title">${item.title[lang]}</div>
+        <div class="pub-venue">${item.venue}</div>
+      </div>
+    `).join('');
+  }
+
+  function renderSpeaking(lang) {
+    const el = document.getElementById('speaking-list');
+    el.innerHTML = SPEAKING.map(item => `
+      <div class="timeline-item">
+        <div class="timeline-year">${item.year}</div>
+        <div class="timeline-title">${item.title[lang]}</div>
+        <div class="timeline-org">${item.org[lang]}</div>
+      </div>
+    `).join('');
+  }
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    const dict = I18N[lang];
+    if (!dict) return;
+
+    document.body.classList.add('lang-switching');
+    setTimeout(() => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = dict[key];
+        if (val === undefined) return;
+        if (el.getAttribute('data-i18n-html') === 'true') {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
+      });
+
+      renderExperience(lang);
+      renderPublications(lang);
+      renderSpeaking(lang);
+
+      const titles = {
+        ko: "소개 — 강희주",
+        en: "About — Hee Ju Kang",
+        zh: "关于 — 姜希周"
+      };
+      document.title = titles[lang];
+
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+
+      localStorage.setItem('lang', lang);
+      document.body.classList.remove('lang-switching');
+    }, 180);
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+
+  const savedLang = localStorage.getItem('lang') || 'ko';
+  applyLang(savedLang);
+
+  function updateClock() {
+    const now = new Date();
+    const hh = String(now.getHours()).padStart(2, '0');
+    const mm = String(now.getMinutes()).padStart(2, '0');
+    const clockEl = document.getElementById('clock');
+    if (clockEl) clockEl.textContent = `SEOUL ${hh}:${mm}`;
+  }
+  updateClock();
+  setInterval(updateClock, 30000);
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
