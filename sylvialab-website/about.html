@@ -43,13 +43,7 @@
     <h1 class="about-intro-name" data-i18n="about.name" data-i18n-html="true"></h1>
     <div class="about-intro-role" data-i18n="about.role"></div>
     <p class="about-intro-bio" data-i18n="about.bio" data-i18n-html="true"></p>
-    <div class="keyword-row">
-      <span class="keyword-chip">HRI</span>
-      <span class="keyword-chip">휴머노이드 UX</span>
-      <span class="keyword-chip">대화형 UI</span>
-      <span class="keyword-chip">제스처 · 시선</span>
-      <span class="keyword-chip">센서데이터 UX</span>
-    </div>
+    <div class="keyword-row" id="keyword-row"></div>
   </div>
 </section>
 
@@ -74,23 +68,7 @@
     </div>
     <h2 class="section-title" data-i18n="about.edu.title" data-i18n-html="true"></h2>
   </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-year">박사 · Ph.D.</div>
-      <div class="timeline-title">홍익대학교 국제디자인대학원 (IDAS) <em>— HRI · UX 연구</em></div>
-      <div class="timeline-org">재학 중 · In Progress</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">석사 · M.A.</div>
-      <div class="timeline-title">홍익대학교 국제디자인대학원 (IDAS)</div>
-      <div class="timeline-org">수료 · Graduated</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">학사 · B.A.</div>
-      <div class="timeline-title">University of Sydney · 시드니대학교</div>
-      <div class="timeline-org">수료 · Graduated</div>
-    </div>
-  </div>
+  <div class="timeline" id="education-list"></div>
 </section>
 
 <section id="expertise">
@@ -101,24 +79,7 @@
     </div>
     <h2 class="section-title" data-i18n="about.exp.title" data-i18n-html="true"></h2>
   </div>
-  <div class="expertise-grid">
-    <div class="expertise-item">
-      <div class="expertise-tag">HRI Design</div>
-      <div class="expertise-name"><strong>로봇-인간 상호작용</strong> 디자인</div>
-    </div>
-    <div class="expertise-item">
-      <div class="expertise-tag">AI · Multimodal</div>
-      <div class="expertise-name"><strong>AI 융합 서비스 UX</strong> 설계 — 대화형 · 멀티모달</div>
-    </div>
-    <div class="expertise-item">
-      <div class="expertise-tag">AI Token Economy</div>
-      <div class="expertise-name"><strong>AI Token Economy</strong></div>
-    </div>
-    <div class="expertise-item">
-      <div class="expertise-tag">Lab · Education</div>
-      <div class="expertise-name"><strong>교육 · 랩 운영</strong> — 프로토타이핑 · 인터랙션 실험</div>
-    </div>
-  </div>
+  <div class="expertise-grid" id="expertise-list"></div>
 </section>
 
 <section id="career">
@@ -129,23 +90,7 @@
     </div>
     <h2 class="section-title" data-i18n="about.career.title" data-i18n-html="true"></h2>
   </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-year">현재 · Present</div>
-      <div class="timeline-title"><em>부산과학기술대학교</em> 생활조형디자인과 교수<br><span style="font-size: 14px; color: var(--ink-soft);">인터랙션 디자인 · 창업 · UX 수업</span></div>
-      <div class="timeline-org">교수 · Professor</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">前 · Prior</div>
-      <div class="timeline-title"><em>금융회사 PM</em><br><span style="font-size: 14px; color: var(--ink-soft);">금융 디지털 트랜스포메이션 UX</span></div>
-      <div class="timeline-org">Product Manager</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">前 · Prior</div>
-      <div class="timeline-title"><em>IBM GBS</em> 컨설턴트<br><span style="font-size: 14px; color: var(--ink-soft);">Digital Transformation</span></div>
-      <div class="timeline-org">Consultant</div>
-    </div>
-  </div>
+  <div class="timeline" id="career-list"></div>
 </section>
 
 <section id="publications">
@@ -156,33 +101,7 @@
     </div>
     <h2 class="section-title" data-i18n="about.pub.title" data-i18n-html="true"></h2>
   </div>
-  <div class="pub-list">
-    <div class="pub-item">
-      <div class="pub-num">01</div>
-      <div class="pub-title">생성형 AI 서비스에서 <em>토큰 사용권 이동성</em>의 서비스 설계 가능성 탐색<br><span style="font-size: 13px; color: var(--ink-mute); font-style: italic;">Toward Portable Token Rights: A Service Design Perspective on Generative AI Platforms</span></div>
-      <div class="pub-venue">한국디자인학회<br>심사 중 · Under Review</div>
-    </div>
-    <div class="pub-item">
-      <div class="pub-num">02</div>
-      <div class="pub-title"><em>유니버설디자인</em> · 부산학 <span style="font-size: 13px; color: var(--ink-mute);">— 부산 지역 11개 대학 연합 연구</span></div>
-      <div class="pub-venue">부산학 연합 연구<br>11개 대학 연합 · 2025</div>
-    </div>
-    <div class="pub-item">
-      <div class="pub-num">03</div>
-      <div class="pub-title"><a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09012651" target="_blank" rel="noopener noreferrer">Evaluation on the Usability of Chatbot Intelligent Messenger Mobile Services — <em>Focusing on Google (Allo) and Facebook (M Messenger)</em></a></div>
-      <div class="pub-venue">Korea Convergence Society<br>2017, Vol.8, No.9, pp.271–276</div>
-    </div>
-    <div class="pub-item">
-      <div class="pub-num">04</div>
-      <div class="pub-title">상황별 맞춤 신용카드 애플리케이션 제안 — <em>서비스 디자인 방법론을 중심으로</em><br><span style="font-size: 13px; color: var(--ink-mute); font-style: italic;">Proposal of Personalized Credit Card Application in Varied Context</span></div>
-      <div class="pub-venue">디지털디자인학연구<br>한국디지털디자인협의회 · 2015.01</div>
-    </div>
-    <div class="pub-item">
-      <div class="pub-num">05</div>
-      <div class="pub-title">프레젠테이션 발표능력을 위한 <em>서비스 디자인</em> — AI 스피치 코치 중심으로</div>
-      <div class="pub-venue">Working Paper</div>
-    </div>
-  </div>
+  <div class="pub-list" id="publications-list"></div>
 </section>
 
 <section id="focus">
@@ -193,15 +112,8 @@
     </div>
     <h2 class="section-title" data-i18n="about.focus.title" data-i18n-html="true"></h2>
   </div>
-  <div class="focus-list">
-    <div class="focus-item"><strong>휴머노이드 로봇</strong>의 감정 표현 UX 설계</div>
-    <div class="focus-item"><strong>생성형 AI × 로봇</strong> 대화 인터페이스 최적화</div>
-    <div class="focus-item"><strong>로봇 서비스 경제</strong> — 블록체인 융합 모델</div>
-    <div class="focus-item"><strong>2025 로봇 상용화 시대</strong> 사용자 경험 예측 연구</div>
-  </div>
-  <div class="focus-quote">
-    실제 현장에서 겪은 디지털 전환의 경험과 글로벌 기술 트렌드를 관찰하며, <strong>로봇이 우리 삶에 자연스럽게 스며들 때 필요한 UX 관점</strong>들을 정리하고 나누고자 합니다. 앞으로는 <strong>로보어드바이저 일임 서비스 사용자 경험, 생성형 AI × 로봇 대화 인터페이스 최적화, AI 뱅킹 로봇 고객 상담 인터페이스 디자인</strong>을 중심으로 이야기하며, 기술 전문가가 아닌 일반 사람들도 쉽게 이해할 수 있는 <strong>로봇 UX 가이드북</strong>을 만들어 가려 합니다.
-  </div>
+  <div class="focus-list" id="focus-list"></div>
+  <div class="focus-quote" data-i18n="about.focus.quote" data-i18n-html="true"></div>
 </section>
 
 <section id="programs">
@@ -212,23 +124,7 @@
     </div>
     <h2 class="section-title" data-i18n="about.prog.title" data-i18n-html="true"></h2>
   </div>
-  <div class="program-grid">
-    <div class="program-card">
-      <div class="program-icon">Lectures</div>
-      <div class="program-title">강연</div>
-      <div class="program-body">최신 로봇 UX 트렌드, 휴머노이드 감정 UX, AI × 로봇 인터페이스, 미래 기술과 사용자 경험.</div>
-    </div>
-    <div class="program-card">
-      <div class="program-icon">Workshops</div>
-      <div class="program-title">워크숍</div>
-      <div class="program-body">조직 맞춤형 UX 실습, 로봇 서비스 프로토타이핑, AI · 데이터 기반 사용자 시뮬레이션.</div>
-    </div>
-    <div class="program-card">
-      <div class="program-icon">Consulting</div>
-      <div class="program-title">컨설팅</div>
-      <div class="program-body">로봇 서비스 UX 리디자인, AI 금융 · 헬스케어 인터페이스 개선, 블록체인 기반 로봇 경제 모델 설계.</div>
-    </div>
-  </div>
+  <div class="program-grid" id="programs-list"></div>
 </section>
 
 <section id="teaching-history">
@@ -239,90 +135,10 @@
     </div>
     <h2 class="section-title" data-i18n="about.teach.title" data-i18n-html="true"></h2>
   </div>
-
-  <div class="list-group-label">UX · AI 융합 디자인</div>
-  <div class="simple-list">
-    <div class="item">
-      <div class="year">2026</div>
-      <div class="title"><strong>국민대학교</strong> 특강 <em>— 디자이너를 위한 바이브코딩, 포트폴리오 적용법</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2026</div>
-      <div class="title"><strong>홍익대학교</strong> 특강 <em>— Vibe Coding Design with Agents</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2026</div>
-      <div class="title"><strong>NHN</strong> 바이브코딩 강의 <em>· 바이브코딩 서비스 기획</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2026</div>
-      <div class="title"><strong>동그라미재단</strong> <em>— AI 콘텐츠 크리에이터 과정</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2026</div>
-      <div class="title"><strong>DMC 매력일자리</strong> <em>— AI 활용 사무역량 · 마케팅 양성과정</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2026</div>
-      <div class="title"><strong>D-10 비자 외국인과정</strong> <em>— AI 활용 사무역량 · 마케팅 양성과정</em></div>
-    </div>
-    <div class="item">
-      <div class="year">팀장</div>
-      <div class="title"><strong>신한커리어업</strong> UX 직무 팀장 <em>— UX 총괄 · 실무 프로젝트 멘토링</em></div>
-    </div>
-    <div class="item">
-      <div class="year">워크숍</div>
-      <div class="title"><strong>삼성전자 · LG · LG인화원</strong> UX/UI 워크숍 <em>— 웨어러블 · IoT 사례 기반 디자인씽킹</em></div>
-    </div>
-    <div class="item">
-      <div class="year">교수</div>
-      <div class="title"><strong>부산과학기술대학교</strong> 생활조형디자인과</div>
-    </div>
-    <div class="item">
-      <div class="year">16–33기</div>
-      <div class="title"><strong>Remain</strong> UX/UI 강의 강사</div>
-    </div>
-    <div class="item">
-      <div class="year">다수</div>
-      <div class="title">국내 스타트업 대상 <strong>UX/UI 워크숍</strong> 강의</div>
-    </div>
-    <div class="item">
-      <div class="year">강사</div>
-      <div class="title"><strong>서울창업허브</strong> UX/UI 강의</div>
-    </div>
-    <div class="item">
-      <div class="year">강의</div>
-      <div class="title">비전공자를 위한 <strong>Figma 활용 UX/UI</strong> 강의</div>
-    </div>
-  </div>
-
-  <div class="list-group-label">Python · 데이터 분석</div>
-  <div class="simple-list">
-    <div class="item">
-      <div class="year">NIPA</div>
-      <div class="title">한국정보통신산업진흥원 <em>금융 중간관리자 대상 Python Programming</em> 강사</div>
-    </div>
-    <div class="item">
-      <div class="year">핀테크</div>
-      <div class="title"><strong>한국 핀테크코리아지원센터</strong> 마이데이터 강의 강사</div>
-    </div>
-    <div class="item">
-      <div class="year">삼성화재</div>
-      <div class="title">보험 데이터 · 비금융 데이터 <em>Python Programming</em> 강사</div>
-    </div>
-    <div class="item">
-      <div class="year">KOTRA</div>
-      <div class="title">KOTRA <strong>프로그래밍</strong> 강의 강사</div>
-    </div>
-    <div class="item">
-      <div class="year">인프런</div>
-      <div class="title"><strong>인프런</strong> 파이썬 프로그래밍 강의 강사</div>
-    </div>
-    <div class="item">
-      <div class="year">부산과기대</div>
-      <div class="title"><strong>부산과학기술대학교</strong> 파이썬 강의 강사</div>
-    </div>
-  </div>
+  <div class="list-group-label" data-i18n="about.teach.group1"></div>
+  <div class="simple-list" id="teaching-ux-list"></div>
+  <div class="list-group-label" data-i18n="about.teach.group2"></div>
+  <div class="simple-list" id="teaching-py-list"></div>
 </section>
 
 <section id="speaking">
@@ -333,66 +149,10 @@
     </div>
     <h2 class="section-title" data-i18n="about.talk.title" data-i18n-html="true"></h2>
   </div>
-
-  <div class="list-group-label">미래 기술 트렌드 · 글로벌 네트워킹</div>
-  <div class="simple-list">
-    <div class="item">
-      <div class="year">2025</div>
-      <div class="title"><a href="https://www.donga.com/news/It/article/all/20251027/132643320/1" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line);"><strong>Korea Open AGI Symposium 2025</strong></a></div>
-    </div>
-    <div class="item">
-      <div class="year">2024</div>
-      <div class="title"><strong>Perpetual Protocol DeFi</strong> <em>@ Devcon</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2023</div>
-      <div class="title"><strong>TOKEN2049</strong> — DAO 발표</div>
-    </div>
-    <div class="item">
-      <div class="year">2023</div>
-      <div class="title"><strong>Blockchain Korea 2023</strong> — 일본 시장 NFT 규제 및 프로젝트 커뮤니티 마케팅 발표</div>
-    </div>
-    <div class="item">
-      <div class="year">2022</div>
-      <div class="title"><strong>Xangle Adoption 2022</strong> — NFT Webinar</div>
-    </div>
-    <div class="item">
-      <div class="year">2022</div>
-      <div class="title"><strong>Web3 Korea 2022</strong> — NFT 커뮤니티 마케팅 발표</div>
-    </div>
-  </div>
-
-  <div class="list-group-label">차세대 블록체인 생태계 구축 활동</div>
-  <div class="simple-list">
-    <div class="item">
-      <div class="year">2024</div>
-      <div class="title"><strong>Devcon Hackathon</strong></div>
-    </div>
-    <div class="item">
-      <div class="year">2024</div>
-      <div class="title"><strong>Ethcon Korea Conference</strong> · Job Seminars</div>
-    </div>
-    <div class="item">
-      <div class="year">2024</div>
-      <div class="title"><strong>KBW 2024</strong> — Korea Blockchain Week</div>
-    </div>
-    <div class="item">
-      <div class="year">2023</div>
-      <div class="title"><strong>IVS Kyoto Conference</strong></div>
-    </div>
-    <div class="item">
-      <div class="year">2023</div>
-      <div class="title"><strong>Ethcon Korea Conference</strong> — Community & Sponsors Crew</div>
-    </div>
-    <div class="item">
-      <div class="year">2022</div>
-      <div class="title"><strong>Vogue × GQ × ALAP</strong> <em>@ SeoulWave</em></div>
-    </div>
-    <div class="item">
-      <div class="year">2022</div>
-      <div class="title">VIP Dinner — <strong>NFT Get Inspired</strong> <em>@ Shilla Hotel</em></div>
-    </div>
-  </div>
+  <div class="list-group-label" data-i18n="about.talk.group1"></div>
+  <div class="simple-list" id="speaking-future-list"></div>
+  <div class="list-group-label" data-i18n="about.talk.group2"></div>
+  <div class="simple-list" id="speaking-blockchain-list"></div>
 </section>
 
 <footer>
@@ -448,8 +208,8 @@
       "about.name": "강 <em>희주</em>",
       "about.role": "디자인 교수 · HRI & Physical AI 연구자 · 前 IBM GBS 컨설턴트",
       "about.bio": "대학에서 <strong>창업 · 디자인</strong>을 강의하는 디자인 교수이자, 서울을 기반으로 활동하는 <strong>HRI(인간-로봇 상호작용)와 Physical AI 연구자</strong>입니다. IBM GBS 컨설턴트, 금융회사 PM 경력을 통해 현장의 디지털 전환 경험과 최신 기술 트렌드를 연결합니다.<br><br>로봇이 삶 속으로 자연스럽게 스며드는 시대의 <em>사용자 경험</em>을 연구하고, 가르치고, 씁니다.",
-      "about.cta.label": "◦ 강연 · 워크숍 · 인터뷰",
-      "about.cta.text": "지금 <em>새로운 초대</em>를 받고 있습니다. 강연, 워크숍, 컨설팅 · 인터뷰 — 편하게 문의 주세요.",
+      "about.cta.label": "◦ 함께 다음 10년을 그리다",
+      "about.cta.text": "로봇과 AI가 일상이 되는 시대 — 당신의 조직이 <em>먼저 상상해야 할 미래</em>가 있습니다. 그 시선의 출발점이 되고 싶습니다.",
       "about.cta.btn": "강연 문의하기",
       "about.edu.num": "§ 01 / 학력",
       "about.edu.sub": "어디서 배웠는가.",
@@ -466,15 +226,20 @@
       "about.focus.num": "§ 05 / 현재 연구 분야",
       "about.focus.sub": "브런치에서 쓰고자 하는 글들.",
       "about.focus.title": "<em>Current</em> Focus.",
+      "about.focus.quote": "실제 현장에서 겪은 디지털 전환의 경험과 글로벌 기술 트렌드를 관찰하며, <strong>로봇이 우리 삶에 자연스럽게 스며들 때 필요한 UX 관점</strong>들을 정리하고 나누고자 합니다. 앞으로는 <strong>로보어드바이저 일임 서비스 사용자 경험, 생성형 AI × 로봇 대화 인터페이스 최적화, AI 뱅킹 로봇 고객 상담 인터페이스 디자인</strong>을 중심으로 이야기하며, 기술 전문가가 아닌 일반 사람들도 쉽게 이해할 수 있는 <strong>로봇 UX 가이드북</strong>을 만들어 가려 합니다.",
       "about.prog.num": "§ 06 / 제공 프로그램",
       "about.prog.sub": "함께 할 수 있는 일들.",
       "about.prog.title": "<em>Programs</em>.",
       "about.teach.num": "§ 07 / 강의 이력",
       "about.teach.sub": "UX · AI 융합 디자인 활동.",
       "about.teach.title": "<em>Teaching</em> History.",
+      "about.teach.group1": "UX · AI 융합 디자인",
+      "about.teach.group2": "Python · 데이터 분석",
       "about.talk.num": "§ 08 / 강연 · 컨퍼런스",
       "about.talk.sub": "미래 기술 트렌드 연구 · 글로벌 네트워킹.",
       "about.talk.title": "<em>Speaking</em>.",
+      "about.talk.group1": "미래 기술 트렌드 · 글로벌 네트워킹",
+      "about.talk.group2": "차세대 블록체인 생태계 구축 활동",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
       "foot.role": "연구자 · 멘토 · 교육자",
       "foot.work": "활동",
@@ -499,9 +264,9 @@
       "about.name": "Hee Ju <em>Kang</em>",
       "about.role": "Design Professor · HRI & Physical AI Researcher · Former IBM GBS Consultant",
       "about.bio": "A <strong>design professor teaching entrepreneurship and design</strong>, and a <strong>Human-Robot Interaction and Physical AI researcher based in Seoul</strong>. With prior experience as an IBM GBS consultant and PM at a financial company, I bridge field-tested digital transformation and emerging technology trends.<br><br>I research, teach, and write about the <em>user experience</em> of an era where robots quietly enter our daily lives.",
-      "about.cta.label": "◦ Talks · Workshops · Interviews",
-      "about.cta.text": "Open to <em>new invitations</em>. Lectures, workshops, consulting, and interviews — reach out anytime.",
-      "about.cta.btn": "Send inquiry",
+      "about.cta.label": "◦ Shape the next decade together",
+      "about.cta.text": "Robots and AI are entering daily life. There's a <em>future your organization needs to imagine first</em> — let me be where that vision begins.",
+      "about.cta.btn": "Send an inquiry",
       "about.edu.num": "§ 01 / Education",
       "about.edu.sub": "Where I learned.",
       "about.edu.title": "<em>Education</em>.",
@@ -517,15 +282,20 @@
       "about.focus.num": "§ 05 / Current Focus",
       "about.focus.sub": "What I'm writing about on Brunch.",
       "about.focus.title": "<em>Current</em> Focus.",
+      "about.focus.quote": "Drawing on field experience in digital transformation and observing global technology trends, I want to articulate and share <strong>the UX perspectives we need when robots quietly enter our lives</strong>. Going forward, I'll focus on <strong>robo-advisor discretionary services, generative AI × robot dialogue optimization, and AI banking-robot customer advisory interfaces</strong> — and build a <strong>robot UX guidebook</strong> written for everyday readers, not just technologists.",
       "about.prog.num": "§ 06 / Programs",
       "about.prog.sub": "Ways to work together.",
       "about.prog.title": "<em>Programs</em>.",
       "about.teach.num": "§ 07 / Teaching History",
       "about.teach.sub": "UX and AI design activities.",
       "about.teach.title": "<em>Teaching</em> History.",
+      "about.teach.group1": "UX · AI Integrated Design",
+      "about.teach.group2": "Python · Data Analysis",
       "about.talk.num": "§ 08 / Speaking & Conferences",
       "about.talk.sub": "Future-tech research and global networking.",
       "about.talk.title": "<em>Speaking</em>.",
+      "about.talk.group1": "Future-Tech Trends · Global Networking",
+      "about.talk.group2": "Next-Gen Blockchain Ecosystem Building",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
       "foot.role": "Researcher · Mentor · Educator",
       "foot.work": "Work",
@@ -550,8 +320,8 @@
       "about.name": "姜希 <em>周</em>",
       "about.role": "设计学教授 · HRI 与具身智能研究员 · 前 IBM GBS 顾问",
       "about.bio": "<strong>在大学讲授创业与设计的设计学教授</strong>,同时是常驻首尔的 <strong>人机交互 HRI 与具身智能 Physical AI 研究员</strong>。曾任 IBM GBS 顾问与金融公司产品经理,将一线的数字化转型经验与最新科技趋势结合起来。<br><br>我研究、讲授、并书写——关于机器人悄然进入日常生活的那个时代的 <em>用户体验</em>。",
-      "about.cta.label": "◦ 演讲 · 工作坊 · 访谈",
-      "about.cta.text": "正在接受 <em>新的邀请</em>。演讲、工作坊、咨询与访谈——欢迎联系。",
+      "about.cta.label": "◦ 一起描绘未来十年",
+      "about.cta.text": "机器人与 AI 正在融入日常——您的组织需要 <em>率先想象的未来</em>。愿成为那份视野的起点。",
       "about.cta.btn": "提交咨询",
       "about.edu.num": "§ 01 / 学历",
       "about.edu.sub": "学习历程。",
@@ -568,15 +338,20 @@
       "about.focus.num": "§ 05 / 当前研究",
       "about.focus.sub": "正在 Brunch 撰写的主题。",
       "about.focus.title": "<em>当前</em>焦点。",
+      "about.focus.quote": "基于一线的数字化转型经验与对全球科技趋势的观察,我希望整理并分享 <strong>当机器人悄然融入生活时所需要的 UX 视角</strong>。未来我将聚焦 <strong>机器人投顾全权委托服务的用户体验、生成式 AI × 机器人对话界面优化,以及 AI 银行机器人客户咨询界面设计</strong>,并撰写一本 <strong>面向普通读者而非技术专家的机器人 UX 指南</strong>。",
       "about.prog.num": "§ 06 / 合作项目",
       "about.prog.sub": "可以一起做的事。",
       "about.prog.title": "<em>项目</em>。",
       "about.teach.num": "§ 07 / 教学履历",
       "about.teach.sub": "UX 与 AI 融合设计活动。",
       "about.teach.title": "<em>教学</em>履历。",
+      "about.teach.group1": "UX · AI 融合设计",
+      "about.teach.group2": "Python · 数据分析",
       "about.talk.num": "§ 08 / 演讲 · 大会",
       "about.talk.sub": "未来技术趋势研究与全球交流。",
       "about.talk.title": "<em>演讲</em>。",
+      "about.talk.group1": "未来技术趋势 · 全球交流",
+      "about.talk.group2": "下一代区块链生态建设",
       "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
       "foot.role": "研究员 · 导师 · 教育者",
       "foot.work": "工作",
@@ -589,6 +364,341 @@
       "foot.made": "首尔制作 · 2026 年 4 月 18 日更新"
     }
   };
+
+  const KEYWORDS = [
+    { ko: "HRI", en: "HRI", zh: "HRI" },
+    { ko: "휴머노이드 UX", en: "Humanoid UX", zh: "人形机器人 UX" },
+    { ko: "대화형 UI", en: "Conversational UI", zh: "对话式 UI" },
+    { ko: "제스처 · 시선", en: "Gesture · Gaze", zh: "手势 · 视线" },
+    { ko: "센서데이터 UX", en: "Sensor-data UX", zh: "传感器数据 UX" }
+  ];
+
+  const EDUCATION = [
+    { year: { ko: "박사 · Ph.D.", en: "Ph.D.", zh: "博士" },
+      title: { ko: "홍익대학교 국제디자인대학원 (IDAS) <em>— HRI · UX 연구</em>",
+               en: "Hongik University IDAS <em>— HRI · UX Research</em>",
+               zh: "弘益大学国际设计专门大学院 (IDAS) <em>— HRI · UX 研究</em>" },
+      org:  { ko: "재학 중 · In Progress", en: "In Progress", zh: "在读中" } },
+    { year: { ko: "석사 · M.A.", en: "M.A.", zh: "硕士" },
+      title: { ko: "홍익대학교 국제디자인대학원 (IDAS)",
+               en: "Hongik University IDAS",
+               zh: "弘益大学国际设计专门大学院 (IDAS)" },
+      org:  { ko: "수료 · Graduated", en: "Graduated", zh: "已毕业" } },
+    { year: { ko: "학사 · B.A.", en: "B.A.", zh: "学士" },
+      title: { ko: "University of Sydney · 시드니대학교",
+               en: "University of Sydney",
+               zh: "悉尼大学 · University of Sydney" },
+      org:  { ko: "수료 · Graduated", en: "Graduated", zh: "已毕业" } }
+  ];
+
+  const EXPERTISE = [
+    { tag: "HRI Design",
+      name: { ko: "<strong>로봇-인간 상호작용</strong> 디자인",
+              en: "<strong>Human-Robot Interaction</strong> Design",
+              zh: "<strong>人机交互 HRI</strong> 设计" } },
+    { tag: "AI · Multimodal",
+      name: { ko: "<strong>AI 융합 서비스 UX</strong> 설계 — 대화형 · 멀티모달",
+              en: "<strong>AI-integrated Service UX</strong> — Conversational · Multimodal",
+              zh: "<strong>AI 融合服务 UX</strong> 设计 — 对话式 · 多模态" } },
+    { tag: "AI Token Economy",
+      name: { ko: "<strong>AI Token Economy</strong>",
+              en: "<strong>AI Token Economy</strong>",
+              zh: "<strong>AI Token Economy</strong>" } },
+    { tag: "Lab · Education",
+      name: { ko: "<strong>교육 · 랩 운영</strong> — 프로토타이핑 · 인터랙션 실험",
+              en: "<strong>Education · Lab Ops</strong> — Prototyping · Interaction Experiments",
+              zh: "<strong>教育 · 实验室运营</strong> — 原型制作 · 交互实验" } }
+  ];
+
+  const CAREER = [
+    { year: { ko: "현재 · Present", en: "Present", zh: "现任" },
+      title: { ko: "<em>부산과학기술대학교</em> 생활조형디자인과 교수<br><span style=\"font-size: 14px; color: var(--ink-soft);\">인터랙션 디자인 · 창업 · UX 수업</span>",
+               en: "<em>Busan Institute of Science and Technology</em> — Lifestyle Design Dept.<br><span style=\"font-size: 14px; color: var(--ink-soft);\">Interaction Design · Entrepreneurship · UX</span>",
+               zh: "<em>釜山科学技术大学</em> 生活造型设计系 教授<br><span style=\"font-size: 14px; color: var(--ink-soft);\">交互设计 · 创业 · UX 课程</span>" },
+      org: { ko: "교수 · Professor", en: "Professor", zh: "教授" } },
+    { year: { ko: "前 · Prior", en: "Prior", zh: "曾任" },
+      title: { ko: "<em>금융회사 PM</em><br><span style=\"font-size: 14px; color: var(--ink-soft);\">금융 디지털 트랜스포메이션 UX</span>",
+               en: "<em>Finance Company PM</em><br><span style=\"font-size: 14px; color: var(--ink-soft);\">Financial Digital Transformation UX</span>",
+               zh: "<em>金融公司 PM</em><br><span style=\"font-size: 14px; color: var(--ink-soft);\">金融数字化转型 UX</span>" },
+      org: { ko: "Product Manager", en: "Product Manager", zh: "产品经理" } },
+    { year: { ko: "前 · Prior", en: "Prior", zh: "曾任" },
+      title: { ko: "<em>IBM GBS</em> 컨설턴트<br><span style=\"font-size: 14px; color: var(--ink-soft);\">Digital Transformation</span>",
+               en: "<em>IBM GBS</em> Consultant<br><span style=\"font-size: 14px; color: var(--ink-soft);\">Digital Transformation</span>",
+               zh: "<em>IBM GBS</em> 顾问<br><span style=\"font-size: 14px; color: var(--ink-soft);\">Digital Transformation</span>" },
+      org: { ko: "Consultant", en: "Consultant", zh: "顾问" } }
+  ];
+
+  const PUBLICATIONS = [
+    { title: { ko: "생성형 AI 서비스에서 <em>토큰 사용권 이동성</em>의 서비스 설계 가능성 탐색<br><span style=\"font-size: 13px; color: var(--ink-mute); font-style: italic;\">Toward Portable Token Rights: A Service Design Perspective on Generative AI Platforms</span>",
+               en: "<em>Toward Portable Token Rights</em>: A Service Design Perspective on Generative AI Platforms",
+               zh: "生成式 AI 服务中 <em>代币使用权可迁移性</em> 的服务设计可能性探索<br><span style=\"font-size: 13px; color: var(--ink-mute); font-style: italic;\">Toward Portable Token Rights: A Service Design Perspective on Generative AI Platforms</span>" },
+      venue: { ko: "한국디자인학회<br>심사 중 · Under Review",
+               en: "Korean Society of Design Science<br>Under Review",
+               zh: "韩国设计学会<br>审稿中" } },
+    { title: { ko: "<em>유니버설디자인</em> · 부산학 <span style=\"font-size: 13px; color: var(--ink-mute);\">— 부산 지역 11개 대학 연합 연구</span>",
+               en: "<em>Universal Design</em> · Busan Studies <span style=\"font-size: 13px; color: var(--ink-mute);\">— 11-university collaborative research</span>",
+               zh: "<em>通用设计</em> · 釜山学 <span style=\"font-size: 13px; color: var(--ink-mute);\">— 釜山 11 所大学联合研究</span>" },
+      venue: { ko: "부산학 연합 연구<br>11개 대학 연합 · 2025",
+               en: "Busan Studies Consortium<br>11-university collaboration · 2025",
+               zh: "釜山学联合研究<br>11 所大学联合 · 2025" } },
+    { title: { ko: "<a href=\"https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09012651\" target=\"_blank\" rel=\"noopener noreferrer\">Evaluation on the Usability of Chatbot Intelligent Messenger Mobile Services — <em>Focusing on Google (Allo) and Facebook (M Messenger)</em></a>",
+               en: "<a href=\"https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09012651\" target=\"_blank\" rel=\"noopener noreferrer\">Evaluation on the Usability of Chatbot Intelligent Messenger Mobile Services — <em>Focusing on Google (Allo) and Facebook (M Messenger)</em></a>",
+               zh: "<a href=\"https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09012651\" target=\"_blank\" rel=\"noopener noreferrer\">Evaluation on the Usability of Chatbot Intelligent Messenger Mobile Services — <em>Focusing on Google (Allo) and Facebook (M Messenger)</em></a>" },
+      venue: { ko: "Korea Convergence Society<br>2017, Vol.8, No.9, pp.271–276",
+               en: "Korea Convergence Society<br>2017, Vol.8, No.9, pp.271–276",
+               zh: "Korea Convergence Society<br>2017, Vol.8, No.9, pp.271–276" } },
+    { title: { ko: "상황별 맞춤 신용카드 애플리케이션 제안 — <em>서비스 디자인 방법론을 중심으로</em><br><span style=\"font-size: 13px; color: var(--ink-mute); font-style: italic;\">Proposal of Personalized Credit Card Application in Varied Context</span>",
+               en: "<em>Proposal of Personalized Credit Card Application in Varied Context</em> — Focusing on Service Design Methodology",
+               zh: "情境化个性化信用卡应用方案 — <em>以服务设计方法论为中心</em>" },
+      venue: { ko: "디지털디자인학연구<br>한국디지털디자인협의회 · 2015.01",
+               en: "Journal of Digital Design<br>Korea Digital Design Council · Jan 2015",
+               zh: "数字设计学研究<br>韩国数字设计协会 · 2015.01" } },
+    { title: { ko: "프레젠테이션 발표능력을 위한 <em>서비스 디자인</em> — AI 스피치 코치 중심으로",
+               en: "<em>Service Design for Presentation Skills</em> — Focusing on an AI Speech Coach",
+               zh: "提升演讲能力的 <em>服务设计</em> — 以 AI 演讲教练为中心" },
+      venue: { ko: "Working Paper", en: "Working Paper", zh: "工作论文" } }
+  ];
+
+  const FOCUS = [
+    { text: { ko: "<strong>휴머노이드 로봇</strong>의 감정 표현 UX 설계",
+              en: "<strong>Humanoid robot</strong> emotion-expression UX",
+              zh: "<strong>人形机器人</strong> 情感表达 UX 设计" } },
+    { text: { ko: "<strong>생성형 AI × 로봇</strong> 대화 인터페이스 최적화",
+              en: "<strong>Generative AI × robots</strong> — dialogue interface optimization",
+              zh: "<strong>生成式 AI × 机器人</strong> 对话界面优化" } },
+    { text: { ko: "<strong>로봇 서비스 경제</strong> — 블록체인 융합 모델",
+              en: "<strong>Robot service economy</strong> — blockchain-integrated models",
+              zh: "<strong>机器人服务经济</strong> — 区块链融合模型" } },
+    { text: { ko: "<strong>2025 로봇 상용화 시대</strong> 사용자 경험 예측 연구",
+              en: "UX forecasting for the <strong>2025 robot-commercialization era</strong>",
+              zh: "<strong>2025 机器人商用时代</strong> 用户体验预测研究" } }
+  ];
+
+  const PROGRAMS = [
+    { icon: "Lectures",
+      title: { ko: "강연", en: "Lectures", zh: "讲座" },
+      body: { ko: "최신 로봇 UX 트렌드, 휴머노이드 감정 UX, AI × 로봇 인터페이스, 미래 기술과 사용자 경험.",
+              en: "Latest robot UX trends, humanoid emotion UX, AI × robot interfaces, and the future of user experience.",
+              zh: "最新机器人 UX 趋势、人形机器人情感 UX、AI × 机器人界面、未来技术与用户体验。" } },
+    { icon: "Workshops",
+      title: { ko: "워크숍", en: "Workshops", zh: "工作坊" },
+      body: { ko: "조직 맞춤형 UX 실습, 로봇 서비스 프로토타이핑, AI · 데이터 기반 사용자 시뮬레이션.",
+              en: "Organization-tailored UX practice, robot service prototyping, AI- and data-driven user simulation.",
+              zh: "针对组织定制的 UX 实践、机器人服务原型设计、AI 与数据驱动的用户仿真。" } },
+    { icon: "Consulting",
+      title: { ko: "컨설팅", en: "Consulting", zh: "咨询" },
+      body: { ko: "로봇 서비스 UX 리디자인, AI 금융 · 헬스케어 인터페이스 개선, 블록체인 기반 로봇 경제 모델 설계.",
+              en: "Robot service UX redesign, AI finance & healthcare interface improvement, blockchain-based robot economy modeling.",
+              zh: "机器人服务 UX 重设计、AI 金融与医疗界面改进、基于区块链的机器人经济模型设计。" } }
+  ];
+
+  const TEACHING_UX = [
+    { year: { ko: "2026", en: "2026", zh: "2026" },
+      title: { ko: "<strong>국민대학교</strong> 특강 <em>— 디자이너를 위한 바이브코딩, 포트폴리오 적용법</em>",
+               en: "<strong>Kookmin University</strong> special lecture <em>— Vibe Coding for Designers · Portfolio Application</em>",
+               zh: "<strong>国民大学</strong> 特别讲座 <em>— 为设计师而设的 Vibe Coding 与作品集应用</em>" } },
+    { year: { ko: "2026", en: "2026", zh: "2026" },
+      title: { ko: "<strong>홍익대학교</strong> 특강 <em>— Vibe Coding Design with Agents</em>",
+               en: "<strong>Hongik University</strong> special lecture <em>— Vibe Coding Design with Agents</em>",
+               zh: "<strong>弘益大学</strong> 特别讲座 <em>— Vibe Coding Design with Agents</em>" } },
+    { year: { ko: "2026", en: "2026", zh: "2026" },
+      title: { ko: "<strong>NHN</strong> 바이브코딩 강의 <em>· 바이브코딩 서비스 기획</em>",
+               en: "<strong>NHN</strong> Vibe-coding lecture <em>· service planning</em>",
+               zh: "<strong>NHN</strong> Vibe-coding 讲座 <em>· 服务企划</em>" } },
+    { year: { ko: "2026", en: "2026", zh: "2026" },
+      title: { ko: "<strong>동그라미재단</strong> <em>— AI 콘텐츠 크리에이터 과정</em>",
+               en: "<strong>Donggrami Foundation</strong> <em>— AI Content Creator Program</em>",
+               zh: "<strong>Donggrami 基金会</strong> <em>— AI 内容创作者课程</em>" } },
+    { year: { ko: "2026", en: "2026", zh: "2026" },
+      title: { ko: "<strong>DMC 매력일자리</strong> <em>— AI 활용 사무역량 · 마케팅 양성과정</em>",
+               en: "<strong>DMC Attractive Jobs</strong> <em>— AI Office Skills & Marketing Program</em>",
+               zh: "<strong>DMC 魅力职业</strong> <em>— AI 办公技能与营销培养课程</em>" } },
+    { year: { ko: "2026", en: "2026", zh: "2026" },
+      title: { ko: "<strong>D-10 비자 외국인과정</strong> <em>— AI 활용 사무역량 · 마케팅 양성과정</em>",
+               en: "<strong>D-10 Visa Program (Int'l)</strong> <em>— AI Office Skills & Marketing</em>",
+               zh: "<strong>D-10 签证外国人课程</strong> <em>— AI 办公技能与营销</em>" } },
+    { year: { ko: "팀장", en: "Lead", zh: "负责人" },
+      title: { ko: "<strong>신한커리어업</strong> UX 직무 팀장 <em>— UX 총괄 · 실무 프로젝트 멘토링</em>",
+               en: "<strong>Shinhan Career Up</strong> — UX Track Lead <em>· UX direction · project mentorship</em>",
+               zh: "<strong>新韩 Career Up</strong> UX 职务组长 <em>— UX 统筹 · 实务项目指导</em>" } },
+    { year: { ko: "워크숍", en: "Workshop", zh: "工作坊" },
+      title: { ko: "<strong>삼성전자 · LG · LG인화원</strong> UX/UI 워크숍 <em>— 웨어러블 · IoT 사례 기반 디자인씽킹</em>",
+               en: "<strong>Samsung · LG · LG Inhwawon</strong> UX/UI workshops <em>— design thinking grounded in wearable & IoT cases</em>",
+               zh: "<strong>三星电子 · LG · LG 仁华院</strong> UX/UI 工作坊 <em>— 基于可穿戴与物联网案例的设计思维</em>" } },
+    { year: { ko: "교수", en: "Faculty", zh: "教授" },
+      title: { ko: "<strong>부산과학기술대학교</strong> 생활조형디자인과",
+               en: "<strong>Busan Institute of Science and Technology</strong> — Lifestyle Design Department",
+               zh: "<strong>釜山科学技术大学</strong> 生活造型设计系" } },
+    { year: { ko: "16–33기", en: "Cohorts 16–33", zh: "第16–33届" },
+      title: { ko: "<strong>Remain</strong> UX/UI 강의 강사",
+               en: "<strong>Remain</strong> — UX/UI course instructor",
+               zh: "<strong>Remain</strong> UX/UI 课程讲师" } },
+    { year: { ko: "다수", en: "Multiple", zh: "多次" },
+      title: { ko: "국내 스타트업 대상 <strong>UX/UI 워크숍</strong> 강의",
+               en: "UX/UI workshops for <strong>Korean startups</strong>",
+               zh: "面向韩国初创公司的 <strong>UX/UI 工作坊</strong>" } },
+    { year: { ko: "강사", en: "Instructor", zh: "讲师" },
+      title: { ko: "<strong>서울창업허브</strong> UX/UI 강의",
+               en: "<strong>Seoul Startup Hub</strong> — UX/UI lectures",
+               zh: "<strong>首尔创业中心</strong> UX/UI 讲座" } },
+    { year: { ko: "강의", en: "Course", zh: "课程" },
+      title: { ko: "비전공자를 위한 <strong>Figma 활용 UX/UI</strong> 강의",
+               en: "<strong>Figma-based UX/UI</strong> for non-design majors",
+               zh: "面向非专业学员的 <strong>Figma 实战 UX/UI</strong> 课程" } }
+  ];
+
+  const TEACHING_PY = [
+    { year: { ko: "NIPA", en: "NIPA", zh: "NIPA" },
+      title: { ko: "한국정보통신산업진흥원 <em>금융 중간관리자 대상 Python Programming</em> 강사",
+               en: "NIPA — <em>Python Programming for Mid-level Finance Managers</em>",
+               zh: "韩国信息通信产业振兴院 <em>面向金融中层管理者的 Python 编程</em> 讲师" } },
+    { year: { ko: "핀테크", en: "FinTech KR", zh: "金融科技" },
+      title: { ko: "<strong>한국 핀테크코리아지원센터</strong> 마이데이터 강의 강사",
+               en: "<strong>Korea FinTech Support Center</strong> — MyData lectures",
+               zh: "<strong>韩国金融科技韩国支援中心</strong> MyData 讲座讲师" } },
+    { year: { ko: "삼성화재", en: "Samsung F&M", zh: "三星火灾" },
+      title: { ko: "보험 데이터 · 비금융 데이터 <em>Python Programming</em> 강사",
+               en: "Insurance & non-financial data <em>Python Programming</em> instructor",
+               zh: "保险数据与非金融数据 <em>Python 编程</em> 讲师" } },
+    { year: { ko: "KOTRA", en: "KOTRA", zh: "KOTRA" },
+      title: { ko: "KOTRA <strong>프로그래밍</strong> 강의 강사",
+               en: "<strong>KOTRA</strong> programming lecturer",
+               zh: "<strong>KOTRA</strong> 编程课程讲师" } },
+    { year: { ko: "인프런", en: "Inflearn", zh: "Inflearn" },
+      title: { ko: "<strong>인프런</strong> 파이썬 프로그래밍 강의 강사",
+               en: "<strong>Inflearn</strong> — Python programming course instructor",
+               zh: "<strong>Inflearn</strong> Python 编程课程讲师" } },
+    { year: { ko: "부산과기대", en: "BIST", zh: "釜山科技大" },
+      title: { ko: "<strong>부산과학기술대학교</strong> 파이썬 강의 강사",
+               en: "<strong>Busan Institute of Science and Technology</strong> — Python instructor",
+               zh: "<strong>釜山科学技术大学</strong> Python 课程讲师" } }
+  ];
+
+  const SPEAKING_FUTURE = [
+    { year: "2025",
+      title: { ko: "<a href=\"https://www.donga.com/news/It/article/all/20251027/132643320/1\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line);\"><strong>Korea Open AGI Symposium 2025</strong></a>",
+               en: "<a href=\"https://www.donga.com/news/It/article/all/20251027/132643320/1\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line);\"><strong>Korea Open AGI Symposium 2025</strong></a>",
+               zh: "<a href=\"https://www.donga.com/news/It/article/all/20251027/132643320/1\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line);\"><strong>Korea Open AGI Symposium 2025</strong></a>" } },
+    { year: "2024",
+      title: { ko: "<strong>Perpetual Protocol DeFi</strong> <em>@ Devcon</em>",
+               en: "<strong>Perpetual Protocol DeFi</strong> <em>@ Devcon</em>",
+               zh: "<strong>Perpetual Protocol DeFi</strong> <em>@ Devcon</em>" } },
+    { year: "2023",
+      title: { ko: "<strong>TOKEN2049</strong> — DAO 발표",
+               en: "<strong>TOKEN2049</strong> — DAO talk",
+               zh: "<strong>TOKEN2049</strong> — DAO 演讲" } },
+    { year: "2023",
+      title: { ko: "<strong>Blockchain Korea 2023</strong> — 일본 시장 NFT 규제 및 프로젝트 커뮤니티 마케팅 발표",
+               en: "<strong>Blockchain Korea 2023</strong> — talk on Japan NFT regulation & community marketing",
+               zh: "<strong>Blockchain Korea 2023</strong> — 日本市场 NFT 监管与项目社区营销演讲" } },
+    { year: "2022",
+      title: { ko: "<strong>Xangle Adoption 2022</strong> — NFT Webinar",
+               en: "<strong>Xangle Adoption 2022</strong> — NFT webinar",
+               zh: "<strong>Xangle Adoption 2022</strong> — NFT 线上研讨会" } },
+    { year: "2022",
+      title: { ko: "<strong>Web3 Korea 2022</strong> — NFT 커뮤니티 마케팅 발표",
+               en: "<strong>Web3 Korea 2022</strong> — NFT community marketing talk",
+               zh: "<strong>Web3 Korea 2022</strong> — NFT 社区营销演讲" } }
+  ];
+
+  const SPEAKING_BLOCKCHAIN = [
+    { year: "2024",
+      title: { ko: "<strong>Devcon Hackathon</strong>",
+               en: "<strong>Devcon Hackathon</strong>",
+               zh: "<strong>Devcon 黑客松</strong>" } },
+    { year: "2024",
+      title: { ko: "<strong>Ethcon Korea Conference</strong> · Job Seminars",
+               en: "<strong>Ethcon Korea Conference</strong> · Job Seminars",
+               zh: "<strong>Ethcon Korea 大会</strong> · 求职研讨会" } },
+    { year: "2024",
+      title: { ko: "<strong>KBW 2024</strong> — Korea Blockchain Week",
+               en: "<strong>KBW 2024</strong> — Korea Blockchain Week",
+               zh: "<strong>KBW 2024</strong> — 韩国区块链周" } },
+    { year: "2023",
+      title: { ko: "<strong>IVS Kyoto Conference</strong>",
+               en: "<strong>IVS Kyoto Conference</strong>",
+               zh: "<strong>IVS Kyoto 大会</strong>" } },
+    { year: "2023",
+      title: { ko: "<strong>Ethcon Korea Conference</strong> — Community & Sponsors Crew",
+               en: "<strong>Ethcon Korea Conference</strong> — Community & Sponsors Crew",
+               zh: "<strong>Ethcon Korea 大会</strong> — 社区与赞助团队" } },
+    { year: "2022",
+      title: { ko: "<strong>Vogue × GQ × ALAP</strong> <em>@ SeoulWave</em>",
+               en: "<strong>Vogue × GQ × ALAP</strong> <em>@ SeoulWave</em>",
+               zh: "<strong>Vogue × GQ × ALAP</strong> <em>@ SeoulWave</em>" } },
+    { year: "2022",
+      title: { ko: "VIP Dinner — <strong>NFT Get Inspired</strong> <em>@ Shilla Hotel</em>",
+               en: "VIP Dinner — <strong>NFT Get Inspired</strong> <em>@ Shilla Hotel</em>",
+               zh: "VIP 晚宴 — <strong>NFT Get Inspired</strong> <em>@ 新罗酒店</em>" } }
+  ];
+
+  function renderKeywords(lang) {
+    const el = document.getElementById('keyword-row');
+    el.innerHTML = KEYWORDS.map(k => `<span class="keyword-chip">${k[lang]}</span>`).join('');
+  }
+
+  function renderEducation(lang) {
+    const el = document.getElementById('education-list');
+    el.innerHTML = EDUCATION.map(i => `
+      <div class="timeline-item">
+        <div class="timeline-year">${i.year[lang]}</div>
+        <div class="timeline-title">${i.title[lang]}</div>
+        <div class="timeline-org">${i.org[lang]}</div>
+      </div>`).join('');
+  }
+
+  function renderExpertise(lang) {
+    const el = document.getElementById('expertise-list');
+    el.innerHTML = EXPERTISE.map(i => `
+      <div class="expertise-item">
+        <div class="expertise-tag">${i.tag}</div>
+        <div class="expertise-name">${i.name[lang]}</div>
+      </div>`).join('');
+  }
+
+  function renderCareer(lang) {
+    const el = document.getElementById('career-list');
+    el.innerHTML = CAREER.map(i => `
+      <div class="timeline-item">
+        <div class="timeline-year">${i.year[lang]}</div>
+        <div class="timeline-title">${i.title[lang]}</div>
+        <div class="timeline-org">${i.org[lang]}</div>
+      </div>`).join('');
+  }
+
+  function renderPublications(lang) {
+    const el = document.getElementById('publications-list');
+    el.innerHTML = PUBLICATIONS.map((i, idx) => `
+      <div class="pub-item">
+        <div class="pub-num">${String(idx + 1).padStart(2, '0')}</div>
+        <div class="pub-title">${i.title[lang]}</div>
+        <div class="pub-venue">${i.venue[lang]}</div>
+      </div>`).join('');
+  }
+
+  function renderFocus(lang) {
+    const el = document.getElementById('focus-list');
+    el.innerHTML = FOCUS.map(i => `<div class="focus-item">${i.text[lang]}</div>`).join('');
+  }
+
+  function renderPrograms(lang) {
+    const el = document.getElementById('programs-list');
+    el.innerHTML = PROGRAMS.map(i => `
+      <div class="program-card">
+        <div class="program-icon">${i.icon}</div>
+        <div class="program-title">${i.title[lang]}</div>
+        <div class="program-body">${i.body[lang]}</div>
+      </div>`).join('');
+  }
+
+  function renderSimpleList(listId, data, lang) {
+    const el = document.getElementById(listId);
+    el.innerHTML = data.map(i => `
+      <div class="item">
+        <div class="year">${typeof i.year === 'string' ? i.year : i.year[lang]}</div>
+        <div class="title">${i.title[lang]}</div>
+      </div>`).join('');
+  }
 
   function applyLang(lang) {
     document.documentElement.lang = lang;
@@ -607,6 +717,18 @@
           el.textContent = val;
         }
       });
+
+      renderKeywords(lang);
+      renderEducation(lang);
+      renderExpertise(lang);
+      renderCareer(lang);
+      renderPublications(lang);
+      renderFocus(lang);
+      renderPrograms(lang);
+      renderSimpleList('teaching-ux-list', TEACHING_UX, lang);
+      renderSimpleList('teaching-py-list', TEACHING_PY, lang);
+      renderSimpleList('speaking-future-list', SPEAKING_FUTURE, lang);
+      renderSimpleList('speaking-blockchain-list', SPEAKING_BLOCKCHAIN, lang);
 
       const titles = {
         ko: "소개 — 강희주",
