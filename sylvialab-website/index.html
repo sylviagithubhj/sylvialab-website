@@ -156,6 +156,15 @@
   </div>
 </section>
 
+<section class="hero-slider" id="gallery" aria-label="Moments">
+  <div class="slider-frame">
+    <div class="slider-track" id="slider-track"></div>
+    <button class="slider-nav prev" id="slider-prev" aria-label="Previous">‹</button>
+    <button class="slider-nav next" id="slider-next" aria-label="Next">›</button>
+    <div class="slider-dots" id="slider-dots"></div>
+  </div>
+</section>
+
 <section id="research">
   <div class="section-header reveal">
     <div>
@@ -678,6 +687,10 @@
     }
   };
 
+  // To add slider photos: drop image files into photos/ folder and add entries below.
+  // Example: { src: "photos/kbw-2024.jpg", caption: { ko: "KBW 2024 · 서울", en: "KBW 2024 · Seoul", zh: "KBW 2024 · 首尔" } }
+  const GALLERY = [];
+
   const ARCHIVE_DATA = [
     { num: "014", cat: { ko: "디자인", en: "Design", zh: "设计" }, year: "2026",
       url: "https://brunch.co.kr/@sylviasolution/184",
@@ -706,6 +719,55 @@
       title: { ko: "<em>체화된</em> 에이전트에 대한 조용한 논거.", en: "The quiet case for <em>embodied</em> agents.", zh: "<em>具身</em>智能体的一个低调的理由。" },
       excerpt: { ko: "AI의 다음 도약은 더 큰 모델보다, 넘어지고 다시 일어서는 서투른 로봇에 가까울 것이다.", en: "Why the next leap in AI looks less like a bigger model and more like a clumsy robot falling over — and getting up.", zh: "为什么 AI 的下一次飞跃,不是更大的模型,而是一个会摔倒又爬起来的笨拙机器人。" } }
   ];
+
+  const sliderTrack = document.getElementById('slider-track');
+  const sliderDots = document.getElementById('slider-dots');
+  const sliderPrev = document.getElementById('slider-prev');
+  const sliderNext = document.getElementById('slider-next');
+  const sliderFrame = document.querySelector('.slider-frame');
+  let sliderIdx = 0;
+  let sliderTimer = null;
+
+  function renderSlider(lang) {
+    if (!GALLERY.length) {
+      sliderTrack.innerHTML = `<div class="slide"><div class="slide-empty">${lang === 'en' ? 'Photos coming soon.' : lang === 'zh' ? '照片即将上传。' : '사진이 곧 추가됩니다.'}</div></div>`;
+      sliderDots.innerHTML = '';
+      sliderPrev.style.display = 'none';
+      sliderNext.style.display = 'none';
+      return;
+    }
+    sliderTrack.innerHTML = GALLERY.map(item => `
+      <div class="slide">
+        <img src="${item.src}" alt="${(item.caption && item.caption[lang]) || ''}" loading="lazy">
+        ${item.caption ? `<div class="slide-caption">${item.caption[lang] || ''}</div>` : ''}
+      </div>`).join('');
+    sliderDots.innerHTML = GALLERY.map((_, i) => `<button class="slider-dot${i === 0 ? ' is-active' : ''}" data-idx="${i}" aria-label="Slide ${i + 1}"></button>`).join('');
+    sliderPrev.style.display = '';
+    sliderNext.style.display = '';
+    sliderIdx = 0;
+    updateSlider();
+    sliderDots.querySelectorAll('.slider-dot').forEach(d => {
+      d.addEventListener('click', () => { sliderIdx = parseInt(d.dataset.idx, 10); updateSlider(); restartAuto(); });
+    });
+    restartAuto();
+  }
+
+  function updateSlider() {
+    sliderTrack.style.transform = `translateX(-${sliderIdx * 100}%)`;
+    sliderDots.querySelectorAll('.slider-dot').forEach((d, i) => {
+      d.classList.toggle('is-active', i === sliderIdx);
+    });
+  }
+  function nextSlide() { if (!GALLERY.length) return; sliderIdx = (sliderIdx + 1) % GALLERY.length; updateSlider(); }
+  function prevSlide() { if (!GALLERY.length) return; sliderIdx = (sliderIdx - 1 + GALLERY.length) % GALLERY.length; updateSlider(); }
+  function restartAuto() {
+    if (sliderTimer) clearInterval(sliderTimer);
+    if (GALLERY.length > 1) sliderTimer = setInterval(nextSlide, 5000);
+  }
+  sliderPrev.addEventListener('click', () => { prevSlide(); restartAuto(); });
+  sliderNext.addEventListener('click', () => { nextSlide(); restartAuto(); });
+  sliderFrame.addEventListener('mouseenter', () => { if (sliderTimer) clearInterval(sliderTimer); });
+  sliderFrame.addEventListener('mouseleave', restartAuto);
 
   function renderArchive(lang) {
     const tbody = document.getElementById('archive-body');
@@ -758,6 +820,7 @@
         if (dict[key]) el.placeholder = dict[key];
       });
 
+      renderSlider(lang);
       renderArchive(lang);
       renderWriting(lang);
 

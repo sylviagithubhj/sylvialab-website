@@ -225,27 +225,6 @@
   <div class="simple-list" id="speaking-blockchain-list"></div>
 </section>
 
-<section id="gallery">
-  <div class="section-header reveal">
-    <div>
-      <div class="section-num" data-i18n="about.gallery.num"></div>
-      <div class="section-sub" data-i18n="about.gallery.sub"></div>
-    </div>
-    <h2 class="section-title" data-i18n="about.gallery.title" data-i18n-html="true"></h2>
-  </div>
-  <div class="gallery-grid" id="gallery-grid"></div>
-</section>
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" hidden>
-  <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
-  <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous">‹</button>
-  <div class="lightbox-content">
-    <img id="lightbox-img" src="" alt="">
-    <div class="lightbox-caption" id="lightbox-caption"></div>
-  </div>
-  <button class="lightbox-nav next" id="lightbox-next" aria-label="Next">›</button>
-</div>
-
 <footer>
   <div class="foot-col">
     <div class="foot-brand" data-i18n="foot.brand" data-i18n-html="true"></div>
@@ -330,9 +309,6 @@
       "about.talk.title": "<em>Speaking</em>.",
       "about.talk.group1": "미래 기술 트렌드 · 글로벌 네트워킹",
       "about.talk.group2": "차세대 블록체인 생태계 구축 활동",
-      "about.gallery.num": "§ 09 / 순간들",
-      "about.gallery.sub": "강연, 워크숍, 컨퍼런스 — 기록한 장면들.",
-      "about.gallery.title": "<em>Moments</em>.",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
       "foot.role": "연구자 · 멘토 · 교육자",
       "foot.work": "활동",
@@ -389,9 +365,6 @@
       "about.talk.title": "<em>Speaking</em>.",
       "about.talk.group1": "Future-Tech Trends · Global Networking",
       "about.talk.group2": "Next-Gen Blockchain Ecosystem Building",
-      "about.gallery.num": "§ 09 / Moments",
-      "about.gallery.sub": "Scenes from talks, workshops, and conferences.",
-      "about.gallery.title": "<em>Moments</em>.",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
       "foot.role": "Researcher · Mentor · Educator",
       "foot.work": "Work",
@@ -448,9 +421,6 @@
       "about.talk.title": "<em>演讲</em>。",
       "about.talk.group1": "未来技术趋势 · 全球交流",
       "about.talk.group2": "下一代区块链生态建设",
-      "about.gallery.num": "§ 09 / 瞬间",
-      "about.gallery.sub": "演讲、工作坊与大会的场景。",
-      "about.gallery.title": "<em>Moments</em>。",
       "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
       "foot.role": "研究员 · 导师 · 教育者",
       "foot.work": "工作",
@@ -731,73 +701,6 @@
                zh: "VIP 晚宴 — <strong>NFT Get Inspired</strong> <em>@ 新罗酒店</em>" } }
   ];
 
-  // To add photos: drop image files into photos/ folder and add entries below.
-  // Example: { src: "photos/kbw-2024.jpg", caption: { ko: "KBW 2024 · 서울", en: "KBW 2024 · Seoul", zh: "KBW 2024 · 首尔" } }
-  const GALLERY = [];
-
-  function renderGallery(lang) {
-    const el = document.getElementById('gallery-grid');
-    if (!GALLERY.length) {
-      el.innerHTML = `<div class="gallery-item" style="grid-column: 1 / -1; aspect-ratio: auto; padding: 48px; cursor: default;"><div class="gallery-item-placeholder" style="position: static;">${lang === 'en' ? 'Photos coming soon.' : lang === 'zh' ? '照片即将上传。' : '사진이 곧 추가됩니다.'}</div></div>`;
-      return;
-    }
-    el.innerHTML = GALLERY.map((item, idx) => `
-      <div class="gallery-item" data-idx="${idx}">
-        <img src="${item.src}" alt="${(item.caption && item.caption[lang]) || ''}" loading="lazy">
-      </div>
-    `).join('');
-    el.querySelectorAll('.gallery-item').forEach(card => {
-      card.addEventListener('click', () => openLightbox(parseInt(card.dataset.idx, 10), lang));
-    });
-  }
-
-  let currentLightboxIdx = 0;
-  let currentLightboxLang = 'ko';
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCaption = document.getElementById('lightbox-caption');
-
-  function openLightbox(idx, lang) {
-    if (!GALLERY.length) return;
-    currentLightboxIdx = idx;
-    currentLightboxLang = lang;
-    updateLightbox();
-    lightbox.hidden = false;
-    requestAnimationFrame(() => lightbox.classList.add('is-open'));
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    lightbox.classList.remove('is-open');
-    document.body.style.overflow = '';
-    setTimeout(() => { lightbox.hidden = true; }, 300);
-  }
-  function updateLightbox() {
-    const item = GALLERY[currentLightboxIdx];
-    if (!item) return;
-    lightboxImg.src = item.src;
-    lightboxImg.alt = (item.caption && item.caption[currentLightboxLang]) || '';
-    lightboxCaption.textContent = (item.caption && item.caption[currentLightboxLang]) || '';
-  }
-  function nextLightbox() {
-    currentLightboxIdx = (currentLightboxIdx + 1) % GALLERY.length;
-    updateLightbox();
-  }
-  function prevLightbox() {
-    currentLightboxIdx = (currentLightboxIdx - 1 + GALLERY.length) % GALLERY.length;
-    updateLightbox();
-  }
-
-  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-  document.getElementById('lightbox-next').addEventListener('click', nextLightbox);
-  document.getElementById('lightbox-prev').addEventListener('click', prevLightbox);
-  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e) => {
-    if (lightbox.hidden) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowRight') nextLightbox();
-    if (e.key === 'ArrowLeft') prevLightbox();
-  });
-
   function renderKeywords(lang) {
     const el = document.getElementById('keyword-row');
     el.innerHTML = KEYWORDS.map(k => `<span class="keyword-chip">${k[lang]}</span>`).join('');
@@ -895,7 +798,6 @@
       renderSimpleList('teaching-py-list', TEACHING_PY, lang);
       renderSimpleList('speaking-future-list', SPEAKING_FUTURE, lang);
       renderSimpleList('speaking-blockchain-list', SPEAKING_BLOCKCHAIN, lang);
-      renderGallery(lang);
 
       const titles = {
         ko: "소개 — 강희주",
