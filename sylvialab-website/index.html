@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hee Ju Kang — Researcher, Mentor, Educator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #f3efe7;
+    --bg-elev: #ebe6db;
+    --ink: #1a1915;
+    --ink-soft: #4a4740;
+    --ink-mute: #8b877d;
+    --line: #c9c4b7;
+    --accent: #b64f2b;
+    --accent-soft: #d97151;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  html[lang="ko"] body { font-family: 'Pretendard Variable', Pretendard, 'Inter Tight', sans-serif; }
+  html[lang="zh"] body { font-family: 'Inter Tight', 'Noto Sans SC', sans-serif; }
+
+  html[lang="ko"] .serif, html[lang="ko"] .hero-title, html[lang="ko"] .section-title,
+  html[lang="ko"] .conf-title, html[lang="ko"] .mentor-heading, html[lang="ko"] .article-title,
+  html[lang="ko"] .news-title, html[lang="ko"] .archive-title-cell, html[lang="ko"] .research-title,
+  html[lang="ko"] .hero-bio, html[lang="ko"] .section-sub, html[lang="ko"] .stat-num,
+  html[lang="ko"] .nav-brand, html[lang="ko"] .foot-brand, html[lang="ko"] .mentor-book-text,
+  html[lang="ko"] .news-sub, html[lang="ko"] .affil-org, html[lang="ko"] .hero-name-primary {
+    font-family: 'Fraunces', 'Pretendard Variable', Pretendard, serif;
+  }
+
+  html[lang="zh"] .serif, html[lang="zh"] .hero-title, html[lang="zh"] .section-title,
+  html[lang="zh"] .conf-title, html[lang="zh"] .mentor-heading, html[lang="zh"] .article-title,
+  html[lang="zh"] .news-title, html[lang="zh"] .archive-title-cell, html[lang="zh"] .research-title,
+  html[lang="zh"] .hero-bio, html[lang="zh"] .section-sub, html[lang="zh"] .stat-num,
+  html[lang="zh"] .nav-brand, html[lang="zh"] .foot-brand, html[lang="zh"] .mentor-book-text,
+  html[lang="zh"] .news-sub, html[lang="zh"] .affil-org, html[lang="zh"] .hero-name-primary {
+    font-family: 'Fraunces', 'Noto Serif SC', serif;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .serif { font-family: 'Fraunces', serif; }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(243, 239, 231, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-brand em { font-style: italic; color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  .nav-right { display: flex; align-items: center; gap: 24px; }
+
+  .lang-toggle {
+    display: flex;
+    gap: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--line);
+    padding: 2px;
+    border-radius: 2px;
+  }
+
+  .lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--ink-mute);
+    padding: 6px 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+  .lang-btn:hover { color: var(--ink); }
+  .lang-btn.active { background: var(--ink); color: var(--bg); }
+
+  .nav-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.05em;
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: 140px 40px 80px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+
+  .hero-name-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .hero-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .hero-portrait {
+    width: 180px;
+    height: 220px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .hero-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.15) contrast(1.02);
+    transition: filter 0.4s;
+  }
+
+  .hero-portrait:hover img { filter: grayscale(0) contrast(1); }
+
+  .hero-portrait-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--ink-mute);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-portrait-caption {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: rgba(26, 25, 21, 0.7);
+    padding: 4px 8px;
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-name-primary {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 7vw, 88px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-name-aux {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--ink-mute);
+  }
+
+  .hero-name-aux span { color: var(--ink-soft); margin: 0 6px; }
+
+  .hero-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 8vw, 128px);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+  }
+
+  .hero-title em { font-style: italic; font-weight: 400; color: var(--accent); }
+  .hero-title .thin { font-weight: 300; }
+
+  .hero-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--line);
+    align-items: start;
+  }
+
+  .hero-bio {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    grid-column: 1 / 3;
+  }
+
+  .hero-bio strong { color: var(--ink); font-weight: 500; }
+
+  .hero-stats { display: flex; flex-direction: column; gap: 20px; }
+
+  .stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted var(--line);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-mute);
+  }
+
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    color: var(--ink);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-transform: none;
+  }
+
+  .affil-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .affil-block { display: flex; flex-direction: column; gap: 6px; }
+
+  .affil-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .affil-org {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .affil-sub { font-size: 14px; color: var(--ink-soft); }
+
+  section {
+    padding: 100px 40px;
+    position: relative;
+    border-top: 1px solid var(--line);
+  }
+
+  .section-header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: end;
+  }
+
+  .section-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .section-title em { font-style: italic; color: var(--accent); }
+
+  .section-sub {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-mute);
+    margin-top: 8px;
+  }
+
+  .research-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+
+  .research-item {
+    grid-column: span 6;
+    padding: 32px;
+    border: 1px solid var(--line);
+    background: var(--bg-elev);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .research-item:hover { border-color: var(--ink); transform: translateY(-4px); }
+
+  .research-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--accent);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+  }
+
+  .research-item:hover::before { transform: scaleY(1); }
+
+  .research-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .research-title {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+
+  .research-desc { font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
+
+  .conf-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: end;
+    padding: 60px;
+    background: var(--ink);
+    color: var(--bg);
+    border: 1px solid var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .conf-hero::after {
+    content: '';
+    position: absolute;
+    top: -50%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 60%);
+    opacity: 0.25;
+    pointer-events: none;
+  }
+
+  .conf-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent-soft);
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .conf-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .conf-title em { font-style: italic; color: var(--accent-soft); }
+
+  .conf-meta {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .conf-meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(243, 239, 231, 0.2);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    gap: 16px;
+  }
+
+  .conf-meta-row span:first-child { color: rgba(243, 239, 231, 0.5); flex-shrink: 0; }
+  .conf-meta-row span:last-child { text-align: right; }
+
+  .conf-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 28px;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 32px;
+    transition: all 0.3s;
+    width: fit-content;
+  }
+
+  .conf-cta:hover {
+    background: var(--accent-soft);
+    transform: translate(2px, -2px);
+    box-shadow: -4px 4px 0 var(--bg);
+  }
+
+  .conf-cta .arrow { transition: transform 0.3s; }
+  .conf-cta:hover .arrow { transform: translateX(4px); }
+
+  .mentor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+  .mentor-card {
+    padding: 48px 40px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer;
+  }
+
+  .mentor-card:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .mentor-card:hover .mentor-arrow { color: var(--accent-soft); transform: translate(4px, -4px); }
+
+  .mentor-track {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .mentor-card:hover .mentor-track { color: var(--accent-soft); }
+
+  .mentor-heading {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  .mentor-heading em { font-style: italic; }
+
+  .mentor-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+  }
+
+  .mentor-card:hover .mentor-body { color: rgba(243, 239, 231, 0.7); }
+
+  .mentor-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .mentor-card:hover .mentor-foot { border-color: rgba(243, 239, 231, 0.2); }
+
+  .mentor-foot-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .mentor-arrow {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    color: var(--ink);
+    transition: all 0.3s;
+  }
+
+  .mentor-book {
+    margin-top: 40px;
+    padding: 32px 40px;
+    background: var(--ink);
+    color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .mentor-book-text {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .mentor-book-btn {
+    padding: 14px 28px;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+
+  .mentor-book-btn:hover { background: var(--accent-soft); }
+
+  .archive-table { width: 100%; border-collapse: collapse; }
+
+  .archive-table thead th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--ink-mute);
+    text-align: left;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--line);
+    font-weight: 400;
+  }
+
+  .archive-table tbody tr {
+    border-bottom: 1px solid var(--line);
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+
+  .archive-table tbody tr:hover { background: var(--bg-elev); }
+  .archive-table tbody tr:hover .archive-title-cell { color: var(--accent); }
+
+  .archive-table td { padding: 24px 20px; vertical-align: middle; }
+
+  .archive-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    width: 60px;
+  }
+
+  .archive-title-cell {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    transition: color 0.2s;
+  }
+
+  .archive-cat {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    display: inline-block;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .archive-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    text-align: right;
+  }
+
+  .archive-arrow {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--ink-mute);
+    text-align: right;
+    width: 40px;
+  }
+
+  .writing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+
+  .article {
+    padding-top: 24px;
+    border-top: 1px solid var(--ink);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .article:hover { transform: translateY(-4px); }
+
+  .article-meta {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink-mute);
+    margin-bottom: 16px;
+  }
+
+  .article-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+
+  .article-title em { font-style: italic; color: var(--accent); }
+
+  .article-excerpt { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+  .newsletter {
+    padding: 120px 40px;
+    text-align: center;
+    background: var(--ink);
+    color: var(--bg);
+    border-top: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .newsletter::before {
+    content: '¶';
+    position: absolute;
+    font-family: 'Fraunces', serif;
+    font-size: 800px;
+    color: var(--accent);
+    opacity: 0.08;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .newsletter-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+
+  .news-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent-soft);
+    margin-bottom: 24px;
+  }
+
+  .news-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+
+  .news-title em { font-style: italic; color: var(--accent-soft); }
+
+  .news-sub {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: rgba(243, 239, 231, 0.6);
+    margin-bottom: 40px;
+  }
+
+  .news-form {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    border: 1px solid rgba(243, 239, 231, 0.2);
+  }
+
+  .news-form input {
+    flex: 1;
+    padding: 18px 20px;
+    background: transparent;
+    border: none;
+    color: var(--bg);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    outline: none;
+  }
+
+  .news-form input::placeholder { color: rgba(243, 239, 231, 0.4); }
+
+  .news-form button {
+    padding: 18px 32px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .news-form button:hover { background: var(--accent-soft); }
+
+  footer {
+    padding: 60px 40px 40px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .foot-brand { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; }
+  .foot-brand em { font-style: italic; color: var(--accent); }
+
+  .foot-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--ink-mute);
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .foot-col ul { list-style: none; }
+  .foot-col li { margin-bottom: 8px; }
+
+  .foot-col a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .foot-col a:hover { color: var(--accent); }
+
+  .foot-bottom {
+    grid-column: 1 / -1;
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  [data-i18n] { transition: opacity 0.2s ease; }
+  body.lang-switching [data-i18n] { opacity: 0.3; }
+
+  @media (max-width: 900px) {
+    nav { padding: 14px 16px; gap: 8px; }
+    .nav-links { display: none; }
+    .nav-time { display: none; }
+    .nav-right { gap: 8px; }
+    .lang-btn { padding: 5px 7px; font-size: 10px; }
+    .hero { padding: 100px 20px 60px; }
+    .hero-top { grid-template-columns: 1fr; gap: 24px; }
+    .hero-portrait { width: 140px; height: 170px; order: -1; }
+    .hero-bottom { grid-template-columns: 1fr; gap: 40px; }
+    .hero-bio { grid-column: 1; }
+    .affil-strip { grid-template-columns: 1fr; gap: 20px; }
+    section { padding: 60px 20px; }
+    .section-header { grid-template-columns: 1fr; gap: 16px; margin-bottom: 40px; }
+    .research-item { grid-column: span 12; padding: 24px; }
+    .conf-hero { grid-template-columns: 1fr; padding: 32px; gap: 32px; }
+    .mentor-grid { grid-template-columns: 1fr; }
+    .mentor-book { flex-direction: column; text-align: center; padding: 24px; }
+    .writing-grid { grid-template-columns: 1fr; }
+    footer { grid-template-columns: 1fr 1fr; }
+    .archive-table td, .archive-table th { padding: 14px 8px; }
+    .archive-title-cell { font-size: 16px; }
+    .archive-cat, .archive-year, .archive-num { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand" data-i18n="brand" data-i18n-html="true"></div>
+  <div class="nav-links">
+    <a href="#research" data-i18n="nav.research"></a>
+    <a href="#conference" data-i18n="nav.conference"></a>
+    <a href="#mentorship" data-i18n="nav.mentorship"></a>
+    <a href="#teaching" data-i18n="nav.teaching"></a>
+    <a href="#writing" data-i18n="nav.writing"></a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-time" id="clock"></div>
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="ko">KO</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-meta">
+    <span data-i18n="hero.meta.loc"></span>
+    <span data-i18n="hero.meta.vol"></span>
+  </div>
+
+  <div class="hero-top">
+    <div>
+      <div class="hero-name-stack">
+        <div class="hero-name-primary" data-i18n="hero.name.primary"></div>
+        <div class="hero-name-aux" data-i18n="hero.name.aux" data-i18n-html="true"></div>
+      </div>
+      <h1 class="hero-title" data-i18n="hero.title" data-i18n-html="true"></h1>
+    </div>
+    <div class="hero-portrait">
+      <!-- 여기에 사진 넣기: src="사진파일명.jpg"로 바꾸세요 -->
+      <!-- <img src="profile.jpg" alt="Hee Ju Kang"> -->
+      <div class="hero-portrait-placeholder">
+        Portrait<br>180 × 220
+      </div>
+      <div class="hero-portrait-caption">HEE JU KANG · 2026</div>
+    </div>
+  </div>
+
+  <div class="affil-strip">
+    <div class="affil-block">
+      <div class="affil-label" data-i18n="hero.affil.research.label"></div>
+      <div class="affil-org" data-i18n="hero.affil.research.org"></div>
+      <div class="affil-sub" data-i18n="hero.affil.research.sub"></div>
+    </div>
+    <div class="affil-block">
+      <div class="affil-label" data-i18n="hero.affil.teaching.label"></div>
+      <div class="affil-org" data-i18n="hero.affil.teaching.org"></div>
+      <div class="affil-sub" data-i18n="hero.affil.teaching.sub"></div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <p class="hero-bio" data-i18n="hero.bio" data-i18n-html="true"></p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num serif">6</span>
+        <span data-i18n="hero.stats.papers"></span>
+      </div>
+      <div class="stat">
+        <span class="stat-num serif">400+</span>
+        <span data-i18n="hero.stats.mentees"></span>
+      </div>
+      <div class="stat">
+        <span class="stat-num serif">05</span>
+        <span data-i18n="hero.stats.confs"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="research.num"></div>
+      <div class="section-sub" data-i18n="research.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="research.title" data-i18n-html="true"></h2>
+  </div>
+
+  <div class="research-grid">
+    <div class="research-item reveal">
+      <div class="research-tag" data-i18n="research.tag.primary"></div>
+      <h3 class="research-title" data-i18n="research.r1.title"></h3>
+      <p class="research-desc" data-i18n="research.r1.desc"></p>
+    </div>
+    <div class="research-item reveal">
+      <div class="research-tag" data-i18n="research.tag.primary"></div>
+      <h3 class="research-title" data-i18n="research.r2.title"></h3>
+      <p class="research-desc" data-i18n="research.r2.desc"></p>
+    </div>
+    <div class="research-item reveal">
+      <div class="research-tag" data-i18n="research.tag.primary"></div>
+      <h3 class="research-title" data-i18n="research.r3.title"></h3>
+      <p class="research-desc" data-i18n="research.r3.desc"></p>
+    </div>
+    <div class="research-item reveal">
+      <div class="research-tag" data-i18n="research.tag.adjacent"></div>
+      <h3 class="research-title" data-i18n="research.r4.title"></h3>
+      <p class="research-desc" data-i18n="research.r4.desc"></p>
+    </div>
+  </div>
+</section>
+
+<section id="conference">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="conf.num"></div>
+      <div class="section-sub" data-i18n="conf.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="conf.title" data-i18n-html="true"></h2>
+  </div>
+
+  <div class="conf-hero reveal">
+    <div>
+      <div class="conf-label" data-i18n="conf.label"></div>
+      <h3 class="conf-title" data-i18n="conf.name" data-i18n-html="true"></h3>
+      <a href="#" class="conf-cta">
+        <span data-i18n="conf.cta"></span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+    <div class="conf-meta">
+      <div class="conf-meta-row"><span data-i18n="conf.meta.date"></span><span data-i18n="conf.meta.date.v"></span></div>
+      <div class="conf-meta-row"><span data-i18n="conf.meta.venue"></span><span data-i18n="conf.meta.venue.v"></span></div>
+      <div class="conf-meta-row"><span data-i18n="conf.meta.speakers"></span><span data-i18n="conf.meta.speakers.v"></span></div>
+      <div class="conf-meta-row"><span data-i18n="conf.meta.tracks"></span><span data-i18n="conf.meta.tracks.v"></span></div>
+      <div class="conf-meta-row"><span data-i18n="conf.meta.aud"></span><span data-i18n="conf.meta.aud.v"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="mentorship">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="mentor.num"></div>
+      <div class="section-sub" data-i18n="mentor.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="mentor.title" data-i18n-html="true"></h2>
+  </div>
+
+  <div class="mentor-grid">
+    <div class="mentor-card reveal">
+      <div class="mentor-track" data-i18n="mentor.a.track"></div>
+      <h3 class="mentor-heading" data-i18n="mentor.a.heading" data-i18n-html="true"></h3>
+      <p class="mentor-body" data-i18n="mentor.a.body"></p>
+      <div class="mentor-foot">
+        <span class="mentor-foot-label" data-i18n="mentor.a.slots"></span>
+        <span class="mentor-arrow">→</span>
+      </div>
+    </div>
+
+    <div class="mentor-card reveal">
+      <div class="mentor-track" data-i18n="mentor.b.track"></div>
+      <h3 class="mentor-heading" data-i18n="mentor.b.heading" data-i18n-html="true"></h3>
+      <p class="mentor-body" data-i18n="mentor.b.body"></p>
+      <div class="mentor-foot">
+        <span class="mentor-foot-label" data-i18n="mentor.b.slots"></span>
+        <span class="mentor-arrow">→</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mentor-book">
+    <div class="mentor-book-text" data-i18n="mentor.book.text" data-i18n-html="true"></div>
+    <a href="#" class="mentor-book-btn" data-i18n="mentor.book.btn"></a>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="teach.num"></div>
+      <div class="section-sub" data-i18n="teach.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="teach.title" data-i18n-html="true"></h2>
+  </div>
+
+  <table class="archive-table reveal">
+    <thead>
+      <tr>
+        <th></th>
+        <th data-i18n="teach.h.title"></th>
+        <th data-i18n="teach.h.cat"></th>
+        <th data-i18n="teach.h.year"></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="archive-body"></tbody>
+  </table>
+</section>
+
+<section id="writing">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="write.num"></div>
+      <div class="section-sub" data-i18n="write.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="write.title" data-i18n-html="true"></h2>
+  </div>
+
+  <div class="writing-grid" id="writing-grid"></div>
+</section>
+
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <div class="news-label" data-i18n="news.label"></div>
+    <h2 class="news-title" data-i18n="news.title" data-i18n-html="true"></h2>
+    <p class="news-sub" data-i18n="news.sub"></p>
+    <div class="news-form">
+      <input type="email" data-i18n-ph="news.placeholder">
+      <button type="button" data-i18n="news.btn"></button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-brand">
+    <span data-i18n="foot.brand" data-i18n-html="true"></span><br>
+    <span class="mono" style="font-size: 10px; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.2em;" data-i18n="foot.role"></span>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.work"></h4>
+    <ul>
+      <li><a href="#research" data-i18n="nav.research"></a></li>
+      <li><a href="#conference" data-i18n="nav.conference"></a></li>
+      <li><a href="#teaching" data-i18n="nav.teaching"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.connect"></h4>
+    <ul>
+      <li><a href="#mentorship" data-i18n="foot.bookm"></a></li>
+      <li><a href="#" data-i18n="foot.news"></a></li>
+      <li><a href="#" data-i18n="foot.speak"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.elsewhere"></h4>
+    <ul>
+      <li><a href="mailto:heejuk@mail.hongik.ac.kr">heejuk@mail.hongik.ac.kr</a></li>
+      <li><a href="https://sylvialab.kr" target="_blank">sylvialab.kr</a></li>
+      <li><a href="#">Google Scholar</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <span data-i18n="foot.copy"></span>
+    <span data-i18n="foot.made"></span>
+  </div>
+</footer>
+
+<script>
+  const I18N = {
+    ko: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.research": "연구",
+      "nav.conference": "컨퍼런스",
+      "nav.mentorship": "멘토링",
+      "nav.teaching": "강의",
+      "nav.writing": "글",
+      "hero.meta.loc": "서울 · 2019년부터 활동",
+      "hero.meta.vol": "Vol. VII — 2026 봄호",
+      "hero.name.primary": "강희주",
+      "hero.name.aux": "HEE JU KANG<span>·</span>姜希周",
+      "hero.title": '젊은 세대를 위한<br><em>사람 중심의</em> AI를<br><span class="thin">만드는 일.</span>',
+      "hero.affil.research.label": "연구",
+      "hero.affil.research.org": "홍익대학교",
+      "hero.affil.research.sub": "국제디자인전문대학원(IDAS) · 박사과정",
+      "hero.affil.teaching.label": "강의",
+      "hero.affil.teaching.org": "부산과학기술대학교",
+      "hero.affil.teaching.sub": "겸임교수",
+      "hero.bio": "<strong>HRI(인간-로봇 상호작용)와 Physical AI 연구자</strong>입니다. 서울을 기반으로 젊은 빌더들을 위한 AI 컨퍼런스를 기획하고, 국내외 엔지니어들의 커리어를 멘토링하며, 디자인·마케팅·AI 리터러시를 가르치고 있습니다.<br><br><em>이 사이트는 그 모든 활동의 인덱스입니다.</em>",
+      "hero.stats.papers": "논문 편수",
+      "hero.stats.mentees": "멘티 수",
+      "hero.stats.confs": "개최 컨퍼런스",
+      "research.num": "§ 01 / 연구",
+      "research.sub": "기계와 사람이 만나는 지점에서.",
+      "research.title": "연구 <em>분야</em>.",
+      "research.tag.primary": "주요 분야",
+      "research.tag.adjacent": "연관 분야",
+      "research.r1.title": "Human-Robot Interaction",
+      "research.r1.desc": "사람과 협업하고, 자신을 설명하며, 신뢰를 쌓아가는 로봇을 디자인합니다. CHI, HRI, RO-MAN 학회 발표 경험.",
+      "research.r2.title": "Physical AI",
+      "research.r2.desc": "물리적 세계에서 학습하는 체화된 지능 — 로봇 조작, 감각-운동 연결, 실세계 일반화를 탐구합니다. 예측이 아닌 행동을 해야 하는 에이전트 연구.",
+      "research.r3.title": "Affective Interaction Design",
+      "research.r3.desc": "사람의 감정을 읽고, 응답하고, 존중하는 인터랙션 디자인. 정서적 경험이 중심이 되는 제품과 시스템.",
+      "research.r4.title": "AI & Society",
+      "research.r4.desc": "젊은 세대가 주변에 만들어지는 AI 도구를 어떻게 형성하고, 수용하고, 저항하는가.",
+      "conf.num": "§ 02 / 대표 프로젝트",
+      "conf.sub": "젊은 빌더들이 만들고, 젊은 빌더들을 위한 컨퍼런스.",
+      "conf.title": "<em>컨퍼런스</em>.",
+      "conf.label": "◦ 신청 접수 중",
+      "conf.name": "Youth <em>AI</em><br>Summit <em>2026</em>",
+      "conf.cta": "신청하기",
+      "conf.meta.date": "일시",
+      "conf.meta.date.v": "2026.10.18 — 10.20",
+      "conf.meta.venue": "장소",
+      "conf.meta.venue.v": "서울, 대한민국",
+      "conf.meta.speakers": "연사",
+      "conf.meta.speakers.v": "24명 확정",
+      "conf.meta.tracks": "트랙",
+      "conf.meta.tracks.v": "HRI · Physical AI · 정책",
+      "conf.meta.aud": "참가자",
+      "conf.meta.aud.v": "30세 이하 · 전 세계",
+      "mentor.num": "§ 03 / 1:1 멘토링",
+      "mentor.sub": "진로를 이동하려는 엔지니어를 위해.",
+      "mentor.title": "국경을 넘는 <em>커리어</em><br>멘토링.",
+      "mentor.a.track": "Track A — 해외 진출",
+      "mentor.a.heading": "한국 <em>→</em> 해외",
+      "mentor.a.body": "미국·유럽·일본 포지션을 노리는 한국 엔지니어·연구자를 위한 멘토링. 이력서, 포트폴리오, 연구 스테이트먼트, 인터뷰 준비, 비자 전략 — FAANG, 최상위 연구소, 하드웨어 스타트업 실제 합격 사례를 기반으로 합니다.",
+      "mentor.a.slots": "이번 달 4자리 남음",
+      "mentor.b.track": "Track B — 국내 진입",
+      "mentor.b.heading": "해외 <em>→</em> 한국",
+      "mentor.b.body": "한국으로 이주하려는 해외 엔지니어, 또는 귀국하는 재외 한국인을 위한 멘토링. 국내 채용 생태계, 지분 관행, 인터뷰 문화, 서울 정착 로지스틱스.",
+      "mentor.b.slots": "이번 달 3자리 남음",
+      "mentor.book.text": "어느 트랙이 맞을지 모르시겠다면, <em>15분 인트로 콜부터 잡아보세요.</em>",
+      "mentor.book.btn": "콜 예약하기 →",
+      "teach.num": "§ 04 / 강의 아카이브",
+      "teach.sub": "강의, 워크숍, 수업 자료.",
+      "teach.title": "<em>아카이브</em>.",
+      "teach.h.title": "제목",
+      "teach.h.cat": "카테고리",
+      "teach.h.year": "연도",
+      "write.num": "§ 05 / 글",
+      "write.sub": "에세이, 필드 노트, 공개 서한.",
+      "write.title": "최근 <em>글</em>.",
+      "news.label": "◦ 월간 레터",
+      "news.title": "한 달에 <em>한 번</em>, 레터.",
+      "news.sub": "연구 노트, 멘토링 신청 공지, 가끔은 미완성의 생각. 스팸 없음, 트래킹 없음, 언제든 구독 취소.",
+      "news.placeholder": "your@email.com",
+      "news.btn": "구독하기",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
+      "foot.role": "연구자 · 멘토 · 교육자",
+      "foot.work": "활동",
+      "foot.connect": "연결",
+      "foot.elsewhere": "다른 곳에서",
+      "foot.bookm": "멘토링 예약",
+      "foot.news": "뉴스레터",
+      "foot.speak": "강연 문의",
+      "foot.copy": "© 2026 강희주",
+      "foot.made": "서울에서 · 2026.04.17 업데이트"
+    },
+    en: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.research": "Research",
+      "nav.conference": "Conference",
+      "nav.mentorship": "Mentorship",
+      "nav.teaching": "Teaching",
+      "nav.writing": "Writing",
+      "hero.meta.loc": "Seoul · Active since 2019",
+      "hero.meta.vol": "Vol. VII — Spring 2026",
+      "hero.name.primary": "Hee Ju Kang",
+      "hero.name.aux": "강희주<span>·</span>姜希周",
+      "hero.title": '<span class="thin">Building</span> <em>human-centered</em><br>AI <span class="thin">for the next</span><br><em>generation.</em>',
+      "hero.affil.research.label": "Research",
+      "hero.affil.research.org": "Hongik University",
+      "hero.affil.research.sub": "International Design School for Advanced Studies (IDAS) · Ph.D. Candidate",
+      "hero.affil.teaching.label": "Teaching",
+      "hero.affil.teaching.org": "Busan Institute of Science and Technology",
+      "hero.affil.teaching.sub": "Adjunct Professor",
+      "hero.bio": "I'm a <strong>Human-Robot Interaction and Physical AI researcher</strong> based in Seoul. I run an AI conference for young builders, mentor engineers across Korea and abroad, and teach design, marketing, and AI literacy to students who are just getting started.<br><br><em>This site is the index to all of it.</em>",
+      "hero.stats.papers": "Published papers",
+      "hero.stats.mentees": "Mentees",
+      "hero.stats.confs": "Conferences hosted",
+      "research.num": "§ 01 / Research",
+      "research.sub": "Where machines meet people.",
+      "research.title": "Fields of <em>inquiry</em>.",
+      "research.tag.primary": "Primary Focus",
+      "research.tag.adjacent": "Adjacent",
+      "research.r1.title": "Human-Robot Interaction",
+      "research.r1.desc": "Designing robots that collaborate, explain themselves, and build trust with the humans around them. Published at CHI, HRI, and RO-MAN.",
+      "research.r2.title": "Physical AI",
+      "research.r2.desc": "Embodied intelligence that learns from the physical world — robotic manipulation, sensorimotor grounding, and real-world generalization in agents that must act, not just predict.",
+      "research.r3.title": "Affective Interaction Design",
+      "research.r3.desc": "Interaction design that reads, responds to, and respects human emotion. Products and systems where the affective experience is central.",
+      "research.r4.title": "AI & Society",
+      "research.r4.desc": "How young generations shape, adopt, and push back on the AI tools built around them.",
+      "conf.num": "§ 02 / Flagship Project",
+      "conf.sub": "A conference by and for young builders.",
+      "conf.title": "The <em>Conference</em>.",
+      "conf.label": "◦ Now Accepting Applications",
+      "conf.name": "Youth <em>AI</em><br>Summit <em>2026</em>",
+      "conf.cta": "Apply to attend",
+      "conf.meta.date": "Date",
+      "conf.meta.date.v": "Oct 18—20, 2026",
+      "conf.meta.venue": "Venue",
+      "conf.meta.venue.v": "Seoul, KR",
+      "conf.meta.speakers": "Speakers",
+      "conf.meta.speakers.v": "24 confirmed",
+      "conf.meta.tracks": "Tracks",
+      "conf.meta.tracks.v": "HRI · Physical AI · Policy",
+      "conf.meta.aud": "Attendees",
+      "conf.meta.aud.v": "Under 30 · Global",
+      "mentor.num": "§ 03 / 1:1 Mentorship",
+      "mentor.sub": "For engineers making a move.",
+      "mentor.title": "Cross-border <em>career</em><br>mentorship.",
+      "mentor.a.track": "Track A — Outbound",
+      "mentor.a.heading": "Korea <em>→</em> Abroad",
+      "mentor.a.body": "For Korean engineers and researchers targeting US, EU, or Japan roles. Resume, portfolio, research statement, interview prep, and visa strategy — drawn from real placements at FAANG, top labs, and hardware startups.",
+      "mentor.a.slots": "4 spots this month",
+      "mentor.b.track": "Track B — Inbound",
+      "mentor.b.heading": "Abroad <em>→</em> Korea",
+      "mentor.b.body": "For international engineers relocating to Korea, or overseas Koreans returning home. Navigating the domestic hiring landscape, equity norms, interview culture, and settling-in logistics in Seoul.",
+      "mentor.b.slots": "3 spots this month",
+      "mentor.book.text": "Not sure which track? <em>Book a 15-minute intro call first.</em>",
+      "mentor.book.btn": "Book a call →",
+      "teach.num": "§ 04 / Teaching Archive",
+      "teach.sub": "Lectures, workshops, and course decks.",
+      "teach.title": "The <em>archive</em>.",
+      "teach.h.title": "Title",
+      "teach.h.cat": "Category",
+      "teach.h.year": "Year",
+      "write.num": "§ 05 / Writing",
+      "write.sub": "Essays, field notes, and open letters.",
+      "write.title": "Recent <em>dispatches</em>.",
+      "news.label": "◦ Monthly Dispatch",
+      "news.title": "A letter, <em>once a month</em>.",
+      "news.sub": "Research notes, mentorship openings, and the occasional unfinished thought. No spam, no tracking, easy to leave.",
+      "news.placeholder": "your@email.com",
+      "news.btn": "Subscribe",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
+      "foot.role": "Researcher · Mentor · Educator",
+      "foot.work": "Work",
+      "foot.connect": "Connect",
+      "foot.elsewhere": "Elsewhere",
+      "foot.bookm": "Book mentorship",
+      "foot.news": "Newsletter",
+      "foot.speak": "Speaking inquiry",
+      "foot.copy": "© 2026 Hee Ju Kang",
+      "foot.made": "Made in Seoul — last updated Apr 17"
+    },
+    zh: {
+      "brand": "姜希<em>周</em>",
+      "nav.research": "研究",
+      "nav.conference": "大会",
+      "nav.mentorship": "辅导",
+      "nav.teaching": "教学",
+      "nav.writing": "文章",
+      "hero.meta.loc": "首尔 · 自 2019 年起",
+      "hero.meta.vol": "第七期 — 2026 年春",
+      "hero.name.primary": "姜希周",
+      "hero.name.aux": "HEE JU KANG<span>·</span>강희주",
+      "hero.title": '为年轻一代打造<br><em>以人为本的</em><br>人工智能。',
+      "hero.affil.research.label": "研究",
+      "hero.affil.research.org": "弘益大学",
+      "hero.affil.research.sub": "国际设计专门大学院 IDAS · 博士研究生",
+      "hero.affil.teaching.label": "教学",
+      "hero.affil.teaching.org": "釜山科学技术大学",
+      "hero.affil.teaching.sub": "客座教授",
+      "hero.bio": "我是一名常驻首尔的<strong>人机交互 HRI 与具身智能 Physical AI 研究员</strong>。我为年轻的创造者们举办人工智能大会,为韩国与海外的工程师提供职业辅导,并为刚起步的学生讲授设计、市场营销与 AI 素养。<br><br><em>这个网站是所有这些工作的索引。</em>",
+      "hero.stats.papers": "发表论文",
+      "hero.stats.mentees": "学员人数",
+      "hero.stats.confs": "举办大会",
+      "research.num": "§ 01 / 研究",
+      "research.sub": "在机器与人相遇的地方。",
+      "research.title": "研究 <em>领域</em>。",
+      "research.tag.primary": "主要方向",
+      "research.tag.adjacent": "相关方向",
+      "research.r1.title": "人机交互 HRI",
+      "research.r1.desc": "设计能够协作、自我说明、建立信任的机器人。曾在 CHI、HRI、RO-MAN 等国际会议发表研究。",
+      "research.r2.title": "具身智能 Physical AI",
+      "research.r2.desc": "在物理世界中学习的具身智能——机器人操作、感知运动基础、真实世界的泛化能力。研究必须行动、而不只是预测的智能体。",
+      "research.r3.title": "情感交互设计",
+      "research.r3.desc": "能够理解、回应并尊重人类情感的交互设计。以情感体验为核心的产品与系统。",
+      "research.r4.title": "AI 与社会",
+      "research.r4.desc": "年轻一代如何塑造、接纳并反思围绕他们构建的 AI 工具。",
+      "conf.num": "§ 02 / 代表项目",
+      "conf.sub": "由年轻创造者、为年轻创造者举办的大会。",
+      "conf.title": "<em>大会</em>。",
+      "conf.label": "◦ 现正接受报名",
+      "conf.name": "青年 <em>AI</em><br>峰会 <em>2026</em>",
+      "conf.cta": "立即报名",
+      "conf.meta.date": "日期",
+      "conf.meta.date.v": "2026.10.18—10.20",
+      "conf.meta.venue": "地点",
+      "conf.meta.venue.v": "韩国 · 首尔",
+      "conf.meta.speakers": "讲者",
+      "conf.meta.speakers.v": "24 位已确认",
+      "conf.meta.tracks": "主题",
+      "conf.meta.tracks.v": "HRI · Physical AI · 政策",
+      "conf.meta.aud": "参会者",
+      "conf.meta.aud.v": "30 岁以下 · 全球",
+      "mentor.num": "§ 03 / 一对一辅导",
+      "mentor.sub": "面向正在转换方向的工程师。",
+      "mentor.title": "跨境 <em>职业</em><br>辅导。",
+      "mentor.a.track": "路径 A — 向外",
+      "mentor.a.heading": "韩国 <em>→</em> 海外",
+      "mentor.a.body": "面向计划应聘美国、欧洲、日本职位的韩国工程师与研究员。简历、作品集、研究陈述、面试准备与签证策略——来自 FAANG、顶尖实验室及硬件初创公司的真实录用经验。",
+      "mentor.a.slots": "本月剩余 4 位",
+      "mentor.b.track": "路径 B — 向内",
+      "mentor.b.heading": "海外 <em>→</em> 韩国",
+      "mentor.b.body": "面向移居韩国的国际工程师,或回国发展的海外韩国人。了解韩国本地招聘生态、股权惯例、面试文化,以及在首尔安家落户的实务。",
+      "mentor.b.slots": "本月剩余 3 位",
+      "mentor.book.text": "不确定适合哪条路径?<em>先预约一次 15 分钟的介绍通话吧。</em>",
+      "mentor.book.btn": "预约通话 →",
+      "teach.num": "§ 04 / 教学档案",
+      "teach.sub": "讲座、工作坊与课程资料。",
+      "teach.title": "<em>档案</em>。",
+      "teach.h.title": "标题",
+      "teach.h.cat": "类别",
+      "teach.h.year": "年份",
+      "write.num": "§ 05 / 文章",
+      "write.sub": "随笔、田野笔记与公开信。",
+      "write.title": "近期 <em>文章</em>。",
+      "news.label": "◦ 每月通讯",
+      "news.title": "每月 <em>一封信</em>。",
+      "news.sub": "研究笔记、辅导名额通知,偶尔也有尚未完成的思考。无广告,无追踪,随时取消订阅。",
+      "news.placeholder": "your@email.com",
+      "news.btn": "订阅",
+      "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
+      "foot.role": "研究员 · 导师 · 教育者",
+      "foot.work": "工作",
+      "foot.connect": "联系",
+      "foot.elsewhere": "在别处",
+      "foot.bookm": "预约辅导",
+      "foot.news": "订阅通讯",
+      "foot.speak": "演讲邀请",
+      "foot.copy": "© 2026 姜希周",
+      "foot.made": "于首尔制作 — 4 月 17 日更新"
+    }
+  };
+
+  const ARCHIVE_DATA = [
+    { num: "014", cat: { ko: "디자인", en: "Design", zh: "设计" }, year: "2026",
+      title: { ko: "연구자를 위한 Figma — 스케치부터 실제 구현까지", en: "Figma for Researchers — from sketch to shipped", zh: "给研究者的 Figma — 从草图到落地" } },
+    { num: "013", cat: { ko: "마케팅", en: "Marketing", zh: "市场营销" }, year: "2025",
+      title: { ko: "기술 창업자를 위한 마케팅 기초", en: "Marketing fundamentals for technical founders", zh: "给技术型创业者的市场营销基础" } },
+    { num: "012", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2025",
+      title: { ko: "Physical AI 입문", en: "An introduction to Physical AI", zh: "具身智能入门" } },
+    { num: "011", cat: { ko: "커리어", en: "Career", zh: "职业" }, year: "2025",
+      title: { ko: "주니어 엔지니어를 위한 포트폴리오 디자인", en: "Portfolio design for junior engineers", zh: "给初级工程师的作品集设计" } },
+    { num: "010", cat: { ko: "커뮤니케이션", en: "Communication", zh: "沟通" }, year: "2024",
+      title: { ko: "당신의 연구를 이야기로 전달하는 법", en: "How to tell the story of your research", zh: "如何讲述你的研究故事" } },
+    { num: "009", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2024",
+      title: { ko: "HRI 101 — 하루짜리 워크숍", en: "HRI 101 — a one-day workshop", zh: "HRI 101 — 一日工作坊" } }
+  ];
+
+  const WRITING_DATA = [
+    { type: { ko: "에세이", en: "Essay", zh: "随笔" }, date: { ko: "2026.04.08", en: "08 Apr 2026", zh: "2026.04.08" },
+      title: { ko: "<em>젊은</em> 빌더들이 AI에 대해 계속해서 옳은 이유.", en: "What <em>young</em> builders keep getting right about AI.", zh: "<em>年轻</em>创造者对 AI 的判断,为什么总是对的。" },
+      excerpt: { ko: "22살 청년이 Figma 파일 하나와 주말 하나로, 대기업 4개월짜리 로드맵을 왜 앞지르는가.", en: "On why a 22-year-old with a Figma file and a weekend outpaces a four-month roadmap from the incumbents.", zh: "为什么一个拿着 Figma 文件的 22 岁青年,一个周末就能超越巨头四个月的路线图。" } },
+    { type: { ko: "필드 노트", en: "Field Note", zh: "田野笔记" }, date: { ko: "2026.03.27", en: "27 Mar 2026", zh: "2026.03.27" },
+      title: { ko: "서울에서 샌프란시스코로 — 실전 가이드.", en: "Going from Seoul to SF — a field guide.", zh: "从首尔到旧金山 — 实战指南。" },
+      excerpt: { ko: "미국 인터뷰 루프, 비자 일정, 그리고 첫 6개월에 대해 누가 내게 미리 말해줬으면 했던 것들.", en: "What I wish someone had told me about the US interview loop, visa timelines, and the first six months.", zh: "关于美国面试流程、签证时间线和最初六个月,我当初希望有人能提前告诉我的事。" } },
+    { type: { ko: "연구 로그", en: "Research Log", zh: "研究记录" }, date: { ko: "2026.03.12", en: "12 Mar 2026", zh: "2026.03.12" },
+      title: { ko: "<em>체화된</em> 에이전트에 대한 조용한 논거.", en: "The quiet case for <em>embodied</em> agents.", zh: "<em>具身</em>智能体的一个低调的理由。" },
+      excerpt: { ko: "AI의 다음 도약은 더 큰 모델보다, 넘어지고 다시 일어서는 서투른 로봇에 가까울 것이다.", en: "Why the next leap in AI looks less like a bigger model and more like a clumsy robot falling over — and getting up.", zh: "为什么 AI 的下一次飞跃,不是更大的模型,而是一个会摔倒又爬起来的笨拙机器人。" } }
+  ];
+
+  function renderArchive(lang) {
+    const tbody = document.getElementById('archive-body');
+    tbody.innerHTML = ARCHIVE_DATA.map(item => `
+      <tr>
+        <td class="archive-num">${item.num}</td>
+        <td class="archive-title-cell">${item.title[lang]}</td>
+        <td><span class="archive-cat">${item.cat[lang]}</span></td>
+        <td class="archive-year">${item.year}</td>
+        <td class="archive-arrow">↗</td>
+      </tr>
+    `).join('');
+  }
+
+  function renderWriting(lang) {
+    const grid = document.getElementById('writing-grid');
+    grid.innerHTML = WRITING_DATA.map(item => `
+      <article class="article">
+        <div class="article-meta"><span>${item.type[lang]}</span><span>${item.date[lang]}</span></div>
+        <h3 class="article-title">${item.title[lang]}</h3>
+        <p class="article-excerpt">${item.excerpt[lang]}</p>
+      </article>
+    `).join('');
+  }
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    const dict = I18N[lang];
+    if (!dict) return;
+
+    document.body.classList.add('lang-switching');
+    setTimeout(() => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = dict[key];
+        if (val === undefined) return;
+        if (el.getAttribute('data-i18n-html') === 'true') {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
+      });
+      document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+        const key = el.getAttribute('data-i18n-ph');
+        if (dict[key]) el.placeholder = dict[key];
+      });
+
+      renderArchive(lang);
+      renderWriting(lang);
+
+      const titles = {
+        ko: "강희주 — 연구자 · 멘토 · 교육자",
+        en: "Hee Ju Kang — Researcher, Mentor, Educator",
+        zh: "姜希周 — 研究员 · 导师 · 教育者"
+      };
+      document.title = titles[lang];
+
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+
+      document.body.classList.remove('lang-switching');
+      try { localStorage.setItem('site-lang', lang); } catch(e) {}
+    }, 180);
+  }
+
+  function detectInitialLang() {
+    try {
+      const saved = localStorage.getItem('site-lang');
+      if (saved && I18N[saved]) return saved;
+    } catch(e) {}
+    const browser = (navigator.language || 'en').toLowerCase();
+    if (browser.startsWith('ko')) return 'ko';
+    if (browser.startsWith('zh')) return 'zh';
+    return 'en';
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+
+  applyLang(detectInitialLang());
+
+  function updateClock() {
+    const now = new Date();
+    const seoul = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false
+    }).format(now);
+    document.getElementById('clock').textContent = `SEL · ${seoul} KST`;
+  }
+  updateClock();
+  setInterval(updateClock, 30000);
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('in'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
