@@ -810,6 +810,105 @@ section {
 
 .news-message.is-error { color: #ff9270; }
 
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 25, 21, 0.55);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  max-width: 480px;
+  width: 100%;
+  padding: 48px 44px 40px;
+  position: relative;
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 40px 80px rgba(26, 25, 21, 0.25);
+}
+
+.modal-backdrop.is-open .modal { transform: translateY(0) scale(1); }
+
+.modal-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.modal-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.modal-title em { font-style: italic; color: var(--accent); font-weight: 400; }
+
+.modal-body {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 32px;
+}
+
+.modal-body em { font-style: italic; color: var(--accent); }
+
+.modal-actions { display: flex; justify-content: flex-end; gap: 12px; }
+
+.modal-btn {
+  padding: 14px 24px;
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: background 0.2s;
+}
+
+.modal-btn:hover { background: var(--accent); }
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  color: var(--ink-mute);
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.modal-close:hover { color: var(--ink); }
+
 footer {
   padding: 60px 40px 40px;
   border-top: 1px solid var(--line);
@@ -1290,6 +1389,9 @@ body.lang-switching [data-i18n] { opacity: 0.3; }
   .focus-quote { padding: 24px; font-size: 16px; }
   .program-grid { grid-template-columns: 1fr; }
   .simple-list .item { grid-template-columns: 1fr; gap: 4px; }
+  .modal { padding: 40px 28px 32px; }
+  .modal-title { font-size: 26px; }
+  .modal-body { font-size: 15px; }
   .about-cta-section { padding: 24px 20px 0; }
   .about-cta { grid-template-columns: 1fr; padding: 32px; gap: 24px; text-align: center; }
   .about-cta-text { font-size: 22px; }

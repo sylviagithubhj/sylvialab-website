@@ -203,7 +203,7 @@
     <div>
       <div class="conf-label" data-i18n="conf.label"></div>
       <h3 class="conf-title" data-i18n="conf.name" data-i18n-html="true"></h3>
-      <a href="#" class="conf-cta">
+      <a href="#" class="conf-cta" id="apply-btn">
         <span data-i18n="conf.cta"></span>
         <span class="arrow">→</span>
       </a>
@@ -355,6 +355,18 @@
   </div>
 </footer>
 
+<div class="modal-backdrop" id="apply-modal" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title" hidden>
+  <div class="modal">
+    <button class="modal-close" id="apply-modal-close" aria-label="Close">×</button>
+    <div class="modal-label" data-i18n="conf.modal.label"></div>
+    <h2 class="modal-title" id="apply-modal-title" data-i18n="conf.modal.title" data-i18n-html="true"></h2>
+    <p class="modal-body" data-i18n="conf.modal.body" data-i18n-html="true"></p>
+    <div class="modal-actions">
+      <button class="modal-btn" id="apply-modal-ok" data-i18n="conf.modal.close"></button>
+    </div>
+  </div>
+</div>
+
 <script>
   const I18N = {
     ko: {
@@ -400,6 +412,10 @@
       "conf.label": "◦ 신청 접수 중",
       "conf.name": "Youth <em>AI</em><br>Summit <em>2026</em>",
       "conf.cta": "신청하기",
+      "conf.modal.label": "◦ 곧 만나요",
+      "conf.modal.title": "신청은 <em>2026년 6월</em>부터.",
+      "conf.modal.body": "<em>Early Bird</em>가 6월에 먼저 열립니다. 뉴스레터를 구독하시면 오픈 소식을 가장 먼저 받아보실 수 있어요.",
+      "conf.modal.close": "알겠어요",
       "conf.meta.date": "일시",
       "conf.meta.date.v": "2026.10.18 — 10.20",
       "conf.meta.venue": "장소",
@@ -499,6 +515,10 @@
       "conf.label": "◦ Now Accepting Applications",
       "conf.name": "Youth <em>AI</em><br>Summit <em>2026</em>",
       "conf.cta": "Apply to attend",
+      "conf.modal.label": "◦ See you soon",
+      "conf.modal.title": "Applications open <em>June 2026</em>.",
+      "conf.modal.body": "<em>Early Bird</em> registration opens in June. Subscribe to the newsletter and you'll be the first to know when it goes live.",
+      "conf.modal.close": "Got it",
       "conf.meta.date": "Date",
       "conf.meta.date.v": "Oct 18—20, 2026",
       "conf.meta.venue": "Venue",
@@ -598,6 +618,10 @@
       "conf.label": "◦ 现正接受报名",
       "conf.name": "青年 <em>AI</em><br>峰会 <em>2026</em>",
       "conf.cta": "立即报名",
+      "conf.modal.label": "◦ 敬请期待",
+      "conf.modal.title": "报名将于 <em>2026 年 6 月</em> 开放。",
+      "conf.modal.body": "<em>Early Bird</em> 将在 6 月率先开放。订阅通讯,即可第一时间收到开放通知。",
+      "conf.modal.close": "好的",
       "conf.meta.date": "日期",
       "conf.meta.date.v": "2026.10.18—10.20",
       "conf.meta.venue": "地点",
@@ -794,6 +818,35 @@
     newsMsg.textContent = (I18N[lang] && I18N[lang][key]) || '';
     newsMsg.classList.toggle('is-error', !!isError);
   }
+
+  const applyBtn = document.getElementById('apply-btn');
+  const applyModal = document.getElementById('apply-modal');
+  const applyModalClose = document.getElementById('apply-modal-close');
+  const applyModalOk = document.getElementById('apply-modal-ok');
+
+  function openApplyModal() {
+    applyModal.hidden = false;
+    requestAnimationFrame(() => applyModal.classList.add('is-open'));
+    document.body.style.overflow = 'hidden';
+  }
+  function closeApplyModal() {
+    applyModal.classList.remove('is-open');
+    document.body.style.overflow = '';
+    setTimeout(() => { applyModal.hidden = true; }, 260);
+  }
+
+  applyBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openApplyModal();
+  });
+  applyModalClose.addEventListener('click', closeApplyModal);
+  applyModalOk.addEventListener('click', closeApplyModal);
+  applyModal.addEventListener('click', (e) => {
+    if (e.target === applyModal) closeApplyModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !applyModal.hidden) closeApplyModal();
+  });
 
   newsForm.addEventListener('submit', async (e) => {
     e.preventDefault();
