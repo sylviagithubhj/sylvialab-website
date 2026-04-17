@@ -681,7 +681,8 @@
 
   const ARCHIVE_DATA = [
     { num: "014", cat: { ko: "디자인", en: "Design", zh: "设计" }, year: "2026",
-      title: { ko: "연구자를 위한 Figma — 스케치부터 실제 구현까지", en: "Figma for Researchers — from sketch to shipped", zh: "给研究者的 Figma — 从草图到落地" } },
+      url: "https://brunch.co.kr/@sylviasolution/184",
+      title: { ko: "디자인 시스템 속도 <em>1000%</em> 올려주는 피그마 플러그인", en: "The Figma plugin that makes your design system <em>10× faster</em>", zh: "让设计系统速度提升 <em>10 倍</em>的 Figma 插件" } },
     { num: "013", cat: { ko: "마케팅", en: "Marketing", zh: "市场营销" }, year: "2025",
       title: { ko: "기술 창업자를 위한 마케팅 기초", en: "Marketing fundamentals for technical founders", zh: "给技术型创业者的市场营销基础" } },
     { num: "012", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2025",
@@ -709,7 +710,7 @@
   function renderArchive(lang) {
     const tbody = document.getElementById('archive-body');
     tbody.innerHTML = ARCHIVE_DATA.map(item => `
-      <tr>
+      <tr${item.url ? ` data-url="${item.url}"` : ''}>
         <td class="archive-num">${item.num}</td>
         <td class="archive-title-cell">${item.title[lang]}</td>
         <td><span class="archive-cat">${item.cat[lang]}</span></td>
@@ -717,6 +718,11 @@
         <td class="archive-arrow">↗</td>
       </tr>
     `).join('');
+    tbody.querySelectorAll('tr[data-url]').forEach(tr => {
+      tr.addEventListener('click', () => {
+        window.open(tr.dataset.url, '_blank', 'noopener');
+      });
+    });
   }
 
   function renderWriting(lang) {
