@@ -309,7 +309,7 @@
   <div class="newsletter-inner">
     <div class="news-label" data-i18n="news.label"></div>
     <h2 class="news-title" data-i18n="news.title" data-i18n-html="true"></h2>
-    <p class="news-sub" data-i18n="news.sub"></p>
+    <p class="news-sub" data-i18n="news.sub" data-i18n-html="true"></p>
     <form class="news-form" id="news-form" action="https://formspree.io/f/mgorkyqn" method="POST" novalidate>
       <input type="email" name="email" data-i18n-ph="news.placeholder" required autocomplete="email">
       <button type="submit" data-i18n="news.btn"></button>
@@ -811,18 +811,26 @@
     setNewsMessage('', false);
 
     try {
+      const formData = new FormData();
+      formData.append('email', email);
+      formData.append('_subject', 'New newsletter subscriber');
+      formData.append('source', 'sylvialab.kr newsletter');
+
       const res = await fetch(newsForm.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ email, source: 'sylvialab.kr newsletter' })
+        headers: { 'Accept': 'application/json' },
+        body: formData
       });
+      const payload = await res.json().catch(() => ({}));
       if (res.ok) {
         setNewsMessage('news.success', false);
         newsForm.reset();
       } else {
+        console.warn('Newsletter subscribe failed:', res.status, payload);
         setNewsMessage('news.error', true);
       }
     } catch (err) {
+      console.warn('Newsletter subscribe error:', err);
       setNewsMessage('news.error', true);
     } finally {
       btn.disabled = false;
