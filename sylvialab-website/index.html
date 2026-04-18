@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hee Ju Kang — Researcher, Mentor, Educator</title>
-<meta name="description" content="강희주 — 서울 기반 HRI(인간-로봇 상호작용)·Physical AI 연구자. 젊은 빌더를 위한 AI 컨퍼런스, 1:1 커리어 멘토링, 디자인·마케팅·AI 리터러시 강의.">
+<title>Hee Ju Kang,Researcher, Mentor, Educator</title>
+<meta name="description" content="강희주 · 서울 기반 HRI(인간-로봇 상호작용)·Physical AI 연구자. 젊은 빌더를 위한 AI 컨퍼런스, 1:1 커리어 멘토링, 디자인·마케팅·AI 리터러시 강의.">
 <meta name="keywords" content="HRI, Human-Robot Interaction, Physical AI, UX Designer, 강희주, Hee Ju Kang, AI Researcher, Seoul, Humanoid UX, AI Token Economy">
 <meta name="author" content="Hee Ju Kang">
 <link rel="canonical" href="https://sylvialab.kr/">
 
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Hee Ju Kang — Researcher, Mentor, Educator">
+<meta property="og:title" content="Hee Ju Kang,Researcher, Mentor, Educator">
 <meta property="og:description" content="서울 기반 HRI·Physical AI 연구자. 젊은 빌더를 위한 AI 컨퍼런스와 커리어 멘토링, 디자인·AI 리터러시 강의.">
 <meta property="og:url" content="https://sylvialab.kr/">
 <meta property="og:image" content="https://sylvialab.kr/profile.jpg">
@@ -21,15 +21,16 @@
 <meta property="profile:last_name" content="Kang">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Hee Ju Kang — Researcher, Mentor, Educator">
+<meta name="twitter:title" content="Hee Ju Kang,Researcher, Mentor, Educator">
 <meta name="twitter:description" content="서울 기반 HRI·Physical AI 연구자. AI 컨퍼런스, 커리어 멘토링, AI 리터러시 강의.">
 <meta name="twitter:image" content="https://sylvialab.kr/profile.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="styles.css">
+<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
 
 <script type="application/ld+json">
 {
@@ -92,15 +93,18 @@
 
 <nav>
   <div class="nav-brand" data-i18n="brand" data-i18n-html="true"></div>
-  <div class="nav-links">
+  <div class="nav-links" id="nav-links">
     <a href="about.html" data-i18n="nav.about"></a>
     <a href="#conference" data-i18n="nav.conference"></a>
     <a href="#mentorship" data-i18n="nav.mentorship"></a>
-    <a href="#teaching" data-i18n="nav.teaching"></a>
-    <a href="#workshop" data-i18n="nav.workshop"></a>
-    <a href="#writing" data-i18n="nav.writing"></a>
+    <a href="archive.html" data-i18n="nav.archive"></a>
+    <a href="https://sylvialab-workshop.figma.site/" target="_blank" rel="noopener noreferrer" data-i18n="nav.workshop"></a>
+    <a href="writing.html" data-i18n="nav.writing"></a>
   </div>
   <div class="nav-right">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-time" id="clock"></div>
     <div class="lang-toggle">
       <button class="lang-btn" data-lang="ko">KO</button>
@@ -111,12 +115,14 @@
 </nav>
 
 <section class="hero">
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
   <div class="hero-meta">
     <span data-i18n="hero.meta.loc"></span>
     <span data-i18n="hero.meta.vol"></span>
   </div>
 
-  <div>
+  <div class="hero-headline">
     <div class="hero-name-stack">
       <div class="hero-name-primary" data-i18n="hero.name.primary"></div>
       <div class="hero-name-aux" data-i18n="hero.name.aux" data-i18n-html="true"></div>
@@ -159,8 +165,8 @@
 <section class="hero-slider" id="gallery" aria-label="Moments">
   <div class="slider-frame">
     <div class="slider-track" id="slider-track"></div>
-    <button class="slider-nav prev" id="slider-prev" aria-label="Previous">‹</button>
-    <button class="slider-nav next" id="slider-next" aria-label="Next">›</button>
+    <button class="slider-nav prev" id="slider-prev" aria-label="Previous"><iconify-icon icon="solar:alt-arrow-left-linear"></iconify-icon></button>
+    <button class="slider-nav next" id="slider-next" aria-label="Next"><iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon></button>
     <div class="slider-dots" id="slider-dots"></div>
   </div>
 </section>
@@ -213,7 +219,7 @@
       <h3 class="conf-title" data-i18n="conf.name" data-i18n-html="true"></h3>
       <a href="#" class="conf-cta" id="apply-btn">
         <span data-i18n="conf.cta"></span>
-        <span class="arrow">→</span>
+        <span class="arrow"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span>
       </a>
     </div>
     <div class="conf-meta">
@@ -236,54 +242,31 @@
   </div>
 
   <div class="mentor-grid">
-    <div class="mentor-card reveal">
+    <a class="mentor-card reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform" target="_blank" rel="noopener noreferrer">
       <div class="mentor-track" data-i18n="mentor.a.track"></div>
       <h3 class="mentor-heading" data-i18n="mentor.a.heading" data-i18n-html="true"></h3>
       <p class="mentor-body" data-i18n="mentor.a.body"></p>
       <div class="mentor-foot">
         <span class="mentor-foot-label" data-i18n="mentor.a.slots"></span>
-        <span class="mentor-arrow">→</span>
+        <span class="mentor-arrow"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span>
       </div>
-    </div>
+    </a>
 
-    <div class="mentor-card reveal">
+    <a class="mentor-card reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform" target="_blank" rel="noopener noreferrer">
       <div class="mentor-track" data-i18n="mentor.b.track"></div>
       <h3 class="mentor-heading" data-i18n="mentor.b.heading" data-i18n-html="true"></h3>
       <p class="mentor-body" data-i18n="mentor.b.body"></p>
       <div class="mentor-foot">
         <span class="mentor-foot-label" data-i18n="mentor.b.slots"></span>
-        <span class="mentor-arrow">→</span>
+        <span class="mentor-arrow"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span>
       </div>
-    </div>
+    </a>
   </div>
 
   <div class="mentor-book">
     <div class="mentor-book-text" data-i18n="mentor.book.text" data-i18n-html="true"></div>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform" class="mentor-book-btn" data-i18n="mentor.book.btn" target="_blank" rel="noopener noreferrer"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform?usp=header" class="mentor-book-btn" data-i18n="mentor.book.btn" target="_blank" rel="noopener noreferrer"></a>
   </div>
-</section>
-
-<section id="teaching">
-  <div class="section-header reveal">
-    <div>
-      <div class="section-num" data-i18n="teach.num"></div>
-      <div class="section-sub" data-i18n="teach.sub"></div>
-    </div>
-    <h2 class="section-title" data-i18n="teach.title" data-i18n-html="true"></h2>
-  </div>
-
-  <table class="archive-table reveal">
-    <thead>
-      <tr>
-        <th></th>
-        <th data-i18n="teach.h.title"></th>
-        <th data-i18n="teach.h.cat"></th>
-        <th data-i18n="teach.h.year"></th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody id="archive-body"></tbody>
-  </table>
 </section>
 
 <section id="workshop">
@@ -301,19 +284,9 @@
   </div>
 </section>
 
-<section id="writing">
-  <div class="section-header reveal">
-    <div>
-      <div class="section-num" data-i18n="write.num"></div>
-      <div class="section-sub" data-i18n="write.sub"></div>
-    </div>
-    <h2 class="section-title" data-i18n="write.title" data-i18n-html="true"></h2>
-  </div>
-
-  <div class="writing-grid" id="writing-grid"></div>
-</section>
-
 <section class="newsletter">
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
   <div class="newsletter-inner">
     <div class="news-label" data-i18n="news.label"></div>
     <h2 class="news-title" data-i18n="news.title" data-i18n-html="true"></h2>
@@ -336,7 +309,8 @@
     <ul>
       <li><a href="#research" data-i18n="nav.research"></a></li>
       <li><a href="#conference" data-i18n="nav.conference"></a></li>
-      <li><a href="#teaching" data-i18n="nav.teaching"></a></li>
+      <li><a href="archive.html" data-i18n="nav.archive"></a></li>
+      <li><a href="writing.html" data-i18n="nav.writing"></a></li>
     </ul>
   </div>
   <div class="foot-col">
@@ -344,7 +318,7 @@
     <ul>
       <li><a href="#mentorship" data-i18n="foot.bookm"></a></li>
       <li><a href="#" data-i18n="foot.news"></a></li>
-      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfcH5wH6UYtXCpzgPr3McMJzvuNIxR0jP_W_0rTUUiQV_zmUQ/viewform" target="_blank" rel="noopener noreferrer" data-i18n="foot.speak"></a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform?usp=header" target="_blank" rel="noopener noreferrer" data-i18n="foot.speak"></a></li>
     </ul>
   </div>
   <div class="foot-col">
@@ -364,7 +338,7 @@
 
 <div class="modal-backdrop" id="apply-modal" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title" hidden>
   <div class="modal">
-    <button class="modal-close" id="apply-modal-close" aria-label="Close">×</button>
+    <button class="modal-close" id="apply-modal-close" aria-label="Close"><iconify-icon icon="solar:close-circle-linear"></iconify-icon></button>
     <div class="modal-label" data-i18n="conf.modal.label"></div>
     <h2 class="modal-title" id="apply-modal-title" data-i18n="conf.modal.title" data-i18n-html="true"></h2>
     <p class="modal-body" data-i18n="conf.modal.body" data-i18n-html="true"></p>
@@ -382,11 +356,12 @@
       "nav.conference": "컨퍼런스",
       "nav.mentorship": "멘토링",
       "nav.teaching": "강의",
+      "nav.archive": "아카이브",
       "nav.workshop": "워크숍",
       "nav.writing": "글",
       "nav.about": "소개",
       "hero.meta.loc": "서울 · 2019년부터 활동",
-      "hero.meta.vol": "Vol. VII — 2026 봄호",
+      "hero.meta.vol": "Vol. VII · 2026 봄호",
       "hero.name.primary": "강희주",
       "hero.name.aux": "HEE JU KANG<span>·</span>姜希周",
       "hero.title": '테크 UX 디자이너',
@@ -396,25 +371,25 @@
       "hero.affil.teaching.label": "강의",
       "hero.affil.teaching.org": "부산과학기술대학교",
       "hero.affil.teaching.sub": "겸임교수",
-      "hero.bio": "<strong>HRI(인간-로봇 상호작용)와 Physical AI 연구자</strong>입니다. 서울을 기반으로 젊은 빌더들을 위한 AI 컨퍼런스를 기획하고, 국내외 엔지니어들의 커리어를 멘토링하며, 디자인·마케팅·AI 리터러시를 가르치고 있습니다.<br><br><em>디지털 경험을 통해 더 나은 세상을 만들고 싶어합니다.</em>",
+      "hero.bio": "<strong>HRI(인간-로봇 상호작용)와 Physical AI 연구자</strong>입니다. 서울을 기반으로 젊은 빌더를 위한 AI 컨퍼런스를 기획하고, 국내외 디자이너, 엔지니어의 커리어를 멘토링하며, 디자인·마케팅·AI 리터러시를 가르치고 있습니다.<br><br><em>디지털 경험으로 더 나은 세상을 만들어 갑니다.</em>",
       "hero.stats.community": "커뮤니티 멤버",
-      "hero.stats.mentees": "멘티 수",
-      "hero.stats.confs": "개최 컨퍼런스",
+      "hero.stats.mentees": "누적 멘티",
+      "hero.stats.confs": "컨퍼런스 개최",
       "research.num": "§ 01 / 연구",
-      "research.sub": "기계와 사람이 만나는 지점에서.",
+      "research.sub": "기계와 사람이 만나는 자리에서.",
       "research.title": "연구 <em>분야</em>.",
       "research.tag.primary": "주요 분야",
       "research.tag.adjacent": "연관 분야",
       "research.r1.title": "Human-Robot Interaction",
-      "research.r1.desc": "사람과 협업하고, 자신을 설명하며, 신뢰를 쌓아가는 로봇을 디자인합니다. CHI, HRI, RO-MAN 등 국제 학회를 목표로 하는 연구.",
+      "research.r1.desc": "사람과 협업하고, 스스로를 설명하며, 신뢰를 쌓아가는 로봇을 디자인합니다. CHI, HRI, RO-MAN 등 국제 학회 발표를 목표로 합니다.",
       "research.r2.title": "Physical AI",
-      "research.r2.desc": "물리적 세계에서 학습하는 체화된 지능 — 로봇 조작, 감각-운동 연결, 실세계 일반화를 탐구합니다. 예측이 아닌 행동을 해야 하는 에이전트 연구.",
+      "research.r2.desc": "물리적 세계에서 학습하는 체화된 지능. 로봇 조작, 감각-운동 연결, 실세계 일반화를 탐구합니다. 예측이 아니라 행동해야 하는 에이전트 연구.",
       "research.r3.title": "Affective Interaction Design",
-      "research.r3.desc": "사람의 감정을 읽고, 응답하고, 존중하는 인터랙션 디자인. 정서적 경험이 중심이 되는 제품과 시스템.",
+      "research.r3.desc": "사람의 감정을 읽고, 응답하고, 존중하는 인터랙션 디자인. 정서적 경험을 중심에 두는 제품과 시스템.",
       "research.r4.title": "AI & Society",
-      "research.r4.desc": "젊은 세대가 주변에 만들어지는 AI 도구를 어떻게 형성하고, 수용하고, 저항하는가.",
+      "research.r4.desc": "젊은 세대가 자기 주변의 AI 도구를 어떻게 빚어내고, 받아들이고, 거부하는가.",
       "conf.num": "§ 02 / 대표 프로젝트",
-      "conf.sub": "젊은 빌더들이 만들고, 젊은 빌더들을 위한 컨퍼런스.",
+      "conf.sub": "젊은 빌더가 만들고, 젊은 빌더를 위한 컨퍼런스.",
       "conf.title": "<em>컨퍼런스</em>.",
       "conf.label": "◦ 신청 접수 중",
       "conf.name": "Youth <em>AI</em><br>Summit <em>2026</em>",
@@ -424,7 +399,7 @@
       "conf.modal.body": "<em>Early Bird</em>가 6월에 먼저 열립니다. 뉴스레터를 구독하시면 오픈 소식을 가장 먼저 받아보실 수 있어요.",
       "conf.modal.close": "알겠어요",
       "conf.meta.date": "일시",
-      "conf.meta.date.v": "2026.10.18 — 10.20",
+      "conf.meta.date.v": "2026.10.18 ~ 10.20",
       "conf.meta.venue": "장소",
       "conf.meta.venue.v": "서울, 대한민국",
       "conf.meta.speakers": "연사",
@@ -434,17 +409,17 @@
       "conf.meta.aud": "참가자",
       "conf.meta.aud.v": "30세 이하 · 전 세계",
       "mentor.num": "§ 03 / 1:1 멘토링",
-      "mentor.sub": "진로를 이동하려는 엔지니어를 위해.",
+      "mentor.sub": "커리어를 옮기려는 엔지니어를 위해.",
       "mentor.title": "국경을 넘는 <em>커리어</em><br>멘토링.",
-      "mentor.a.track": "Track A — 해외 진출",
+      "mentor.a.track": "Track A · 해외 진출",
       "mentor.a.heading": "한국 <em>→</em> 해외",
-      "mentor.a.body": "미국·유럽·일본 포지션을 노리는 한국 엔지니어·연구자를 위한 멘토링. 이력서, 포트폴리오, 연구 스테이트먼트, 인터뷰 준비, 비자 전략 — FAANG, 최상위 연구소, 하드웨어 스타트업 실제 합격 사례를 기반으로 합니다.",
+      "mentor.a.body": "미국·유럽·일본 진출을 준비하는 한국 엔지니어·연구자를 위한 멘토링. 이력서, 포트폴리오, 연구 소개서, 인터뷰 준비, 비자 전략까지. FAANG·최상위 연구소·하드웨어 스타트업의 실제 합격 사례를 토대로 진행합니다.",
       "mentor.a.slots": "이번 달 4자리 남음",
-      "mentor.b.track": "Track B — 국내 진입",
+      "mentor.b.track": "Track B · 국내 진입",
       "mentor.b.heading": "해외 <em>→</em> 한국",
-      "mentor.b.body": "한국으로 이주하려는 해외 엔지니어, 또는 귀국하는 재외 한국인을 위한 멘토링. 국내 채용 생태계, 지분 관행, 인터뷰 문화, 서울 정착 로지스틱스.",
+      "mentor.b.body": "한국으로 이주하려는 해외 엔지니어와 귀국을 준비하는 재외 한국인을 위한 멘토링. 국내 채용 생태계, 지분 관행, 인터뷰 문화, 서울 정착까지 함께 살펴봅니다.",
       "mentor.b.slots": "이번 달 3자리 남음",
-      "mentor.book.text": "어느 트랙이 맞을지 모르시겠다면, <em>15분 인트로 콜부터 잡아보세요.</em>",
+      "mentor.book.text": "어느 트랙이 맞을지 모르시겠다면, <em>15분 인트로 콜부터 예약해 보세요.</em>",
       "mentor.book.btn": "콜 예약하기 →",
       "teach.num": "§ 04 / 강의 아카이브",
       "teach.sub": "강의, 워크숍, 수업 자료.",
@@ -455,18 +430,18 @@
       "workshop.num": "§ 05 / 워크숍",
       "workshop.sub": "직접 만들며 배우는 자리.",
       "workshop.title": "<em>워크숍</em>.",
-      "workshop.text": "현장에서 만들고, 프로토타이핑하고, 함께 배우는 시간. <em>지난 워크숍을 둘러보세요.</em>",
+      "workshop.text": "현장에서 함께 만들고, 프로토타이핑하며, 배워가는 시간. <em>지난 워크숍을 둘러보세요.</em>",
       "workshop.btn": "워크숍 둘러보기 →",
       "write.num": "§ 06 / 글",
       "write.sub": "에세이, 필드 노트, 공개 서한.",
       "write.title": "최근 <em>글</em>.",
       "news.label": "◦ 월간 레터",
       "news.title": "한 달에 <em>한 번</em>, 먼저 도착하는 미래.",
-      "news.sub": "로봇이 삶에 스며드는 시대에 필요한 UX 관점, 현장에서 먼저 본 장면들, 다음에 올 질문들 — <em>당신의 조직이 먼저 상상해야 할</em> 이야기들을 한 통의 편지에 담아 보냅니다.",
+      "news.sub": "로봇이 삶에 스며드는 시대에 필요한 UX 관점, 현장에서 먼저 본 장면들, 다음에 올 질문들. <em>당신의 조직이 먼저 상상해야 할</em> 이야기를 한 통의 편지에 담아 보냅니다.",
       "news.placeholder": "your@email.com",
       "news.btn": "구독하기",
       "news.success": "◦ 구독이 완료됐습니다. 곧 뵙겠습니다.",
-      "news.error": "◦ 일시적 오류. 잠시 후 다시 시도해 주세요.",
+      "news.error": "◦ 일시적인 오류입니다. 잠시 후 다시 시도해 주세요.",
       "news.invalid": "◦ 올바른 이메일 주소를 입력해 주세요.",
       "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
       "foot.role": "연구자 · 멘토 · 교육자",
@@ -485,11 +460,12 @@
       "nav.conference": "Conference",
       "nav.mentorship": "Mentorship",
       "nav.teaching": "Teaching",
+      "nav.archive": "Archive",
       "nav.workshop": "Workshop",
       "nav.writing": "Writing",
       "nav.about": "About",
       "hero.meta.loc": "Seoul · Active since 2019",
-      "hero.meta.vol": "Vol. VII — Spring 2026",
+      "hero.meta.vol": "Vol. VII,Spring 2026",
       "hero.name.primary": "Hee Ju Kang",
       "hero.name.aux": "강희주<span>·</span>姜希周",
       "hero.title": '<span class="thin">Building</span> <em>AI Conference</em><br><span style="white-space:nowrap"><span class="thin">for the next</span> <em>generation.</em></span>',
@@ -511,7 +487,7 @@
       "research.r1.title": "Human-Robot Interaction",
       "research.r1.desc": "Designing robots that collaborate, explain themselves, and build trust with the humans around them. Building toward CHI, HRI, and RO-MAN.",
       "research.r2.title": "Physical AI",
-      "research.r2.desc": "Embodied intelligence that learns from the physical world — robotic manipulation, sensorimotor grounding, and real-world generalization in agents that must act, not just predict.",
+      "research.r2.desc": "Embodied intelligence that learns from the physical world,robotic manipulation, sensorimotor grounding, and real-world generalization in agents that must act, not just predict.",
       "research.r3.title": "Affective Interaction Design",
       "research.r3.desc": "Interaction design that reads, responds to, and respects human emotion. Products and systems where the affective experience is central.",
       "research.r4.title": "AI & Society",
@@ -527,7 +503,7 @@
       "conf.modal.body": "<em>Early Bird</em> registration opens in June. Subscribe to the newsletter and you'll be the first to know when it goes live.",
       "conf.modal.close": "Got it",
       "conf.meta.date": "Date",
-      "conf.meta.date.v": "Oct 18—20, 2026",
+      "conf.meta.date.v": "Oct 18,20, 2026",
       "conf.meta.venue": "Venue",
       "conf.meta.venue.v": "Seoul, KR",
       "conf.meta.speakers": "Speakers",
@@ -539,11 +515,11 @@
       "mentor.num": "§ 03 / 1:1 Mentorship",
       "mentor.sub": "For engineers making a move.",
       "mentor.title": "Cross-border <em>career</em><br>mentorship.",
-      "mentor.a.track": "Track A — Outbound",
+      "mentor.a.track": "Track A,Outbound",
       "mentor.a.heading": "Korea <em>→</em> Abroad",
-      "mentor.a.body": "For Korean engineers and researchers targeting US, EU, or Japan roles. Resume, portfolio, research statement, interview prep, and visa strategy — drawn from real placements at FAANG, top labs, and hardware startups.",
+      "mentor.a.body": "For Korean engineers and researchers targeting US, EU, or Japan roles. Resume, portfolio, research statement, interview prep, and visa strategy,drawn from real placements at FAANG, top labs, and hardware startups.",
       "mentor.a.slots": "4 spots this month",
-      "mentor.b.track": "Track B — Inbound",
+      "mentor.b.track": "Track B,Inbound",
       "mentor.b.heading": "Abroad <em>→</em> Korea",
       "mentor.b.body": "For international engineers relocating to Korea, or overseas Koreans returning home. Navigating the domestic hiring landscape, equity norms, interview culture, and settling-in logistics in Seoul.",
       "mentor.b.slots": "3 spots this month",
@@ -564,8 +540,8 @@
       "write.sub": "Essays, field notes, and open letters.",
       "write.title": "Recent <em>dispatches</em>.",
       "news.label": "◦ Monthly Dispatch",
-      "news.title": "Once a month — <em>a future</em>, delivered early.",
-      "news.sub": "The UX perspectives we'll need when robots enter daily life, signals spotted in the field, and the questions coming next — <em>the scenes your organization needs to imagine first</em>, in a single letter.",
+      "news.title": "Once a month,<em>a future</em>, delivered early.",
+      "news.sub": "The UX perspectives we'll need when robots enter daily life, signals spotted in the field, and the questions coming next,<em>the scenes your organization needs to imagine first</em>, in a single letter.",
       "news.placeholder": "your@email.com",
       "news.btn": "Subscribe",
       "news.success": "◦ You're in. See you in your inbox.",
@@ -580,7 +556,7 @@
       "foot.news": "Newsletter",
       "foot.speak": "Speaking inquiry",
       "foot.copy": "© 2026 Hee Ju Kang",
-      "foot.made": "Made in Seoul — last updated Apr 17"
+      "foot.made": "Made in Seoul,last updated Apr 17"
     },
     zh: {
       "brand": "姜希<em>周</em>",
@@ -588,11 +564,12 @@
       "nav.conference": "大会",
       "nav.mentorship": "辅导",
       "nav.teaching": "教学",
+      "nav.archive": "档案",
       "nav.workshop": "工作坊",
       "nav.writing": "文章",
       "nav.about": "关于",
       "hero.meta.loc": "首尔 · 自 2019 年起",
-      "hero.meta.vol": "第七期 — 2026 年春",
+      "hero.meta.vol": "第七期,2026 年春",
       "hero.name.primary": "姜希周",
       "hero.name.aux": "HEE JU KANG<span>·</span>강희주",
       "hero.title": '为年轻一代打造<br><em>以人为本的</em><br>人工智能。',
@@ -614,7 +591,7 @@
       "research.r1.title": "人机交互 HRI",
       "research.r1.desc": "设计能够协作、自我说明、建立信任的机器人。致力于面向 CHI、HRI、RO-MAN 等国际会议的研究。",
       "research.r2.title": "具身智能 Physical AI",
-      "research.r2.desc": "在物理世界中学习的具身智能——机器人操作、感知运动基础、真实世界的泛化能力。研究必须行动、而不只是预测的智能体。",
+      "research.r2.desc": "在物理世界中学习的具身智能,机器人操作、感知运动基础、真实世界的泛化能力。研究必须行动、而不只是预测的智能体。",
       "research.r3.title": "情感交互设计",
       "research.r3.desc": "能够理解、回应并尊重人类情感的交互设计。以情感体验为核心的产品与系统。",
       "research.r4.title": "AI 与社会",
@@ -630,7 +607,7 @@
       "conf.modal.body": "<em>Early Bird</em> 将在 6 月率先开放。订阅通讯,即可第一时间收到开放通知。",
       "conf.modal.close": "好的",
       "conf.meta.date": "日期",
-      "conf.meta.date.v": "2026.10.18—10.20",
+      "conf.meta.date.v": "2026.10.18 ~ 10.20",
       "conf.meta.venue": "地点",
       "conf.meta.venue.v": "韩国 · 首尔",
       "conf.meta.speakers": "讲者",
@@ -642,11 +619,11 @@
       "mentor.num": "§ 03 / 一对一辅导",
       "mentor.sub": "面向正在转换方向的工程师。",
       "mentor.title": "跨境 <em>职业</em><br>辅导。",
-      "mentor.a.track": "路径 A — 向外",
+      "mentor.a.track": "路径 A,向外",
       "mentor.a.heading": "韩国 <em>→</em> 海外",
-      "mentor.a.body": "面向计划应聘美国、欧洲、日本职位的韩国工程师与研究员。简历、作品集、研究陈述、面试准备与签证策略——来自 FAANG、顶尖实验室及硬件初创公司的真实录用经验。",
+      "mentor.a.body": "面向计划应聘美国、欧洲、日本职位的韩国工程师与研究员。简历、作品集、研究陈述、面试准备与签证策略,来自 FAANG、顶尖实验室及硬件初创公司的真实录用经验。",
       "mentor.a.slots": "本月剩余 4 位",
-      "mentor.b.track": "路径 B — 向内",
+      "mentor.b.track": "路径 B,向内",
       "mentor.b.heading": "海外 <em>→</em> 韩国",
       "mentor.b.body": "面向移居韩国的国际工程师,或回国发展的海外韩国人。了解韩国本地招聘生态、股权惯例、面试文化,以及在首尔安家落户的实务。",
       "mentor.b.slots": "本月剩余 3 位",
@@ -668,7 +645,7 @@
       "write.title": "近期 <em>文章</em>。",
       "news.label": "◦ 每月通讯",
       "news.title": "每月 <em>一封信</em>,提前到达的未来。",
-      "news.sub": "机器人融入日常时所需要的 UX 视角、从一线观察到的征兆、下一步要问的问题——<em>您的团队需要率先想象的</em>场景,浓缩在一封信里。",
+      "news.sub": "机器人融入日常时所需要的 UX 视角、从一线观察到的征兆、下一步要问的问题,<em>您的团队需要率先想象的</em>场景,浓缩在一封信里。",
       "news.placeholder": "your@email.com",
       "news.btn": "订阅",
       "news.success": "◦ 订阅成功,我们很快见。",
@@ -683,13 +660,11 @@
       "foot.news": "订阅通讯",
       "foot.speak": "演讲邀请",
       "foot.copy": "© 2026 姜希周",
-      "foot.made": "于首尔制作 — 4 月 17 日更新"
+      "foot.made": "于首尔制作,4 月 17 日更新"
     }
   };
 
   const GALLERY = [
-    { src: "photos/kookmin_lecture.png",
-      caption: { ko: "국민대학교 특강 · 2026", en: "Kookmin University lecture · 2026", zh: "国民大学特别讲座 · 2026" } },
     { src: "photos/tech_ux_designer.png",
       caption: { ko: "테크 UX 디자이너", en: "Tech UX Designer", zh: "技术 UX 设计师" } },
     { src: "photos/robot_professor.jpg",
@@ -702,35 +677,6 @@
       caption: { ko: "대기업 UX 워크숍", en: "Enterprise UX workshop", zh: "大企业 UX 工作坊" } },
     { src: "photos/heeju_professor.png",
       caption: { ko: "강단에서", en: "On the lecture floor", zh: "讲台之上" } }
-  ];
-
-  const ARCHIVE_DATA = [
-    { num: "014", cat: { ko: "디자인", en: "Design", zh: "设计" }, year: "2026",
-      url: "https://brunch.co.kr/@sylviasolution/184",
-      title: { ko: "디자인 시스템 속도 <em>1000%</em> 올려주는 피그마 플러그인", en: "The Figma plugin that makes your design system <em>10× faster</em>", zh: "让设计系统速度提升 <em>10 倍</em>的 Figma 插件" } },
-    { num: "013", cat: { ko: "마케팅", en: "Marketing", zh: "市场营销" }, year: "2025",
-      title: { ko: "기술 창업자를 위한 마케팅 기초", en: "Marketing fundamentals for technical founders", zh: "给技术型创业者的市场营销基础" } },
-    { num: "012", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2025",
-      title: { ko: "Physical AI 입문", en: "An introduction to Physical AI", zh: "具身智能入门" } },
-    { num: "011", cat: { ko: "커리어", en: "Career", zh: "职业" }, year: "2025",
-      url: "https://brunch.co.kr/@sylviasolution/170",
-      title: { ko: "주니어 디자이너를 위한 <em>포트폴리오 디자인</em>", en: "<em>Portfolio design</em> for junior designers", zh: "给初级设计师的 <em>作品集设计</em>" } },
-    { num: "010", cat: { ko: "커뮤니케이션", en: "Communication", zh: "沟通" }, year: "2025",
-      title: { ko: "당신의 연구를 이야기로 전달하는 법", en: "How to tell the story of your research", zh: "如何讲述你的研究故事" } },
-    { num: "009", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2025",
-      title: { ko: "HRI 101 — 하루짜리 워크숍", en: "HRI 101 — a one-day workshop", zh: "HRI 101 — 一日工作坊" } }
-  ];
-
-  const WRITING_DATA = [
-    { type: { ko: "에세이", en: "Essay", zh: "随笔" }, date: { ko: "2026.04.08", en: "08 Apr 2026", zh: "2026.04.08" },
-      title: { ko: "<em>젊은</em> 빌더들이 AI에 대해 계속해서 옳은 이유.", en: "What <em>young</em> builders keep getting right about AI.", zh: "<em>年轻</em>创造者对 AI 的判断,为什么总是对的。" },
-      excerpt: { ko: "22살 청년이 Figma 파일 하나와 주말 하나로, 대기업 4개월짜리 로드맵을 왜 앞지르는가.", en: "On why a 22-year-old with a Figma file and a weekend outpaces a four-month roadmap from the incumbents.", zh: "为什么一个拿着 Figma 文件的 22 岁青年,一个周末就能超越巨头四个月的路线图。" } },
-    { type: { ko: "필드 노트", en: "Field Note", zh: "田野笔记" }, date: { ko: "2026.03.27", en: "27 Mar 2026", zh: "2026.03.27" },
-      title: { ko: "서울에서 샌프란시스코로 — 실전 가이드.", en: "Going from Seoul to SF — a field guide.", zh: "从首尔到旧金山 — 实战指南。" },
-      excerpt: { ko: "미국 인터뷰 루프, 비자 일정, 그리고 첫 6개월에 대해 누가 내게 미리 말해줬으면 했던 것들.", en: "What I wish someone had told me about the US interview loop, visa timelines, and the first six months.", zh: "关于美国面试流程、签证时间线和最初六个月,我当初希望有人能提前告诉我的事。" } },
-    { type: { ko: "연구 로그", en: "Research Log", zh: "研究记录" }, date: { ko: "2026.03.12", en: "12 Mar 2026", zh: "2026.03.12" },
-      title: { ko: "<em>체화된</em> 에이전트에 대한 조용한 논거.", en: "The quiet case for <em>embodied</em> agents.", zh: "<em>具身</em>智能体的一个低调的理由。" },
-      excerpt: { ko: "AI의 다음 도약은 더 큰 모델보다, 넘어지고 다시 일어서는 서투른 로봇에 가까울 것이다.", en: "Why the next leap in AI looks less like a bigger model and more like a clumsy robot falling over — and getting up.", zh: "为什么 AI 的下一次飞跃,不是更大的模型,而是一个会摔倒又爬起来的笨拙机器人。" } }
   ];
 
   const sliderTrack = document.getElementById('slider-track');
@@ -782,35 +728,6 @@
   sliderFrame.addEventListener('mouseenter', () => { if (sliderTimer) clearInterval(sliderTimer); });
   sliderFrame.addEventListener('mouseleave', restartAuto);
 
-  function renderArchive(lang) {
-    const tbody = document.getElementById('archive-body');
-    tbody.innerHTML = ARCHIVE_DATA.map(item => `
-      <tr${item.url ? ` data-url="${item.url}"` : ''}>
-        <td class="archive-num">${item.num}</td>
-        <td class="archive-title-cell">${item.title[lang]}</td>
-        <td><span class="archive-cat">${item.cat[lang]}</span></td>
-        <td class="archive-year">${item.year}</td>
-        <td class="archive-arrow">↗</td>
-      </tr>
-    `).join('');
-    tbody.querySelectorAll('tr[data-url]').forEach(tr => {
-      tr.addEventListener('click', () => {
-        window.open(tr.dataset.url, '_blank', 'noopener');
-      });
-    });
-  }
-
-  function renderWriting(lang) {
-    const grid = document.getElementById('writing-grid');
-    grid.innerHTML = WRITING_DATA.map(item => `
-      <article class="article">
-        <div class="article-meta"><span>${item.type[lang]}</span><span>${item.date[lang]}</span></div>
-        <h3 class="article-title">${item.title[lang]}</h3>
-        <p class="article-excerpt">${item.excerpt[lang]}</p>
-      </article>
-    `).join('');
-  }
-
   function applyLang(lang) {
     document.documentElement.lang = lang;
     const dict = I18N[lang];
@@ -834,13 +751,11 @@
       });
 
       renderSlider(lang);
-      renderArchive(lang);
-      renderWriting(lang);
 
       const titles = {
-        ko: "강희주 — 연구자 · 멘토 · 교육자",
-        en: "Hee Ju Kang — Researcher, Mentor, Educator",
-        zh: "姜希周 — 研究员 · 导师 · 教育者"
+        ko: "강희주 · 연구자 · 멘토 · 교육자",
+        en: "Hee Ju Kang,Researcher, Mentor, Educator",
+        zh: "姜希周,研究员 · 导师 · 教育者"
       };
       document.title = titles[lang];
 
@@ -879,6 +794,21 @@
   }
   updateClock();
   setInterval(updateClock, 30000);
+
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const open = document.body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {

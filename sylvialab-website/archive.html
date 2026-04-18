@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archive,Hee Ju Kang</title>
+<meta name="description" content="강의 아카이브 · 강의, 워크숍, 수업 자료 모음.">
+<link rel="canonical" href="https://sylvialab.kr/archive.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand" data-i18n="brand" data-i18n-html="true"></a>
+  <div class="nav-links" id="nav-links">
+    <a href="about.html" data-i18n="nav.about"></a>
+    <a href="index.html#conference" data-i18n="nav.conference"></a>
+    <a href="index.html#mentorship" data-i18n="nav.mentorship"></a>
+    <a href="archive.html" data-i18n="nav.archive" style="color: var(--accent);"></a>
+    <a href="https://sylvialab-workshop.figma.site/" target="_blank" rel="noopener noreferrer" data-i18n="nav.workshop"></a>
+    <a href="writing.html" data-i18n="nav.writing"></a>
+  </div>
+  <div class="nav-right">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-time" id="clock"></div>
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="ko">KO</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中</button>
+    </div>
+  </div>
+</nav>
+
+<section id="teaching" style="padding-top: 160px;">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="teach.num"></div>
+      <div class="section-sub" data-i18n="teach.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="teach.title" data-i18n-html="true"></h2>
+  </div>
+
+  <table class="archive-table reveal">
+    <thead>
+      <tr>
+        <th></th>
+        <th data-i18n="teach.h.title"></th>
+        <th data-i18n="teach.h.cat"></th>
+        <th data-i18n="teach.h.year"></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="archive-body"></tbody>
+  </table>
+</section>
+
+<footer>
+  <div class="foot-brand">
+    <span data-i18n="foot.brand" data-i18n-html="true"></span><br>
+    <span class="mono" style="font-size: 10px; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.2em;" data-i18n="foot.role"></span>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.work"></h4>
+    <ul>
+      <li><a href="index.html#conference" data-i18n="nav.conference"></a></li>
+      <li><a href="archive.html" data-i18n="nav.archive"></a></li>
+      <li><a href="writing.html" data-i18n="nav.writing"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.connect"></h4>
+    <ul>
+      <li><a href="index.html#mentorship" data-i18n="foot.bookm"></a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform?usp=header" target="_blank" rel="noopener noreferrer" data-i18n="foot.speak"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.elsewhere"></h4>
+    <ul>
+      <li><a href="mailto:heejuk@mail.hongik.ac.kr">heejuk@mail.hongik.ac.kr</a></li>
+      <li><a href="https://sylvialab.kr" target="_blank">sylvialab.kr</a></li>
+      <li><a href="https://brunch.co.kr/@sylviasolution/" target="_blank" rel="noopener noreferrer">Brunch</a></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <span data-i18n="foot.copy"></span>
+  </div>
+</footer>
+
+<script>
+  const I18N = {
+    ko: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.conference": "컨퍼런스",
+      "nav.mentorship": "멘토링",
+      "nav.archive": "아카이브",
+      "nav.workshop": "워크숍",
+      "nav.writing": "글",
+      "nav.about": "소개",
+      "teach.num": "§ 강의 아카이브",
+      "teach.sub": "지난 강의·워크숍·수업 자료를 모았습니다.",
+      "teach.title": "<em>아카이브</em>.",
+      "teach.h.title": "제목",
+      "teach.h.cat": "카테고리",
+      "teach.h.year": "연도",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
+      "foot.role": "연구자 · 멘토 · 교육자",
+      "foot.work": "활동",
+      "foot.connect": "연결",
+      "foot.elsewhere": "다른 곳에서",
+      "foot.bookm": "멘토링 예약",
+      "foot.speak": "강연 문의",
+      "foot.copy": "© 2026 강희주"
+    },
+    en: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.conference": "Conference",
+      "nav.mentorship": "Mentorship",
+      "nav.archive": "Archive",
+      "nav.workshop": "Workshop",
+      "nav.writing": "Writing",
+      "nav.about": "About",
+      "teach.num": "§ Teaching Archive",
+      "teach.sub": "Lectures, workshops, and course decks.",
+      "teach.title": "The <em>archive</em>.",
+      "teach.h.title": "Title",
+      "teach.h.cat": "Category",
+      "teach.h.year": "Year",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
+      "foot.role": "Researcher · Mentor · Educator",
+      "foot.work": "Work",
+      "foot.connect": "Connect",
+      "foot.elsewhere": "Elsewhere",
+      "foot.bookm": "Book mentorship",
+      "foot.speak": "Speaking inquiry",
+      "foot.copy": "© 2026 Hee Ju Kang"
+    },
+    zh: {
+      "brand": "姜希<em>周</em>",
+      "nav.conference": "大会",
+      "nav.mentorship": "辅导",
+      "nav.archive": "档案",
+      "nav.workshop": "工作坊",
+      "nav.writing": "文章",
+      "nav.about": "关于",
+      "teach.num": "§ 教学档案",
+      "teach.sub": "讲座、工作坊与课程资料。",
+      "teach.title": "<em>档案</em>。",
+      "teach.h.title": "标题",
+      "teach.h.cat": "类别",
+      "teach.h.year": "年份",
+      "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
+      "foot.role": "研究员 · 导师 · 教育者",
+      "foot.work": "工作",
+      "foot.connect": "联系",
+      "foot.elsewhere": "在别处",
+      "foot.bookm": "预约辅导",
+      "foot.speak": "演讲邀约",
+      "foot.copy": "© 2026 姜希周"
+    }
+  };
+
+  const ARCHIVE_DATA = [
+    { num: "014", cat: { ko: "디자인", en: "Design", zh: "设计" }, year: "2026",
+      url: "https://brunch.co.kr/@sylviasolution/184",
+      title: { ko: "디자인 시스템 속도 <em>1000%</em> 올려주는 피그마 플러그인", en: "The Figma plugin that makes your design system <em>10× faster</em>", zh: "让设计系统速度提升 <em>10 倍</em>的 Figma 插件" } },
+    { num: "013", cat: { ko: "마케팅", en: "Marketing", zh: "市场营销" }, year: "2025",
+      title: { ko: "기술 창업자를 위한 마케팅 기초", en: "Marketing fundamentals for technical founders", zh: "给技术型创业者的市场营销基础" } },
+    { num: "012", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2025",
+      title: { ko: "Physical AI 입문", en: "An introduction to Physical AI", zh: "具身智能入门" } },
+    { num: "011", cat: { ko: "커리어", en: "Career", zh: "职业" }, year: "2025",
+      url: "https://brunch.co.kr/@sylviasolution/170",
+      title: { ko: "주니어 디자이너를 위한 <em>포트폴리오 디자인</em>", en: "<em>Portfolio design</em> for junior designers", zh: "给初级设计师的 <em>作品集设计</em>" } },
+    { num: "010", cat: { ko: "커뮤니케이션", en: "Communication", zh: "沟通" }, year: "2025",
+      title: { ko: "당신의 연구를 이야기로 전달하는 법", en: "How to tell the story of your research", zh: "如何讲述你的研究故事" } },
+    { num: "009", cat: { ko: "AI · 연구", en: "AI / Research", zh: "AI · 研究" }, year: "2025",
+      title: { ko: "HRI 101 · 하루짜리 워크숍", en: "HRI 101 · a one-day workshop", zh: "HRI 101 · 一日工作坊" } }
+  ];
+
+  function renderArchive(lang) {
+    const tbody = document.getElementById('archive-body');
+    tbody.innerHTML = ARCHIVE_DATA.map(item => `
+      <tr${item.url ? ` data-url="${item.url}"` : ''}>
+        <td class="archive-num">${item.num}</td>
+        <td class="archive-title-cell">${item.title[lang]}</td>
+        <td><span class="archive-cat">${item.cat[lang]}</span></td>
+        <td class="archive-year">${item.year}</td>
+        <td class="archive-arrow"><iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon></td>
+      </tr>
+    `).join('');
+    tbody.querySelectorAll('tr[data-url]').forEach(tr => {
+      tr.addEventListener('click', () => {
+        window.open(tr.dataset.url, '_blank', 'noopener');
+      });
+    });
+  }
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    const dict = I18N[lang];
+    if (!dict) return;
+    document.body.classList.add('lang-switching');
+    setTimeout(() => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = dict[key];
+        if (val === undefined) return;
+        if (el.getAttribute('data-i18n-html') === 'true') el.innerHTML = val;
+        else el.textContent = val;
+      });
+      renderArchive(lang);
+      const titles = { ko: "아카이브 · 강희주", en: "Archive · Hee Ju Kang", zh: "档案 · 姜希周" };
+      document.title = titles[lang];
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      try { localStorage.setItem('site-lang', lang); } catch(e) {}
+      document.body.classList.remove('lang-switching');
+    }, 180);
+  }
+
+  function detectInitialLang() {
+    try {
+      const saved = localStorage.getItem('site-lang');
+      if (saved && I18N[saved]) return saved;
+    } catch(e) {}
+    const browser = (navigator.language || 'en').toLowerCase();
+    if (browser.startsWith('ko')) return 'ko';
+    if (browser.startsWith('zh')) return 'zh';
+    return 'en';
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+  applyLang(detectInitialLang());
+
+  function updateClock() {
+    const seoul = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false
+    }).format(new Date());
+    document.getElementById('clock').textContent = `SEL · ${seoul} KST`;
+  }
+  updateClock();
+  setInterval(updateClock, 30000);
+
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const open = document.body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

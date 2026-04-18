@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writing,Hee Ju Kang</title>
+<meta name="description" content="강희주의 최근 글 · 에세이, 필드 노트, 공개 서한.">
+<link rel="canonical" href="https://sylvialab.kr/writing.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand" data-i18n="brand" data-i18n-html="true"></a>
+  <div class="nav-links" id="nav-links">
+    <a href="about.html" data-i18n="nav.about"></a>
+    <a href="index.html#conference" data-i18n="nav.conference"></a>
+    <a href="index.html#mentorship" data-i18n="nav.mentorship"></a>
+    <a href="archive.html" data-i18n="nav.archive"></a>
+    <a href="https://sylvialab-workshop.figma.site/" target="_blank" rel="noopener noreferrer" data-i18n="nav.workshop"></a>
+    <a href="writing.html" data-i18n="nav.writing" style="color: var(--accent);"></a>
+  </div>
+  <div class="nav-right">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-time" id="clock"></div>
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="ko">KO</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中</button>
+    </div>
+  </div>
+</nav>
+
+<section id="writing" style="padding-top: 160px;">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-num" data-i18n="write.num"></div>
+      <div class="section-sub" data-i18n="write.sub"></div>
+    </div>
+    <h2 class="section-title" data-i18n="write.title" data-i18n-html="true"></h2>
+  </div>
+
+  <div class="writing-grid" id="writing-grid"></div>
+</section>
+
+<footer>
+  <div class="foot-brand">
+    <span data-i18n="foot.brand" data-i18n-html="true"></span><br>
+    <span class="mono" style="font-size: 10px; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.2em;" data-i18n="foot.role"></span>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.work"></h4>
+    <ul>
+      <li><a href="index.html#conference" data-i18n="nav.conference"></a></li>
+      <li><a href="archive.html" data-i18n="nav.archive"></a></li>
+      <li><a href="writing.html" data-i18n="nav.writing"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.connect"></h4>
+    <ul>
+      <li><a href="index.html#mentorship" data-i18n="foot.bookm"></a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfETF895UydCNS191EOhIzckXyzhd7uEGivAHb6hpZTbiQE1g/viewform?usp=header" target="_blank" rel="noopener noreferrer" data-i18n="foot.speak"></a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4 data-i18n="foot.elsewhere"></h4>
+    <ul>
+      <li><a href="mailto:heejuk@mail.hongik.ac.kr">heejuk@mail.hongik.ac.kr</a></li>
+      <li><a href="https://sylvialab.kr" target="_blank">sylvialab.kr</a></li>
+      <li><a href="https://brunch.co.kr/@sylviasolution/" target="_blank" rel="noopener noreferrer">Brunch</a></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <span data-i18n="foot.copy"></span>
+  </div>
+</footer>
+
+<script>
+  const I18N = {
+    ko: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.conference": "컨퍼런스",
+      "nav.mentorship": "멘토링",
+      "nav.archive": "아카이브",
+      "nav.workshop": "워크숍",
+      "nav.writing": "글",
+      "nav.about": "소개",
+      "write.num": "§ 글",
+      "write.sub": "에세이, 필드 노트, 공개 서한.",
+      "write.title": "최근 <em>글</em>.",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주",
+      "foot.role": "연구자 · 멘토 · 교육자",
+      "foot.work": "활동",
+      "foot.connect": "연결",
+      "foot.elsewhere": "다른 곳에서",
+      "foot.bookm": "멘토링 예약",
+      "foot.speak": "강연 문의",
+      "foot.copy": "© 2026 강희주"
+    },
+    en: {
+      "brand": "Hee Ju <em>Kang</em>",
+      "nav.conference": "Conference",
+      "nav.mentorship": "Mentorship",
+      "nav.archive": "Archive",
+      "nav.workshop": "Workshop",
+      "nav.writing": "Writing",
+      "nav.about": "About",
+      "write.num": "§ Writing",
+      "write.sub": "Essays, field notes, and open letters.",
+      "write.title": "Recent <em>dispatches</em>.",
+      "foot.brand": "Hee Ju <em>Kang</em> · 강희주 · 姜希周",
+      "foot.role": "Researcher · Mentor · Educator",
+      "foot.work": "Work",
+      "foot.connect": "Connect",
+      "foot.elsewhere": "Elsewhere",
+      "foot.bookm": "Book mentorship",
+      "foot.speak": "Speaking inquiry",
+      "foot.copy": "© 2026 Hee Ju Kang"
+    },
+    zh: {
+      "brand": "姜希<em>周</em>",
+      "nav.conference": "大会",
+      "nav.mentorship": "辅导",
+      "nav.archive": "档案",
+      "nav.workshop": "工作坊",
+      "nav.writing": "文章",
+      "nav.about": "关于",
+      "write.num": "§ 文章",
+      "write.sub": "随笔、田野笔记与公开信。",
+      "write.title": "近期 <em>文章</em>。",
+      "foot.brand": "姜希<em>周</em> · Hee Ju Kang · 강희주",
+      "foot.role": "研究员 · 导师 · 教育者",
+      "foot.work": "工作",
+      "foot.connect": "联系",
+      "foot.elsewhere": "在别处",
+      "foot.bookm": "预约辅导",
+      "foot.speak": "演讲邀约",
+      "foot.copy": "© 2026 姜希周"
+    }
+  };
+
+  const WRITING_DATA = [
+    { type: { ko: "에세이", en: "Essay", zh: "随笔" }, date: { ko: "2026.04.08", en: "08 Apr 2026", zh: "2026.04.08" },
+      title: { ko: "<em>젊은</em> 빌더들이 AI에 대해 계속해서 옳은 이유.", en: "What <em>young</em> builders keep getting right about AI.", zh: "<em>年轻</em>创造者对 AI 的判断,为什么总是对的。" },
+      excerpt: { ko: "22살 청년이 Figma 파일 하나와 주말 하나로, 대기업 4개월짜리 로드맵을 왜 앞지르는가.", en: "On why a 22-year-old with a Figma file and a weekend outpaces a four-month roadmap from the incumbents.", zh: "为什么一个拿着 Figma 文件的 22 岁青年,一个周末就能超越巨头四个月的路线图。" } },
+    { type: { ko: "필드 노트", en: "Field Note", zh: "田野笔记" }, date: { ko: "2026.03.27", en: "27 Mar 2026", zh: "2026.03.27" },
+      title: { ko: "서울에서 샌프란시스코로 가는 길, 실전 가이드.", en: "Going from Seoul to SF, a field guide.", zh: "从首尔到旧金山, 实战指南。" },
+      excerpt: { ko: "미국 인터뷰 루프, 비자 일정, 그리고 첫 6개월에 대해 누가 내게 미리 말해줬으면 했던 것들.", en: "What I wish someone had told me about the US interview loop, visa timelines, and the first six months.", zh: "关于美国面试流程、签证时间线和最初六个月,我当初希望有人能提前告诉我的事。" } },
+    { type: { ko: "연구 로그", en: "Research Log", zh: "研究记录" }, date: { ko: "2026.03.12", en: "12 Mar 2026", zh: "2026.03.12" },
+      title: { ko: "<em>체화된</em> 에이전트에 대한 조용한 논거.", en: "The quiet case for <em>embodied</em> agents.", zh: "<em>具身</em>智能体的一个低调的理由。" },
+      excerpt: { ko: "AI의 다음 도약은 더 큰 모델보다, 넘어지고 다시 일어서는 서투른 로봇에 가까울 것이다.", en: "Why the next leap in AI looks less like a bigger model and more like a clumsy robot falling over,and getting up.", zh: "为什么 AI 的下一次飞跃,不是更大的模型,而是一个会摔倒又爬起来的笨拙机器人。" } }
+  ];
+
+  function renderWriting(lang) {
+    const grid = document.getElementById('writing-grid');
+    grid.innerHTML = WRITING_DATA.map(item => `
+      <article class="article">
+        <div class="article-meta"><span>${item.type[lang]}</span><span>${item.date[lang]}</span></div>
+        <h3 class="article-title">${item.title[lang]}</h3>
+        <p class="article-excerpt">${item.excerpt[lang]}</p>
+      </article>
+    `).join('');
+  }
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    const dict = I18N[lang];
+    if (!dict) return;
+    document.body.classList.add('lang-switching');
+    setTimeout(() => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = dict[key];
+        if (val === undefined) return;
+        if (el.getAttribute('data-i18n-html') === 'true') el.innerHTML = val;
+        else el.textContent = val;
+      });
+      renderWriting(lang);
+      const titles = { ko: "글 · 강희주", en: "Writing · Hee Ju Kang", zh: "文章 · 姜希周" };
+      document.title = titles[lang];
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      try { localStorage.setItem('site-lang', lang); } catch(e) {}
+      document.body.classList.remove('lang-switching');
+    }, 180);
+  }
+
+  function detectInitialLang() {
+    try {
+      const saved = localStorage.getItem('site-lang');
+      if (saved && I18N[saved]) return saved;
+    } catch(e) {}
+    const browser = (navigator.language || 'en').toLowerCase();
+    if (browser.startsWith('ko')) return 'ko';
+    if (browser.startsWith('zh')) return 'zh';
+    return 'en';
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+  applyLang(detectInitialLang());
+
+  function updateClock() {
+    const seoul = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false
+    }).format(new Date());
+    document.getElementById('clock').textContent = `SEL · ${seoul} KST`;
+  }
+  updateClock();
+  setInterval(updateClock, 30000);
+
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const open = document.body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
