@@ -204,16 +204,6 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    radial-gradient(at 18% 12%, rgba(160, 68, 32, 0.10) 0%, transparent 42%),
-    radial-gradient(at 82% 88%, rgba(122, 132, 113, 0.10) 0%, transparent 48%);
-}
 
 .mono { font-family: 'JetBrains Mono', monospace; }
 .serif { font-family: 'Manrope', sans-serif; }
@@ -332,11 +322,11 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
 
 .hero {
   min-height: 100vh;
-  padding: 140px 40px 80px;
+  padding: 24px 40px 56px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 60px;
+  gap: 24px;
 }
 
 .hero-meta {
@@ -347,8 +337,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
   color: var(--ink-mute);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  border-top: 1px solid var(--line);
-  padding-top: 16px;
+  padding-top: 8px;
 }
 
 .hero-name-stack {
@@ -1760,7 +1749,7 @@ body.lang-switching [data-i18n] { opacity: 0.3; }
   .nav-right { gap: 6px; }
   .lang-btn { padding: 5px 7px; font-size: 10px; }
 
-  .hero { padding: 120px 24px 80px; gap: 44px; }
+  .hero { padding: 16px 24px 48px; gap: 20px; }
   .hero-meta { font-size: 10px; padding-top: 14px; gap: 12px; flex-wrap: wrap; }
   .hero-name-stack { gap: 10px; margin-bottom: 12px; }
   .hero-top { grid-template-columns: 1fr; gap: 24px; }
@@ -1845,7 +1834,7 @@ body.lang-switching [data-i18n] { opacity: 0.3; }
 @media (max-width: 480px) {
   nav { padding: 12px 16px; }
   .nav-links { padding: 4px 18px 16px; }
-  .hero { padding: 108px 18px 64px; gap: 36px; }
+  .hero { padding: 12px 18px 44px; gap: 16px; }
   section { padding: 64px 18px; }
   .newsletter { padding: 72px 18px; }
   footer { grid-template-columns: 1fr; gap: 28px; padding: 48px 18px 28px; }
