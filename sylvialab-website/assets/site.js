@@ -122,7 +122,7 @@
     ['AI 프로덕트 디자인 심화', 'ai-product-design.html', '부트캠프 · 4주', 'ai 프로덕트 디자인 심화 리서치 프로토타입 claude figma mcp cursor'],
     ['AI 워크숍', 'workshops.html', '워크숍 · 2시간', '워크숍 claude 바이브코딩 로컬라이제이션'],
     ['해외에서 읽히는 포트폴리오 부트캠프', 'career.html', '부트캠프 · 4주', '포트폴리오 커리어 해외 이력서 케이스 스터디 취업'],
-    ['국내외 커리어 선택 자문', 'advisory.html', '1:1 · 한 달', '자문 멘토링 커리어 해외 귀국 한국 아이 진로 코칭'],
+    ['커리어 전략 컨설팅', 'advisory.html', '1:1 · 한 달', '컨설팅 커리어 전략 자문 멘토링 커리어 해외 귀국 한국 아이 진로 코칭'],
     ['SKILL.md 키트', 'kit.html', '키트', 'skill md claude figma 한국 사용자 로컬라이제이션'],
     ['기업 교육', 'team.html', '기업 · 팀', '기업 교육 팀 워크숍 강연'],
     ['프로젝트 문의', 'contact.html', '문의', '프로젝트 문의 한국 시장 진출 ux 진단'],
@@ -133,7 +133,7 @@
     ['AI Product Design bootcamp', 'ai-product-design.html', 'Bootcamp · 4 weeks', 'ai product design research prototype claude figma mcp cursor'],
     ['AI workshops', 'workshops.html', 'Workshop · 2 hours', 'workshop claude vibe coding localization'],
     ['Portfolio bootcamp for global roles', 'career.html', 'Bootcamp · 4 weeks', 'portfolio career global abroad resume case study'],
-    ['Korea ↔ Global career advisory', 'advisory.html', '1:1 · 1 month', 'advisory mentoring career abroad moving back korea child coaching'],
+    ['Career strategy consulting', 'advisory.html', '1:1 · 1 month', 'consulting career strategy advisory mentoring career abroad moving back korea child coaching'],
     ['SKILL.md kit', 'kit.html', 'Kit', 'skill md claude figma make korean users localization'],
     ['Team training', 'team.html', 'For companies', 'team company training workshop talk'],
     ['Project inquiry', 'contact.html', 'Contact', 'project inquiry korea market entry ux review contact'],
@@ -148,7 +148,7 @@
     var hits = PAGES.filter(function (p) { return !v || (p[0] + ' ' + p[3]).toLowerCase().indexOf(v) > -1; });
     list.innerHTML = hits.length ? hits.map(function (p) {
       return '<a class="row" href="' + p[1] + '"><span>' + p[0] + '</span><small>' + p[2] + '</small></a>';
-    }).join('') : '<p class="meta" style="padding:16px 0">' + (KO ? '찾는 결과가 없어요. “포트폴리오”, “바이브코딩”, “자문”으로 찾아보세요.' : 'Nothing yet. Try “portfolio”, “vibe coding” or “advisory”.') + '</p>';
+    }).join('') : '<p class="meta" style="padding:16px 0">' + (KO ? '찾는 결과가 없어요. “포트폴리오”, “바이브코딩”, “컨설팅”으로 찾아보세요.' : 'Nothing yet. Try “portfolio”, “vibe coding” or “consulting”.') + '</p>';
   }
   if (input) {
     input.addEventListener('input', function () { render(input.value); });
