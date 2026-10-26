@@ -48,8 +48,33 @@
     document.querySelectorAll('.overlay').forEach(function (o) { if (!o.hidden) close(o); });
   });
 
+  // bottom CTA bar: shows after the first screen, hides at the footer, can be closed on desktop
+  var cta = document.querySelector('.sticky-cta');
+  if (cta) {
+    document.documentElement.classList.add('js');
+    var closed = false;
+    try { closed = sessionStorage.getItem('cta-closed:' + location.pathname) === '1'; } catch (e) {}
+    var foot = document.querySelector('footer');
+    var update = function () {
+      if (closed) { cta.classList.remove('on'); return; }
+      var room = document.documentElement.scrollHeight - window.innerHeight;
+      var past = window.scrollY > Math.min(window.innerHeight * 0.6, room * 0.25);
+      var nearFoot = foot && foot.getBoundingClientRect().top < window.innerHeight - 120;
+      cta.classList.toggle('on', past && !nearFoot);
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+    var x = cta.querySelector('[data-cta-close]');
+    if (x) x.addEventListener('click', function () {
+      closed = true; update();
+      try { sessionStorage.setItem('cta-closed:' + location.pathname, '1'); } catch (e) {}
+      track('cta_close', { page: location.pathname });
+    });
+  }
+
   // search
-  var KO = document.documentElement.lang === 'ko';
+  var KO =document.documentElement.lang === 'ko';
   var PAGES = KO ? [
     ['AI 부트캠프', 'bootcamps.html', '부트캠프 · 3~4주', 'ai 부트캠프 프로덕트 디자인 전략 바이브코딩 로컬라이제이션 기수 bootcamp'],
     ['AI 프로덕트 디자인 부트캠프', 'ai-product-design.html', '부트캠프 · 4주', 'ai 프로덕트 디자인 프로토타입 claude figma'],
