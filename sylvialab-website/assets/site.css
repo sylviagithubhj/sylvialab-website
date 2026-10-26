@@ -1,3 +1,4 @@
+@font-face{font-family:'Pretendard Variable';src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),url('fonts/PretendardVariable.woff2') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
 :root{--motion-fast:120ms;--motion-base:240ms;--motion-slow:420ms;--motion-ease:cubic-bezier(.2,.8,.2,1);--motion-rise:8px;--motion-stagger:60ms;--motion-press:.98;--logo-roll:60s;
   --bg:#0a0a0a;--surface:#141414;--surface-2:#1e1e1e;--line:#313131;--line-2:#454545;
   --text:#ffffff;--muted:#a7a7a7;--dim:#7c7c7c;--accent:#6798ff;
