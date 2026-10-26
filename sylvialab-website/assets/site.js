@@ -59,7 +59,7 @@
     ['SKILL.md 키트', 'kit.html', '키트', 'skill md claude figma 한국 사용자 로컬라이제이션'],
     ['기업 교육', 'team.html', '기업 · 팀', '기업 교육 팀 워크숍 강연'],
     ['프로젝트 문의', 'contact.html', '문의', '프로젝트 문의 한국 시장 진출 ux 진단'],
-    ['강희주 소개', 'about.html', '소개', '강희주 소개 ibm kb 코빗 hri 연구'],
+    ['Sylvia 소개', 'about.html', '소개', 'Sylvia 소개 ibm kb 코빗 hri 연구'],
     ['글', 'writing.html', '글', '글 에세이 브런치']
   ] : [
     ['AI bootcamps', 'bootcamps.html', 'Bootcamp · 3–4 weeks', 'ai product design strategy vibe coding localization cohort'],
@@ -70,7 +70,7 @@
     ['SKILL.md kit', 'kit.html', 'Kit', 'skill md claude figma make korean users localization'],
     ['Team training', 'team.html', 'For companies', 'team company training workshop talk'],
     ['Project inquiry', 'contact.html', 'Contact', 'project inquiry korea market entry ux review contact'],
-    ['About Heeju Kang', '../about.html', 'About', 'heeju kang about ibm kb korbit hri research'],
+    ['About Sylvia', '../about.html', 'About', 'heeju kang about ibm kb korbit hri research'],
     ['Writing', '../writing.html', 'Writing', 'writing articles essays brunch']
   ];
   var input = document.getElementById('q');
