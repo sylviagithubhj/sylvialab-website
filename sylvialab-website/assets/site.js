@@ -73,8 +73,33 @@
     });
   }
 
+  // home program tabs
+  document.querySelectorAll('[role="tablist"]').forEach(function (list) {
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    function select(tab) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !on;
+      });
+      track('program_tab', { tab: tab.id });
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        e.preventDefault();
+        var n = tabs[(i + d + tabs.length) % tabs.length];
+        n.focus(); select(n);
+      });
+    });
+  });
+
   // search
-  var KO =document.documentElement.lang === 'ko';
+  var KO = document.documentElement.lang === 'ko';
   var PAGES = KO ? [
     ['AI 부트캠프', 'bootcamps.html', '부트캠프 · 3~4주', 'ai 부트캠프 프로덕트 디자인 전략 바이브코딩 로컬라이제이션 기수 bootcamp'],
     ['AI 프로덕트 디자인 부트캠프', 'ai-product-design.html', '부트캠프 · 4주', 'ai 프로덕트 디자인 프로토타입 claude figma'],
