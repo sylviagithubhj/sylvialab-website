@@ -73,6 +73,23 @@
     });
   }
 
+  // single-choice cards (advisory)
+  document.querySelectorAll('[role="radiogroup"]').forEach(function (g) {
+    var opts = Array.prototype.slice.call(g.querySelectorAll('[role="radio"]'));
+    function pick(o) {
+      opts.forEach(function (x) { var on = x === o; x.setAttribute('aria-checked', on ? 'true' : 'false'); x.tabIndex = on ? 0 : -1; });
+      track('advisory_need', { need: o.textContent.trim() });
+    }
+    opts.forEach(function (o, i) {
+      o.addEventListener('click', function () { pick(o); });
+      o.addEventListener('keydown', function (e) {
+        var d = (e.key === 'ArrowDown' || e.key === 'ArrowRight') ? 1 : (e.key === 'ArrowUp' || e.key === 'ArrowLeft') ? -1 : 0;
+        if (!d) return; e.preventDefault();
+        var n = opts[(i + d + opts.length) % opts.length]; n.focus(); pick(n);
+      });
+    });
+  });
+
   // home program tabs
   document.querySelectorAll('[role="tablist"]').forEach(function (list) {
     var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
