@@ -67,11 +67,15 @@ a.card:hover{border-color:var(--line-2);transform:translateY(-2px)}
 .sticky-cta .wrap{display:flex;gap:10px}
 .sticky-cta .btn{flex:1}
 @media(min-width:800px){.sticky-cta .btn{flex:0 0 auto}}
-.field{display:flex;flex-direction:column;gap:6px}
-.field span{font-size:13px;color:var(--muted)}
-.field input,.field textarea{width:100%;min-height:50px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:#fff;font:inherit;font-size:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field>span{font-size:13px;font-weight:500;color:#d4d4d4}
+.field input,.field textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid transparent;border-radius:10px;background:#1c1c1c;color:#fff;font:inherit;font-size:16px;transition:border-color .15s,box-shadow .15s,background .15s}
+.field input::placeholder,.field textarea::placeholder{color:#6b6b6b}
+.field input:hover,.field textarea:hover{background:#202020}
 .field textarea{min-height:130px;resize:vertical}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+.field input:focus,.field textarea:focus{outline:none;background:#141414;border-color:var(--accent);box-shadow:0 0 0 3px rgba(103,152,255,.25)}
+.field input:user-invalid,.field input[aria-invalid="true"]{border-color:#ff6b6b;box-shadow:0 0 0 3px rgba(255,107,107,.18)}
+.field .hint{font-size:12px;font-weight:400;color:#7c7c7c}
 form{display:flex;flex-direction:column;gap:18px;max-width:560px}
 
 /* header */
