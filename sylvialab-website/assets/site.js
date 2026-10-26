@@ -101,8 +101,8 @@
   // search
   var KO = document.documentElement.lang === 'ko';
   var PAGES = KO ? [
-    ['AI 부트캠프', 'bootcamps.html', '부트캠프 · 3~4주', 'ai 부트캠프 프로덕트 디자인 전략 바이브코딩 로컬라이제이션 기수 bootcamp'],
-    ['AI 프로덕트 디자인 부트캠프', 'ai-product-design.html', '부트캠프 · 4주', 'ai 프로덕트 디자인 프로토타입 claude figma'],
+    ['AI 부트캠프', 'bootcamps.html', '부트캠프 · 3~4주', 'ai 부트캠프 프로덕트 전략 디자인 시스템 엔지니어링 토큰 figma mcp cursor claude code react next.js 기수 bootcamp'],
+    ['AI 프로덕트 디자인 심화', 'ai-product-design.html', '부트캠프 · 4주', 'ai 프로덕트 디자인 심화 리서치 프로토타입 claude figma mcp cursor'],
     ['AI 워크숍', 'workshops.html', '워크숍 · 2시간', '워크숍 claude 바이브코딩 로컬라이제이션'],
     ['해외에서 읽히는 포트폴리오 부트캠프', 'career.html', '부트캠프 · 4주', '포트폴리오 커리어 해외 이력서 케이스 스터디 취업'],
     ['국내외 커리어 선택 자문', 'advisory.html', '1:1 · 한 달', '자문 멘토링 커리어 해외 귀국 한국 아이 진로 코칭'],
@@ -112,8 +112,8 @@
     ['Sylvia 소개', 'about.html', '소개', 'Sylvia 소개 ibm kb 코빗 hri 연구'],
     ['글', 'writing.html', '글', '글 에세이 브런치']
   ] : [
-    ['AI bootcamps', 'bootcamps.html', 'Bootcamp · 3–4 weeks', 'ai product design strategy vibe coding localization cohort'],
-    ['AI Product Design bootcamp', 'ai-product-design.html', 'Bootcamp · 4 weeks', 'ai product design prototype claude figma'],
+    ['AI bootcamps', 'bootcamps.html', 'Bootcamp · 3–4 weeks', 'ai product strategy design systems engineering tokens figma mcp cursor claude code react next.js cohort'],
+    ['AI Product Design bootcamp', 'ai-product-design.html', 'Bootcamp · 4 weeks', 'ai product design research prototype claude figma mcp cursor'],
     ['AI workshops', 'workshops.html', 'Workshop · 2 hours', 'workshop claude vibe coding localization'],
     ['Portfolio bootcamp for global roles', 'career.html', 'Bootcamp · 4 weeks', 'portfolio career global abroad resume case study'],
     ['Korea ↔ Global career advisory', 'advisory.html', '1:1 · 1 month', 'advisory mentoring career abroad moving back korea child coaching'],
