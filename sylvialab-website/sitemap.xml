@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://sylvialab.kr/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://sylvialab.kr/?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sylvialab.kr/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://sylvialab.kr/?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sylvialab.kr/"/>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sylvialab.kr/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority></url>
+  <url><loc>https://sylvialab.kr/bootcamps.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/ai-product-design.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/workshops.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/career.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/advisory.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/kit.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/team.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/contact.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/about.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/writing.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sylvialab.kr/archive.html</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
 </urlset>
