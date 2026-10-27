@@ -176,3 +176,4 @@ form{display:flex;flex-direction:column;gap:18px;max-width:560px}
 .choice:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 .info-list{list-style:none;margin:0;padding:0;max-width:640px}.info-list li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid #262626}.info-list li:last-child{border-bottom:0}.info-list .ico{flex:0 0 auto;color:var(--accent);display:flex;padding-top:2px}.info-list li>span:last-child{display:flex;flex-direction:column;gap:4px}.info-list strong{font-size:17px;font-weight:600;color:#fff}.info-list li>span:last-child>span{font-size:14px;line-height:1.5;color:var(--muted)}
+.brand .mark{flex:none;display:block}
