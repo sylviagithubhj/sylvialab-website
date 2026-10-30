@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DESIGN.md 모음 · SylviaLab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="국내외 111개 서비스의 디자인 시스템을 DESIGN.md로. 골라서 복사하고 Claude·Cursor·Codex에 붙여 넣으세요.">
+<link rel="canonical" href="https://sylvialab.kr/design-md/">
+<meta property="og:title" content="DESIGN.md 모음 · SylviaLab">
+<meta property="og:description" content="국내외 111개 서비스의 디자인 시스템을 DESIGN.md로. 골라서 복사하고 AI 도구에 붙여 넣으세요.">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap">
+<a class="logo" href="./"><svg width="14" height="10" viewBox="0 0 14 10" aria-hidden="true"><rect width="6" height="10" rx="2" fill="#fff"/><rect x="8" width="6" height="10" rx="2" fill="#6798ff"/></svg>DESIGN.md <small>by SylviaLab</small></a>
+<nav aria-label="바로가기"><a class="pill" href="../">sylvialab.kr</a><a class="pill" href="../bootcamps.html">AI 부트캠프</a></nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+<span class="kicker">Design systems · for AI</span>
+<h1>디자인 시스템을<br><span class="md">DESIGN.md</span>로 모아 뒀어요</h1>
+<p class="sub">국내 <b id="n-ko">27</b>개 · 해외 <b id="n-intl">84</b>개 서비스의 색, 타이포, 간격, 컴포넌트 규칙을 마크다운 한 파일씩 정리했어요. 마음에 드는 걸 골라 AI 도구에 붙여 넣으면 그 톤으로 화면을 만들어요.</p>
+<ol class="steps">
+<li><b>고르기</b> · 서비스 이름이나 분야로 찾아요</li>
+<li><b>복사하기</b> · 목록에서 바로, 또는 상세에서 전체 복사</li>
+<li><b>붙여 넣기</b> · Claude, Cursor, Codex에 “이 DESIGN.md대로 만들어줘”</li>
+</ol>
+</section>
+
+<section class="controls" aria-label="찾기">
+<label class="search" for="q"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color:var(--dim)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg><span style="position:absolute;left:-9999px">DESIGN.md 검색</span><input id="q" type="search" placeholder="토스, Stripe, 핀테크, AI…" autocomplete="off"><kbd>/</kbd></label>
+<div class="row-ctrl">
+<div class="seg" role="group" aria-label="지역">
+<button type="button" data-region="all" aria-pressed="true">전체 <span class="mono" id="n-all">111</span></button>
+<button type="button" data-region="ko" aria-pressed="false">국내</button>
+<button type="button" data-region="intl" aria-pressed="false">해외</button>
+</div>
+</div>
+<div class="chips" id="chips" role="group" aria-label="분야"></div>
+</section>
+
+<div class="meta-line"><span>DESIGN.md <b id="count" style="color:var(--fg)">0개</b></span><span>이름순 · 국내 먼저</span></div>
+<ul class="list" id="list"><li class="empty">불러오는 중…</li></ul>
+
+<footer class="foot">
+<p>해외 항목은 <a href="https://github.com/VoltAgent/awesome-design-md" rel="noopener">VoltAgent/awesome-design-md</a>(MIT), 국내 항목은 <a href="https://github.com/CaesiumY/ko-design-md" rel="noopener">ko-design-md by ChangSik Yoon</a>(CC BY 4.0)을 옮겨 왔어요. 각 파일 상세 페이지에 원본 링크와 라이선스를 적어 두었어요.</p>
+<p>서비스 이름은 식별을 위해서만 쓰며, SylviaLab은 어느 브랜드와도 제휴하지 않았어요. 정정이나 삭제 요청은 heejuk@mail.hongik.ac.kr 로 보내 주세요.</p>
+<p>© 2026 SylviaLab</p>
+</footer>
+</main>
+<script src="list.js"></script>
+</body>
+</html>

@@ -1,0 +1,2042 @@
+{
+"generated": "2026-10-31",
+"categories": {
+"ai": "AI",
+"developer": "개발자 도구",
+"design": "협업·생산성",
+"finance": "금융·결제",
+"commerce": "커머스·서비스",
+"media": "미디어·콘텐츠",
+"hardware": "하드웨어·테크",
+"mobility": "모빌리티",
+"career": "커리어",
+"community": "커뮤니티",
+"content": "콘텐츠",
+"delivery": "배달",
+"education": "교육",
+"etc": "기타",
+"gov": "공공",
+"messenger": "메신저",
+"travel": "여행"
+},
+"items": [
+{
+"slug": "en-1win",
+"name": "1win",
+"region": "intl",
+"category": "commerce",
+"desc": "An analysis of 1win's design language — a near-black crypto casino and sportsbook built on Inter at heavy weights, where a vivid green action color and an electric blue secondary carry every CTA across dense, full-bleed…",
+"colors": [
+"#00b24b",
+"#ffffff",
+"#0075ff",
+"#141415",
+"#2e3035",
+"#2d2f33"
+],
+"bytes": 23906,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/1win",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-airbnb",
+"name": "Airbnb",
+"region": "intl",
+"category": "commerce",
+"desc": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF…",
+"colors": [
+"#ff385c",
+"#e00b41",
+"#ffd1da",
+"#c13515",
+"#b32505",
+"#460479"
+],
+"bytes": 30517,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/airbnb",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-airtable",
+"name": "Airtable",
+"region": "intl",
+"category": "developer",
+"desc": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that punctuate long-scroll…",
+"colors": [
+"#181d26",
+"#0d1218",
+"#333840",
+"#41454d",
+"#dddddd",
+"#9297a0"
+],
+"bytes": 35266,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/airtable",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-aljazeera",
+"name": "Al Jazeera",
+"region": "intl",
+"category": "media",
+"desc": "An analysis of Al Jazeera's design language — a hard-news editorial system built on flat white paper and dense Roboto headline stacks, signed by one saturated orange used as logo block and section-eyebrow bar,…",
+"colors": [
+"#fa9000",
+"#ffffff",
+"#c31833",
+"#bc0000",
+"#000000",
+"#333333"
+],
+"bytes": 28031,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/aljazeera",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-apple",
+"name": "Apple",
+"region": "intl",
+"category": "hardware",
+"desc": "A photography-first interface that turns marketing into a museum gallery. Edge-to-edge product tiles alternate light and dark canvases, framed by SF Pro Display headlines with negative letter-spacing and a single Action…",
+"colors": [
+"#0066cc",
+"#0071e3",
+"#2997ff",
+"#1d1d1f",
+"#ffffff",
+"#cccccc"
+],
+"bytes": 37096,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/apple",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-binance",
+"name": "Binance",
+"region": "intl",
+"category": "finance",
+"desc": "A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment. Type runs Binance's custom…",
+"colors": [
+"#fcd535",
+"#f0b90b",
+"#3a3a1f",
+"#2dbdb6",
+"#181a20",
+"#eaecef"
+],
+"bytes": 39918,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/binance",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-bmw",
+"name": "Bmw",
+"region": "intl",
+"category": "mobility",
+"desc": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries…",
+"colors": [
+"#1c69d4",
+"#0653b6",
+"#d6d6d6",
+"#0066b1",
+"#e22718",
+"#262626"
+],
+"bytes": 27907,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bmw",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-bmw-m",
+"name": "BMW M",
+"region": "intl",
+"category": "mobility",
+"desc": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. The brand carries no decorative voltage — its energy comes from full-bleed…",
+"colors": [
+"#ffffff",
+"#0066b1",
+"#1c69d4",
+"#e22718",
+"#0653b6",
+"#bbbbbb"
+],
+"bytes": 30697,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bmw-m",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-bugatti",
+"name": "Bugatti",
+"region": "intl",
+"category": "mobility",
+"desc": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage. The system runs three custom Bugatti typefaces —…",
+"colors": [
+"#ffffff",
+"#cccccc",
+"#e6e6e6",
+"#999999",
+"#666666",
+"#262626"
+],
+"bytes": 28535,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bugatti",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-cal",
+"name": "Cal.com",
+"region": "intl",
+"category": "developer",
+"desc": "A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography. The system reads as friendly modern SaaS — generous whitespace, soft-rounded cards…",
+"colors": [
+"#111111",
+"#242424",
+"#e5e7eb",
+"#3b82f6",
+"#fb923c",
+"#374151"
+],
+"bytes": 31176,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cal",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-claude",
+"name": "Claude",
+"region": "intl",
+"category": "ai",
+"desc": "A warm-canvas editorial interface for Anthropic's Claude product. The system anchors on a tinted cream canvas with serif display headlines, warm coral CTAs, and dark navy product surfaces (code editor mockups, model…",
+"colors": [
+"#cc785c",
+"#a9583e",
+"#e6dfd8",
+"#ffffff",
+"#5db8a6",
+"#e8a55a"
+],
+"bytes": 33586,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/claude",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-clay",
+"name": "Clay",
+"region": "intl",
+"category": "design",
+"desc": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform). Anchors on white canvas with dark-navy primary CTAs, custom rounded display type, and saturated single-color feature cards — hot…",
+"colors": [
+"#0a0a0a",
+"#1f1f1f",
+"#e5e5e5",
+"#ffffff",
+"#ff4d8b",
+"#1a3a3a"
+],
+"bytes": 25705,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clay",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-clickhouse",
+"name": "ClickHouse",
+"region": "intl",
+"category": "developer",
+"desc": "A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage. White typography in confident sans, yellow CTAs, and yellow-text stat numbers carry the brand voice…",
+"colors": [
+"#faff69",
+"#e6eb52",
+"#3a3a1f",
+"#22c55e",
+"#ef4444",
+"#3b82f6"
+],
+"bytes": 25986,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clickhouse",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-cohere",
+"name": "Cohere",
+"region": "intl",
+"category": "ai",
+"desc": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between…",
+"colors": [
+"#17171c",
+"#003c33",
+"#edfce9",
+"#f1f5ff",
+"#1863dc",
+"#4c6ee6"
+],
+"bytes": 20020,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cohere",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-coinbase",
+"name": "Coinbase",
+"region": "intl",
+"category": "finance",
+"desc": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand voltage, used scarcely…",
+"colors": [
+"#0052ff",
+"#003ecc",
+"#a8b8cc",
+"#f4b000",
+"#0a0b0d",
+"#5b616e"
+],
+"bytes": 25853,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/coinbase",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-composio",
+"name": "Composio",
+"region": "intl",
+"category": "ai",
+"desc": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards…",
+"colors": [
+"#0007cd",
+"#0005a3",
+"#1a26ff",
+"#00d4ff",
+"#7b3aed",
+"#ffffff"
+],
+"bytes": 20606,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/composio",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-cursor",
+"name": "Cursor",
+"region": "intl",
+"category": "ai",
+"desc": "An AI-first code editor whose marketing site reads like a quietly-confident developer-tools brand with a warm-cream editorial canvas (`#f7f7f4`) instead of the typical dark IDE atmosphere. Near-black warm ink…",
+"colors": [
+"#f54e00",
+"#d04200",
+"#26251e",
+"#5a5852",
+"#807d72",
+"#a09c92"
+],
+"bytes": 21771,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cursor",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-dell-1996",
+"name": "Dell (1996)",
+"region": "intl",
+"category": "hardware",
+"desc": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky,…",
+"colors": [
+"#e91d2a",
+"#ffffff",
+"#6a26a4",
+"#000000",
+"#fcc20f",
+"#0000ee"
+],
+"bytes": 34592,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/dell-1996",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-dji",
+"name": "DJI",
+"region": "intl",
+"category": "hardware",
+"desc": "An analysis of DJI's design language — a product-photography showroom for drones and cameras, where full-bleed studio renders sit in square, gutter-separated tiles on a white canvas, every action is a rounded pill in a…",
+"colors": [
+"#0070d5",
+"#0060ef",
+"#deeafd",
+"#ffffff",
+"#1890ff",
+"#be4e04"
+],
+"bytes": 42268,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/dji",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-elevenlabs",
+"name": "ElevenLabs",
+"region": "intl",
+"category": "ai",
+"desc": "A voice-AI brand whose marketing surfaces read like a quietly editorial print magazine. The base canvas is off-white (`#f5f5f5`) holding warm near-black ink (`#292524`); the brand voltage is photographic, not chromatic…",
+"colors": [
+"#292524",
+"#0c0a09",
+"#4e4e4e",
+"#777169",
+"#a8a29e",
+"#e7e5e4"
+],
+"bytes": 20943,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/elevenlabs",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-expo",
+"name": "Expo",
+"region": "intl",
+"category": "developer",
+"desc": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero; near-black ink…",
+"colors": [
+"#000000",
+"#1a1a1a",
+"#ab6400",
+"#8145b5",
+"#47c2ff",
+"#0d74ce"
+],
+"bytes": 21660,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/expo",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-ferrari",
+"name": "Ferrari",
+"region": "intl",
+"category": "mobility",
+"desc": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial…",
+"colors": [
+"#da291c",
+"#b01e0a",
+"#9d2211",
+"#fff200",
+"#f6e500",
+"#ffffff"
+],
+"bytes": 24365,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ferrari",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-figma",
+"name": "Figma",
+"region": "intl",
+"category": "design",
+"desc": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink,…",
+"colors": [
+"#000000",
+"#ffffff",
+"#ff3d8b",
+"#e6e6e6",
+"#f1f1f1",
+"#f7f7f5"
+],
+"bytes": 32316,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/figma",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-framer",
+"name": "Framer",
+"region": "intl",
+"category": "developer",
+"desc": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident…",
+"colors": [
+"#ffffff",
+"#000000",
+"#0099ff",
+"#ff7a3d",
+"#999999",
+"#090909"
+],
+"bytes": 29119,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/framer",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-hashicorp",
+"name": "HashiCorp",
+"region": "intl",
+"category": "developer",
+"desc": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as…",
+"colors": [
+"#000000",
+"#ffffff",
+"#2b89ff",
+"#101a59",
+"#b2b6bd",
+"#656a76"
+],
+"bytes": 28023,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hashicorp",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-hp",
+"name": "HP",
+"region": "intl",
+"category": "hardware",
+"desc": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric…",
+"colors": [
+"#024ad8",
+"#296ef9",
+"#0e3191",
+"#c9e0fc",
+"#ffffff",
+"#1a1a1a"
+],
+"bytes": 36335,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hp",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-ibm",
+"name": "IBM",
+"region": "intl",
+"category": "hardware",
+"desc": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px.…",
+"colors": [
+"#0f62fe",
+"#ffffff",
+"#0043ce",
+"#002d9c",
+"#0050e6",
+"#161616"
+],
+"bytes": 26481,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ibm",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-intercom",
+"name": "Intercom",
+"region": "intl",
+"category": "design",
+"desc": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin…",
+"colors": [
+"#111111",
+"#ffffff",
+"#ff5600",
+"#fe4c02",
+"#65b5ff",
+"#0bdf50"
+],
+"bytes": 23278,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/intercom",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-jobright",
+"name": "Jobright",
+"region": "intl",
+"category": "commerce",
+"desc": "An analysis of Jobright's design language — an AI job-hunting platform built on an energetic spring-mint green against black and white, with pale-mint section bands carrying the page rhythm. Bold condensed Titillium Web…",
+"colors": [
+"#00f0a0",
+"#000000",
+"#ffffff",
+"#ecffe0",
+"#86909c",
+"#e5e7eb"
+],
+"bytes": 26861,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/jobright",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-kraken",
+"name": "Kraken",
+"region": "intl",
+"category": "finance",
+"desc": "",
+"colors": [
+"#7132f5",
+"#5741d8",
+"#5b1ecf",
+"#101114",
+"#149e61",
+"#686b82"
+],
+"bytes": 4350,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/kraken",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-lamborghini",
+"name": "Lamborghini",
+"region": "intl",
+"category": "mobility",
+"desc": "",
+"colors": [
+"#000000",
+"#ffc000",
+"#ffffff",
+"#917300",
+"#ffce3e",
+"#29abe2"
+],
+"bytes": 21119,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/lamborghini",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-linear-app",
+"name": "Linear",
+"region": "intl",
+"category": "developer",
+"desc": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the…",
+"colors": [
+"#5e6ad2",
+"#ffffff",
+"#828fff",
+"#5e69d1",
+"#7a7fad",
+"#f7f8f8"
+],
+"bytes": 24354,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/linear.app",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-lovable",
+"name": "Lovable",
+"region": "intl",
+"category": "ai",
+"desc": "",
+"colors": [
+"#f7f4ed",
+"#1c1c1c",
+"#eceae4",
+"#fcfbf8",
+"#5f5f5d",
+"#3b82f6"
+],
+"bytes": 17384,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/lovable",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-mastercard",
+"name": "Mastercard",
+"region": "intl",
+"category": "finance",
+"desc": "",
+"colors": [
+"#f3f0ee",
+"#141413",
+"#eb001b",
+"#f79e1b",
+"#cf4500",
+"#f37338"
+],
+"bytes": 26995,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mastercard",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-mercury",
+"name": "Mercury",
+"region": "intl",
+"category": "finance",
+"desc": "An analysis of Mercury's design language — a fintech system that moves between a deep ink-violet night world on the homepage and a pale, near-white light world on its product and pricing pages, held together by one…",
+"colors": [
+"#5266eb",
+"#ffffff",
+"#9cb4e8",
+"#fbfcfd",
+"#fbfbff",
+"#edecfb"
+],
+"bytes": 25065,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mercury",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-meta",
+"name": "Meta",
+"region": "intl",
+"category": "media",
+"desc": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed photographic…",
+"colors": [
+"#0064e0",
+"#0457cb",
+"#0091ff",
+"#ffffff",
+"#1876f2",
+"#a121ce"
+],
+"bytes": 37986,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/meta",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-minimax",
+"name": "MiniMax",
+"region": "intl",
+"category": "ai",
+"desc": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink,…",
+"colors": [
+"#0a0a0a",
+"#ffffff",
+"#181e25",
+"#ff5530",
+"#ea5ec1",
+"#1456f0"
+],
+"bytes": 37920,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/minimax",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-mintlify",
+"name": "Mintlify",
+"region": "intl",
+"category": "developer",
+"desc": "Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense developer-grade…",
+"colors": [
+"#0a0a0a",
+"#ffffff",
+"#00d4a4",
+"#00b48a",
+"#7cebcb",
+"#3772cf"
+],
+"bytes": 44083,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mintlify",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-miro",
+"name": "Miro",
+"region": "intl",
+"category": "design",
+"desc": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, broken open by…",
+"colors": [
+"#1c1c1e",
+"#ffffff",
+"#ffd02f",
+"#fcb900",
+"#4262ff",
+"#5b76fe"
+],
+"bytes": 36542,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/miro",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-mistral-ai",
+"name": "Mistral AI",
+"region": "intl",
+"category": "ai",
+"desc": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes every page. The…",
+"colors": [
+"#fa520f",
+"#cc3a05",
+"#ffffff",
+"#ffd06a",
+"#ffb83e",
+"#ffa110"
+],
+"bytes": 35508,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mistral.ai",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-mongodb",
+"name": "MongoDB",
+"region": "intl",
+"category": "developer",
+"desc": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is…",
+"colors": [
+"#00ed64",
+"#00b545",
+"#008c34",
+"#001e2b",
+"#00684a",
+"#00a35c"
+],
+"bytes": 32077,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mongodb",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-mydealz",
+"name": "mydealz",
+"region": "intl",
+"category": "commerce",
+"desc": "An analysis of mydealz's design language — a high-density German deals-community system built on a confident brand green, where a stacked white-card feed carries thousands of deals and every card wears the signature…",
+"colors": [
+"#30a83c",
+"#ffffff",
+"#197e25",
+"#defde4",
+"#ce1736",
+"#034eb1"
+],
+"bytes": 25797,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mydealz",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-nerdwallet",
+"name": "NerdWallet",
+"region": "intl",
+"category": "finance",
+"desc": "An analysis of NerdWallet's design language — a personal-finance comparison platform built almost entirely from one deep green and a ladder of mints beneath it. Editorial pages open on a green gradient band, then drop…",
+"colors": [
+"#008254",
+"#006642",
+"#ffffff",
+"#ddfa88",
+"#00482f",
+"#9ae600"
+],
+"bytes": 36240,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nerdwallet",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-nike",
+"name": "Nike",
+"region": "intl",
+"category": "commerce",
+"desc": "|",
+"colors": [
+"#111111",
+"#ffffff",
+"#ed1aa0",
+"#ffb0dd",
+"#beaffd",
+"#d6d1ff"
+],
+"bytes": 36697,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nike",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-nintendo-2001",
+"name": "Nintendo (2001)",
+"region": "intl",
+"category": "hardware",
+"desc": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold…",
+"colors": [
+"#e60012",
+"#a7282b",
+"#f68d1f",
+"#ecab37",
+"#e48600",
+"#7a8aba"
+],
+"bytes": 38977,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nintendo-2001",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-notion",
+"name": "Notion",
+"region": "intl",
+"category": "design",
+"desc": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire…",
+"colors": [
+"#5645d4",
+"#4534b3",
+"#3a2a99",
+"#ffffff",
+"#0a1530",
+"#070f24"
+],
+"bytes": 35176,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/notion",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-nvidia",
+"name": "NVIDIA",
+"region": "intl",
+"category": "hardware",
+"desc": "|",
+"colors": [
+"#76b900",
+"#000000",
+"#5a8d00",
+"#0046a4",
+"#feeeb2",
+"#952fc6"
+],
+"bytes": 35591,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nvidia",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-ollama",
+"name": "Ollama",
+"region": "intl",
+"category": "ai",
+"desc": "|",
+"colors": [
+"#000000",
+"#ffffff",
+"#ff5f56",
+"#27c93f",
+"#090909",
+"#525252"
+],
+"bytes": 32747,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ollama",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-opencode-ai",
+"name": "OpenCode",
+"region": "intl",
+"category": "ai",
+"desc": "|",
+"colors": [
+"#201d1d",
+"#fdfcfc",
+"#007aff",
+"#0056b3",
+"#004085",
+"#0f0000"
+],
+"bytes": 32647,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/opencode.ai",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-oracle",
+"name": "Oracle",
+"region": "intl",
+"category": "hardware",
+"desc": "An analysis of Oracle's design language — an enterprise system built on a warm neutral ladder rather than a colour palette. Six numbered greys carry almost every surface, a single dark charcoal carries every action, and…",
+"colors": [
+"#312d2a",
+"#47423e",
+"#ffffff",
+"#c74634",
+"#f0cc71",
+"#f7e0a1"
+],
+"bytes": 42525,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/oracle",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-oura",
+"name": "Oura",
+"region": "intl",
+"category": "hardware",
+"desc": "An analysis of Oura's design language — a warm-paper wellness system that pairs a high-contrast Editorial serif with a quiet grotesque sans, wraps every surface in a cream-and-earth palette drawn from mustard, clay and…",
+"colors": [
+"#2a72de",
+"#ffffff",
+"#4a4741",
+"#6b443d",
+"#39221e",
+"#af751b"
+],
+"bytes": 31798,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/oura",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-pinterest",
+"name": "Pinterest",
+"region": "intl",
+"category": "commerce",
+"desc": "|",
+"colors": [
+"#e60023",
+"#ffffff",
+"#cc001f",
+"#617bff",
+"#7e238b",
+"#6845ab"
+],
+"bytes": 36392,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/pinterest",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-playstation",
+"name": "PlayStation",
+"region": "intl",
+"category": "hardware",
+"desc": "|",
+"colors": [
+"#0070d1",
+"#0064b7",
+"#004d8d",
+"#ffffff",
+"#53b1ff",
+"#d53b00"
+],
+"bytes": 39766,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/playstation",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-posthog",
+"name": "PostHog",
+"region": "intl",
+"category": "developer",
+"desc": "|",
+"colors": [
+"#f7a501",
+"#dd9001",
+"#b17816",
+"#23251d",
+"#1d4ed8",
+"#2c84e0"
+],
+"bytes": 40498,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/posthog",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-raycast",
+"name": "Raycast",
+"region": "intl",
+"category": "developer",
+"desc": "|",
+"colors": [
+"#ffffff",
+"#e8e8e8",
+"#000000",
+"#57c1ff",
+"#ff6161",
+"#59d499"
+],
+"bytes": 41275,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/raycast",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-renault",
+"name": "Renault",
+"region": "intl",
+"category": "mobility",
+"desc": "|",
+"colors": [
+"#ffed00",
+"#e6d200",
+"#000000",
+"#222222",
+"#333333",
+"#666666"
+],
+"bytes": 30076,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/renault",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-replicate",
+"name": "Replicate",
+"region": "intl",
+"category": "ai",
+"desc": "|",
+"colors": [
+"#ea2804",
+"#c01f00",
+"#ffffff",
+"#202020",
+"#3a3a3a",
+"#575757"
+],
+"bytes": 31495,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/replicate",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-resend",
+"name": "Resend",
+"region": "intl",
+"category": "developer",
+"desc": "|",
+"colors": [
+"#fcfdff",
+"#000000",
+"#ff801f",
+"#ffc53d",
+"#3b9eff",
+"#11ff99"
+],
+"bytes": 31461,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/resend",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-revolut",
+"name": "Revolut",
+"region": "intl",
+"category": "finance",
+"desc": "|",
+"colors": [
+"#494fdf",
+"#4f55f1",
+"#3a40c4",
+"#ffffff",
+"#00a87e",
+"#376cd5"
+],
+"bytes": 32034,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/revolut",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-runwayml",
+"name": "Runway",
+"region": "intl",
+"category": "ai",
+"desc": "",
+"colors": [
+"#767d88",
+"#7d848e",
+"#000000",
+"#030303",
+"#1a1a1a",
+"#ffffff"
+],
+"bytes": 14353,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/runwayml",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-sanity",
+"name": "Sanity",
+"region": "intl",
+"category": "developer",
+"desc": "",
+"colors": [
+"#0b0b0b",
+"#212121",
+"#353535",
+"#797979",
+"#b9b9b9",
+"#ededed"
+],
+"bytes": 21231,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sanity",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-sap",
+"name": "SAP",
+"region": "intl",
+"category": "hardware",
+"desc": "An analysis of SAP's design language — an enterprise system that keeps almost everything on white and spends its structure on two greys and one blue. The chrome is deliberately quiet, a 60px light-grey bar over a…",
+"colors": [
+"#0057d2",
+"#0040b0",
+"#ffffff",
+"#ebf8ff",
+"#022879",
+"#6bc0ff"
+],
+"bytes": 33615,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sap",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-sentry",
+"name": "Sentry",
+"region": "intl",
+"category": "developer",
+"desc": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality. The system pairs…",
+"colors": [
+"#150f23",
+"#ffffff",
+"#c2ef4e",
+"#fa7faa",
+"#6a5fc1",
+"#422082"
+],
+"bytes": 35444,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sentry",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-shopify",
+"name": "Shopify",
+"region": "intl",
+"category": "commerce",
+"desc": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks. The marketing-hero and product-narrative pages live on near-black canvases with full-bleed…",
+"colors": [
+"#000000",
+"#ffffff",
+"#0a0a0a",
+"#fbfbf5",
+"#1e2c31",
+"#d4d4d8"
+],
+"bytes": 27067,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/shopify",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-slack",
+"name": "Slack",
+"region": "intl",
+"category": "design",
+"desc": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary…",
+"colors": [
+"#4a154b",
+"#481a54",
+"#611f69",
+"#592466",
+"#ffffff",
+"#1264a3"
+],
+"bytes": 24529,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/slack",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-spacex",
+"name": "SpaceX",
+"region": "intl",
+"category": "mobility",
+"desc": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN…",
+"colors": [
+"#000000",
+"#ffffff",
+"#f0f0fa",
+"#0000ee",
+"#0a0a0a",
+"#3a3a3f"
+],
+"bytes": 19679,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/spacex",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-spotify",
+"name": "Spotify",
+"region": "intl",
+"category": "media",
+"desc": "",
+"colors": [
+"#121212",
+"#181818",
+"#1f1f1f",
+"#1ed760",
+"#f3727f",
+"#ffa42b"
+],
+"bytes": 12955,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/spotify",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-starbucks",
+"name": "Starbucks",
+"region": "intl",
+"category": "commerce",
+"desc": "",
+"colors": [
+"#f2f0eb",
+"#edebe9",
+"#006241",
+"#cba258",
+"#00754a",
+"#1e3932"
+],
+"bytes": 37329,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/starbucks",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-stripe",
+"name": "Stripe",
+"region": "intl",
+"category": "finance",
+"desc": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of…",
+"colors": [
+"#533afd",
+"#4434d4",
+"#2e2b8c",
+"#665efd",
+"#b9b9f9",
+"#1c1e54"
+],
+"bytes": 24606,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/stripe",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-supabase",
+"name": "Supabase",
+"region": "intl",
+"category": "developer",
+"desc": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier,…",
+"colors": [
+"#3ecf8e",
+"#24b47e",
+"#4ade80",
+"#6b01c2",
+"#644fc1",
+"#eddbf9"
+],
+"bytes": 21315,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/supabase",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-superhuman",
+"name": "Superhuman",
+"region": "intl",
+"category": "design",
+"desc": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a…",
+"colors": [
+"#1b1938",
+"#0e0c1f",
+"#ffffff",
+"#292827",
+"#73706d",
+"#9a9794"
+],
+"bytes": 21877,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/superhuman",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-tesla",
+"name": "Tesla",
+"region": "intl",
+"category": "mobility",
+"desc": "",
+"colors": [
+"#3e6ae1",
+"#ffffff",
+"#f4f4f4",
+"#171a20",
+"#393c41",
+"#5c5e62"
+],
+"bytes": 22212,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/tesla",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-theverge",
+"name": "The Verge",
+"region": "intl",
+"category": "media",
+"desc": "",
+"colors": [
+"#131313",
+"#3cffd0",
+"#5200ff",
+"#ffffff",
+"#2d2d2d",
+"#309875"
+],
+"bytes": 28368,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/theverge",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-together-ai",
+"name": "Together AI",
+"region": "intl",
+"category": "ai",
+"desc": "An inspired interpretation of Together AI's design language — an AI infrastructure platform whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradient as the single…",
+"colors": [
+"#000000",
+"#ffffff",
+"#fc4c02",
+"#ef2cc1",
+"#bdbbff",
+"#c8f6f9"
+],
+"bytes": 38343,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/together.ai",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-uber",
+"name": "Uber",
+"region": "intl",
+"category": "commerce",
+"desc": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by a single signature…",
+"colors": [
+"#000000",
+"#ffffff",
+"#5e5e5e",
+"#afafaf",
+"#4b4b4b",
+"#efefef"
+],
+"bytes": 34760,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/uber",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-vercel",
+"name": "Vercel",
+"region": "intl",
+"category": "developer",
+"desc": "An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradient (cyan / blue /…",
+"colors": [
+"#171717",
+"#ffffff",
+"#4d4d4d",
+"#888888",
+"#ebebeb",
+"#a1a1a1"
+],
+"bytes": 41405,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/vercel",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-vodafone",
+"name": "Vodafone",
+"region": "intl",
+"category": "hardware",
+"desc": "An inspired interpretation of Vodafone's design language — a telecom super-brand whose web surface alternates between editorial photography hero bands with massive uppercase display headlines and clean white content…",
+"colors": [
+"#e60000",
+"#ffffff",
+"#25282b",
+"#7e7e7e",
+"#bebebe",
+"#f2f2f2"
+],
+"bytes": 28106,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/vodafone",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-voltagent",
+"name": "VoltAgent",
+"region": "intl",
+"category": "ai",
+"desc": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green brand accent,…",
+"colors": [
+"#00d992",
+"#2fd6a1",
+"#10b981",
+"#101010",
+"#f2f2f2",
+"#ffffff"
+],
+"bytes": 25915,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/voltagent",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-warp",
+"name": "Warp",
+"region": "intl",
+"category": "developer",
+"desc": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only by clean Inter…",
+"colors": [
+"#f7f5f0",
+"#2b2622",
+"#c9c0ad",
+"#dad2c1",
+"#aea69c",
+"#383330"
+],
+"bytes": 24438,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/warp",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-webflow",
+"name": "Webflow",
+"region": "intl",
+"category": "developer",
+"desc": "An inspired interpretation of Webflow's design language — a visual web development platform whose surface contrasts a deep near-black `#080808` primary against a generous white canvas, broken by a five-stop chromatic…",
+"colors": [
+"#080808",
+"#ffffff",
+"#7a3dff",
+"#ed52cb",
+"#3b89ff",
+"#006acc"
+],
+"bytes": 28179,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/webflow",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-wired",
+"name": "Wired",
+"region": "intl",
+"category": "media",
+"desc": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display…",
+"colors": [
+"#000000",
+"#ffffff",
+"#1a1a1a",
+"#757575",
+"#e0e0e0",
+"#f5f5f5"
+],
+"bytes": 23661,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wired",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-wise",
+"name": "Wise",
+"region": "intl",
+"category": "finance",
+"desc": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent,…",
+"colors": [
+"#9fe870",
+"#0e0f0c",
+"#cdffad",
+"#c5edab",
+"#e2f6d5",
+"#ffc091"
+],
+"bytes": 24586,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wise",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-x-ai",
+"name": "xAI",
+"region": "intl",
+"category": "ai",
+"desc": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a…",
+"colors": [
+"#ffffff",
+"#0a0a0a",
+"#ff7a17",
+"#ffc285",
+"#7c3aed",
+"#c4b5fd"
+],
+"bytes": 21781,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/x.ai",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "en-zapier",
+"name": "Zapier",
+"region": "intl",
+"category": "developer",
+"desc": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (`#fffefb` canvas, `#f8f4f0` soft cream) with deep coffee ink (`#201515`) and a single…",
+"colors": [
+"#ff4f00",
+"#fffefb",
+"#201515",
+"#2f2a26",
+"#36342e",
+"#605d52"
+],
+"bytes": 22995,
+"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/zapier",
+"license": "MIT · VoltAgent/awesome-design-md"
+},
+{
+"slug": "ko-11st",
+"name": "11번가",
+"region": "ko",
+"category": "commerce",
+"desc": "11번가(11STREET)는 SK Group 계열사가 운영하는 모바일 우선의 종합 이커머스 마켓플레이스이며, 디자인 시스템의 목적은 \"고객에게 효율적인 커뮤니케이션과 일관되고 통일된 디자인으로 서비스 경험을 제공\"하는 데 있다. 브랜드 가치는 Tech…",
+"colors": [
+"#ff5a2e",
+"#ff0038",
+"#ff00ef",
+"#cc002d",
+"#ffebef",
+"#000000"
+],
+"bytes": 28910,
+"updated": "2026-08-02",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/11st.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-baemin",
+"name": "배달의민족",
+"region": "ko",
+"category": "delivery",
+"desc": "배달의민족(배민)은 우아한형제들이 2010년부터 운영해 온 한국 점유율 1위 음식·생필품 배달 슈퍼앱이며, 디자이너 출신 김봉진 의장이 창업했다. 모회사·연혁은 우아한형제들 공식 사이트가 근거다. 음식배달을 주력으로 한그릇(최소주문금액 없는 1인분)·…",
+"colors": [
+"#0cefd3",
+"#5ebebb",
+"#2ac1bc"
+],
+"bytes": 62720,
+"updated": "2026-10-25",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/baemin.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-banksalad",
+"name": "뱅크샐러드",
+"region": "ko",
+"category": "finance",
+"desc": "뱅크샐러드는 (주)뱅크샐러드가 운영하는 자산관리·금융상품 비교 서비스로, App Store 카테고리는 금융이고 부제는 「금융을 넘어 건강 자산까지」다. 웹 GNB 가 카드·대출·예적금에서 무료 건강 검사·건강 보험·자동차보험·머니피드까지 일곱 라벨을 …",
+"colors": [
+"#01110b",
+"#012216",
+"#02442b",
+"#04764c",
+"#06a96c",
+"#1fb27b"
+],
+"bytes": 71347,
+"updated": "2026-10-27",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/banksalad.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-bezier",
+"name": "채널톡",
+"region": "ko",
+"category": "developer",
+"desc": "Bezier는 채널톡의 사내 제품 UI를 외부에 그대로 공개한 드문 한국발 풀 디자인 시스템이다 — 라이선스는 Apache-2.0(© Channel Corp.)이며, 컴포넌트 59 + foundation 3 + utility(ReadMe·Changel…",
+"colors": [
+"#6b6eff",
+"#8082ff",
+"#242428",
+"#1d1d20"
+],
+"bytes": 46833,
+"updated": "2026-10-29",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/bezier.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-class101",
+"name": "클래스101",
+"region": "ko",
+"category": "education",
+"desc": "클래스101은 취미부터 커리어까지 25개 카테고리의 온라인 클래스를 다루는 플랫폼으로, 2022년 8월 말 \"클래스101+\"라는 이름의 월 구독 모델(25개 카테고리 무제한 수강)로 전환했다. 영문 사이트가 CLASS101+ 브랜드로 운영되는 글로벌 …",
+"colors": [
+"#ff5d00",
+"#ffffff",
+"#fcf5f1",
+"#376dfa",
+"#f3f3fc",
+"#e30f32"
+],
+"bytes": 41610,
+"updated": "2026-10-29",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/class101.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-codeit",
+"name": "코드잇",
+"region": "ko",
+"category": "education",
+"desc": "코드잇은 프로그래밍 교육 서비스이며, design.codeit.com은 그 공개 디자인 시스템 사이트다(Framer 호스팅, 전 문서 한국어). 슬로건은 \"배움의 기쁨을 세상 모두에게\"이며, 시스템 자체를 \"'배움의 기쁨'을 일관되게 전하기 위한 약속…",
+"colors": [
+"#6500c3",
+"#ffffff",
+"#333236",
+"#20a7b1",
+"#080c14",
+"#d6173a"
+],
+"bytes": 64302,
+"updated": "2026-10-29",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/codeit.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-gmarket",
+"name": "지마켓",
+"region": "ko",
+"category": "commerce",
+"desc": "Gmarket Design System(GDS)은 지마켓(G마켓)의 디자인 시스템이며, 브랜드명(지마켓 / Gmarket)과 디자인 시스템명은 별개의 이름이다. 지마켓은 한국의 오픈마켓형 이커머스 서비스로, 고객과 상품·고객과 고객을 연결하는 쇼핑 경…",
+"colors": [
+"#00c400",
+"#00c01e",
+"#0028ac",
+"#067dfd",
+"#0231a6",
+"#ffffff"
+],
+"bytes": 45075,
+"updated": "2026-10-29",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/gmarket.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-greeting",
+"name": "그리팅",
+"region": "ko",
+"category": "career",
+"desc": "그리팅은 기업의 채용 담당자가 하루 여덟 시간 붙들고 있는 채용 관리 SaaS이고, 면접 진행 상태를 색 토큰으로 못 박아 도메인을 팔레트 층까지 끌어내린 흰 바탕·헤어라인의 업무 도구다. 사용자는 소비자가 아니라 기업의 채용 담당자이며, 제품은 가이…",
+"colors": [
+"#ffffff",
+"#fafafa",
+"#f5f5f5",
+"#f0f0f0",
+"#d9d9d9",
+"#bfbfbf"
+],
+"bytes": 61777,
+"updated": "2026-10-29",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/greeting.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-gs-retail",
+"name": "우리동네GS",
+"region": "ko",
+"category": "commerce",
+"desc": "우리동네GS는 GS25·GS더프레시·와인25플러스를 한 앱에 모은 GS리테일의 O4O 앱이고, 흰 바탕 카드 위에 청록 브랜드면과 근접 검정 CTA 를 짝지어 쓰는 것이 시각 시그니처다. 2022년 10월 11일 출시하면서 흩어져 있던 GS25 '나만…",
+"colors": [
+"#1e2530",
+"#00d4ea",
+"#ffffff",
+"#f4f5fb",
+"#d6d9e1",
+"#c0c4cd"
+],
+"bytes": 37499,
+"updated": "2026-09-02",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/gs-retail.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-gs-shop",
+"name": "GS SHOP",
+"region": "ko",
+"category": "commerce",
+"desc": "GS SHOP은 TV 편성표와 모바일 라이브가 한 앱에 공존하는 홈쇼핑 커머스로, 2025년 BI 리뉴얼 뒤 계정 동선은 다이내믹 블루가, 구매 동선은 브라이트 핑크가 맡는 2색 대비 위에 서 있다.",
+"colors": [
+"#0f78ff",
+"#2c8afc",
+"#ecf4fe",
+"#ff2f93",
+"#ff63b5",
+"#fef1f8"
+],
+"bytes": 49443,
+"updated": "2026-09-03",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/gs-shop.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-krds",
+"name": "KRDS",
+"region": "ko",
+"category": "gov",
+"desc": "KRDS는 중앙행정기관·공공기관·지방자치단체가 공유하는 단일 시각 언어로, 신뢰·안정·접근성을 핵심 정서로 삼는다. 톤은 \"informational, neutral and respectful — not marketing\" — 정보 전달과 절차 안내가 …",
+"colors": [
+"#fafafa",
+"#f4f5f6",
+"#e6e8ea",
+"#cdd1d5",
+"#b1b8be",
+"#8a949e"
+],
+"bytes": 38793,
+"updated": "2026-08-17",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/krds.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-kyobobook",
+"name": "교보문고",
+"region": "ko",
+"category": "commerce",
+"desc": "Kyobo Design System(KDS)은 교보문고의 디자인 시스템이며, 브랜드명(교보문고 / KYOBO Book Centre)과 디자인 시스템명은 별개의 이름이다. 교보문고는 1980년 설립된 한국 최대 서점 체인으로, 오프라인 서점·온라인 서점…",
+"colors": [
+"#003477",
+"#45b035",
+"#5055b1",
+"#3f4391",
+"#2d3068",
+"#4dac27"
+],
+"bytes": 31439,
+"updated": "2026-08-22",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/kyobobook.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-lg-electronics",
+"name": "LG전자",
+"region": "ko",
+"category": "etc",
+"desc": "LG전자는 에너지의 Active Red와 로고를 받치는 Heritage Red, 두 빨강을 Warm Grey·흰색·검정의 중립 위에 올리고, 제품의 둥근 형태에서 온 EI 폼과 자체 서체 LG EI로 \"기술에 미소를 담는\" Emotionally Int…",
+"colors": [
+"#fd312e",
+"#a50034",
+"#f0ece4",
+"#ffffff",
+"#000000",
+"#ea1917"
+],
+"bytes": 65297,
+"updated": "2026-10-05",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/lg-electronics.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-likelion",
+"name": "멋쟁이사자처럼",
+"region": "ko",
+"category": "education",
+"desc": "멋쟁이사자처럼은 코딩 교육 커뮤니티이자 취업·전직 부트캠프 브랜드다. 채도 높은 시그니처 오렌지 oklch(0.69 0.209 42)(#FF6000)와 쿨톤 그레이 뉴트럴을 맞세워 에너지 넘치는 색 인상을 만들고, 부담을 낮추는 격려형 어조로 친근함을…",
+"colors": [
+"#ffefe5",
+"#ffdfcc",
+"#ffbf99",
+"#ffa066",
+"#ff8033",
+"#ff6000"
+],
+"bytes": 21710,
+"updated": "2026-08-30",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/likelion.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-line-design-system",
+"name": "라인",
+"region": "ko",
+"category": "messenger",
+"desc": "라인의 디자인 시스템은 두 갈래로 나뉜다. LDSM(LINE Design System for Messenger)은 라인 메신저 본체의 시스템이고, LDSG(LINE Design System for Global Family Service)는 LY Cor…",
+"colors": [
+"#06c755",
+"#000000",
+"#e4e4e4",
+"#2a2a2a",
+"#fcfcfc",
+"#f5f5f5"
+],
+"bytes": 58843,
+"updated": "2026-08-02",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/line-design-system.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-nol",
+"name": "NOL",
+"region": "ko",
+"category": "travel",
+"desc": "NOL은 흰 바탕 위에 채도 높은 파랑을 예약·선택·포커스에만 아껴 쓰고, 숙소와 공연 사진을 둥근 모서리로 크게 잘라 화면의 주인공으로 세우는 여행·여가 플랫폼이다.",
+"colors": [
+"#3549ff",
+"#000000",
+"#ffffff",
+"#5085ff",
+"#4154ff",
+"#2432ad"
+],
+"bytes": 57627,
+"updated": "2026-10-12",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/nol.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-remember",
+"name": "리멤버",
+"region": "ko",
+"category": "career",
+"desc": "리멤버는 명함관리 앱에서 출발해 경력채용과 커뮤니티까지 끌어안은 직장인 플랫폼이며, 검정으로 덮은 무채색 화면 위에 오렌지 한 점만 남기는 절제가 그 시각적 서명이다.",
+"colors": [
+"#000000",
+"#ffffff",
+"#ff6a0d",
+"#424242",
+"#808080",
+"#bdbdbd"
+],
+"bytes": 39815,
+"updated": "2026-09-21",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/remember.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-ridi",
+"name": "리디",
+"region": "ko",
+"category": "content",
+"desc": "리디는 흰 바탕과 차가운 무채색 회색 위에 하늘색 리디 블루 oklch(0.683 0.176 248.3) 한 점으로 현재 탭·선택 알약·구매 버튼을 표시하고, 표지·카드는 4px 모서리로 정돈해 표지와 일러스트가 화면을 채우게 둔 웹툰·웹소설·전자책 …",
+"colors": [
+"#fafafa",
+"#f5f5f5",
+"#e6e6e6",
+"#cccccc",
+"#a5a5a5",
+"#787878"
+],
+"bytes": 89078,
+"updated": "2026-10-20",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/ridi.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-samsung-one-ui",
+"name": "삼성 One UI",
+"region": "ko",
+"category": "developer",
+"desc": "One UI의 목표는 폰·태블릿·워치·이어버드·PC 어느 디바이스에서나 \"즐겁고 편안한(joyful and comfortable)\" 경험을 만드는 것이다. 삼성 디자인 포털은 같은 지향을 \"여러 디바이스를 연결해 심리스한 경험을 제공하고, 단순함으로 …",
+"colors": [
+"#0381fe",
+"#0072de",
+"#3e91ff",
+"#fafafa",
+"#000000",
+"#080808"
+],
+"bytes": 46444,
+"updated": "2026-09-14",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/samsung-one-ui.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-seed-design",
+"name": "당근",
+"region": "ko",
+"category": "community",
+"desc": "당근은 주황 하나를 브랜드 축으로 붙들고, 사용자 신뢰를 10단계 온도 램프로 색칠해 UI 안에 박아 넣은 디자인 언어를 쓴다. SEED는 그 언어를 \"당근 제품을 위한 통합 디자인 언어\"로 정의하며, 디자인과 코드가 하나의 소스를 바라보게 만들어 누…",
+"colors": [
+"#ffffff",
+"#f7f8f9",
+"#f3f4f5",
+"#eeeff1",
+"#dcdee3",
+"#d1d3d8"
+],
+"bytes": 81253,
+"updated": "2026-09-29",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/seed-design.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-socar",
+"name": "쏘카",
+"region": "ko",
+"category": "mobility",
+"desc": "SOCAR Frame 2.0(쏘카프레임 2.0)는 쏘카의 디자인 시스템이며, 브랜드명(쏘카 / SOCAR)과 디자인 시스템명은 별개의 이름이다. 쏘카는 한국 최대 카셰어링 서비스이며, 전국의 쏘카존(공용 차량 거점)을 기반으로 단기·왕복 차량 대여를 …",
+"colors": [
+"#0078ff",
+"#0069ff",
+"#0052e0",
+"#0033a9",
+"#ebf5ff",
+"#d6ebff"
+],
+"bytes": 50276,
+"updated": "2026-08-22",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/socar.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-teamsparta",
+"name": "팀스파르타",
+"region": "ko",
+"category": "education",
+"desc": "스파르타클럽은 팀스파르타의 통합 소비자 브랜드로, 내일배움캠프, AI 입문/실무 강의, 재직자 캠프, 기업교육을 한 학습 여정 안에 묶는다. 디자인 시스템의 기준 surface는 마케팅 페이지가 아니라 수강생과 운영자가 쓰는 인증 대시보드이며, cat…",
+"colors": [
+"#fa0030",
+"#d80028",
+"#f94015",
+"#003cdc"
+],
+"bytes": 22708,
+"updated": "2026-09-24",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/teamsparta.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-toss",
+"name": "토스",
+"region": "ko",
+"category": "finance",
+"desc": "토스는 자신을 \"은행에 다니는 유능한 친구\" 로 포지셔닝한다 — 조용히 일을 처리하고, 사용자의 시간을 낭비시키지 않는다는 어조다. 슬로건과 카피 곳곳에 \"투자, 모두가 할 수 있도록\", \"수수료 걱정 없이\"와 같이 진입 장벽을 제거하는 메시지가 반복…",
+"colors": [
+"#3182f6",
+"#e8f3ff",
+"#191f28",
+"#333d4b",
+"#4e5968",
+"#6b7684"
+],
+"bytes": 61914,
+"updated": "2026-09-24",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/toss.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-vapor-ui",
+"name": "구름",
+"region": "ko",
+"category": "developer",
+"desc": "Vapor는 시스템 자체의 정체성을 opinionated, light-first, very token-driven, proudly Korean-bilingual 로 정의한다. opinionated는 디자인 결정이 토큰 레벨에서 강하게 박혀 있다는 뜻이…",
+"colors": [
+"#f7f7f7",
+"#e1e1e1",
+"#c6c6c6",
+"#a3a3a3",
+"#959595",
+"#767676"
+],
+"bytes": 70999,
+"updated": "2026-09-08",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/vapor-ui.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-wanted",
+"name": "원티드",
+"region": "ko",
+"category": "career",
+"desc": "원티드는 한국 디자인-엔지니어링 씬에서 정밀 스케일 토큰 시스템 + 자체 브랜드 서체 + 시그너처 그라디언트 로고의 조합으로 알려진다. 공식 문서는 이 시스템을 몽타주(Montage)로 명명하고 Extensibility·Consistency·Effic…",
+"colors": [
+"#0066ff",
+"#ff53c0",
+"#ff5e00",
+"#feecec",
+"#d9ffe6",
+"#fef4e6"
+],
+"bytes": 93626,
+"updated": "2026-10-27",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/wanted.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-yeogi",
+"name": "여기어때",
+"region": "ko",
+"category": "travel",
+"desc": "여기어때는 GC COMPANY가 운영하는 여행·숙박 플랫폼이고, 그 디자인 시스템 YDS는 지도 위 가격 마커와 활기찬 Lively red를 시그니처로 삼는다. Design Library는 컴포넌트 라이브러리가 아니라 디자인 시스템 + 비주얼 시스템 …",
+"colors": [
+"#f7323f",
+"#000000",
+"#ffffff",
+"#fff5f5",
+"#ffedea",
+"#fedfde"
+],
+"bytes": 69243,
+"updated": "2026-08-02",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/yeogi.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+},
+{
+"slug": "ko-zigbang",
+"name": "직방",
+"region": "ko",
+"category": "etc",
+"desc": "직방 ZUIX는 순흑 대신 짙은 회색 잉크로 짠 무채색 램프 위에 따뜻한 오렌지 한 색만 강조로 올리고, 4px 안팎의 작은 모서리와 Pretendard로 조밀한 모바일 화면을 짜는 부동산 플랫폼의 공통 컴포넌트 언어다.",
+"colors": [
+"#1a1a1a",
+"#4d4d4d",
+"#666666",
+"#808080",
+"#b3b3b3",
+"#cccccc"
+],
+"bytes": 57487,
+"updated": "2026-10-25",
+"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/zigbang.md",
+"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+}
+]
+}

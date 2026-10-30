@@ -40,3 +40,11 @@ sylvialab.kr은 GitHub Pages로 `sylviagithubhj/sylvia-site` 저장소에서 나
 
 - 기수 날짜, 가격, 남은 자리, 후기 문장 (사이트에서는 숨겨 둠)
 - 1:1 자문 바의 메시지 아이콘은 지금 이메일로 연결됨. 카카오톡 채널이 생기면 링크 교체
+
+## 2026-10-31 추가: DESIGN.md 모음 (`/design-md/`)
+
+- `sylvialab-website/design-md/` 폴더를 그대로 `sylvia-site`의 `design-md/`로 복사하면 https://sylvialab.kr/design-md/ 로 열려요.
+- 목록(index.html) · 상세(detail.html#<slug>) · catalog.json · md/ 111개 파일.
+- 출처: 해외 84개 VoltAgent/awesome-design-md (MIT), 국내 27개 CaesiumY/ko-design-md (CC BY 4.0, 출처 표기 필수, 로고는 가져오지 않음).
+- 전 페이지 상단 메뉴·모바일 메뉴·푸터에 "DESIGN.md" 링크를 넣었어요. sylvia-site에는 Claude Code가 넣은 파비콘·JSON-LD가 있으니, html 파일을 통째로 덮지 말고 이 링크 세 줄만 옮겨 주세요.
+- 다시 만들 때: 두 저장소를 받아 `scripts/build_design_md.py`를 실행.

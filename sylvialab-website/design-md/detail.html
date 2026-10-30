@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DESIGN.md · SylviaLab</title>
+<meta name="theme-color" content="#0b0c0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap">
+<a class="logo" href="./"><svg width="14" height="10" viewBox="0 0 14 10" aria-hidden="true"><rect width="6" height="10" rx="2" fill="#fff"/><rect x="8" width="6" height="10" rx="2" fill="#6798ff"/></svg>DESIGN.md <small>by SylviaLab</small></a>
+<nav aria-label="바로가기"><a class="pill" href="./">전체 목록</a><a class="pill" href="../">sylvialab.kr</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="crumb"><a href="./">DESIGN.md 모음</a> / <span id="c-name">…</span></div>
+<section class="dhead">
+<div class="top"><span class="tag" id="d-region"></span><span class="tag" id="d-cat"></span><span class="size" id="d-size"></span></div>
+<h1 id="d-name">불러오는 중…</h1>
+<p class="desc" id="d-desc"></p>
+<div class="palette" id="d-pal" aria-label="주요 색상 · 누르면 HEX 복사"></div>
+<div class="actions">
+<button class="btn primary" id="b-copy" type="button">DESIGN.md 전체 복사</button>
+<a class="btn" id="b-dl" download>.md 내려받기</a>
+<a class="btn" id="b-src" rel="noopener" target="_blank">원본 보기</a>
+</div>
+</section>
+
+<div class="tabs" role="tablist" aria-label="보기 방식">
+<button role="tab" id="t-doc" aria-selected="true" aria-controls="p-doc">문서</button>
+<button role="tab" id="t-raw" aria-selected="false" aria-controls="p-raw">원문 (.md)</button>
+</div>
+<div class="reader">
+<div id="p-doc" role="tabpanel" aria-labelledby="t-doc" class="doc"></div>
+<pre id="p-raw" role="tabpanel" aria-labelledby="t-raw" class="raw" hidden></pre>
+<nav class="toc" id="toc" aria-label="목차"></nav>
+</div>
+<div class="license" id="d-lic"></div>
+
+<footer class="foot">
+<p>서비스 이름은 식별을 위해서만 쓰며, SylviaLab은 어느 브랜드와도 제휴하지 않았어요. 정정이나 삭제 요청은 heejuk@mail.hongik.ac.kr 로 보내 주세요.</p>
+<p>© 2026 SylviaLab</p>
+</footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script src="detail.js"></script>
+</body>
+</html>
