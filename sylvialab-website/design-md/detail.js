@@ -31,11 +31,7 @@
     $('#b-dl').href = 'md/' + it.slug + '.md';
     $('#b-dl').setAttribute('download', it.slug.replace(/^(ko|en)-/, '') + '-DESIGN.md');
     $('#b-src').href = it.source;
-    $('#d-lic').innerHTML = '출처 · <a href="' + esc(it.source) + '" rel="noopener" target="_blank">' + esc(it.license) + '</a>. ' +
-      (it.region === 'ko'
-        ? '원 저작물을 그대로 옮겼고, 로고 주소 한 줄만 뺐어요. CC BY 4.0에 따라 다시 쓸 때도 출처를 남겨 주세요.'
-        : '원 저작물을 그대로 옮겼어요. MIT 라이선스예요.') +
-      ' 서비스 이름과 브랜드는 각 권리자의 것이에요.';
+    $('#d-credit').innerHTML = '원본 · <a href="' + esc(it.source) + '" rel="noopener" target="_blank">' + esc(it.license) + '</a>';
 
     fetch('md/' + it.slug + '.md').then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (t) {
       text = t;
