@@ -34,7 +34,7 @@ CAT_INTL={
  'hardware':'apple dell-1996 dji hp ibm nintendo-2001 nvidia oracle oura playstation sap vodafone',
  'mobility':'bmw bmw-m bugatti ferrari lamborghini renault spacex tesla'}
 cat_of={s:k for k,v in CAT_INTL.items() for s in v.split()}
-CAT_LABEL={'ai':'AI','developer':'개발자 도구','design':'협업·생산성','finance':'금융·결제','commerce':'커머스·서비스','media':'미디어·콘텐츠','hardware':'하드웨어·테크','mobility':'모빌리티','career':'커리어','community':'커뮤니티','content':'콘텐츠','delivery':'배달','education':'교육','etc':'기타','gov':'공공','messenger':'메신저','travel':'여행'}
+CAT_LABEL={'ai':'AI','developer':'개발자 도구','design':'협업·생산성','finance':'금융·결제','commerce':'커머스·서비스','media':'미디어·콘텐츠','hardware':'하드웨어·테크','portal':'포털','proptech':'부동산','device':'기기·OS','mobility':'모빌리티','career':'커리어','community':'커뮤니티','content':'콘텐츠','delivery':'배달','education':'교육','etc':'기타','gov':'공공','messenger':'메신저','travel':'여행'}
 items=[]
 d=SRC+'/awesome-design-md/design-md'
 for s in sorted(os.listdir(d)):
@@ -47,18 +47,26 @@ for s in sorted(os.listdir(d)):
     items.append({'slug':slug,'name':INTL_NAMES.get(s,s.replace('-',' ').title()),'region':'intl','category':cat_of.get(s,'etc'),
       'desc':desc[:220].rsplit(' ',1)[0]+('…' if len(desc)>220 else ''),'colors':pick(colors(fm)) or scan(t),'bytes':len(t.encode()),
       'source':f'https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/{s}','license':'MIT · VoltAgent/awesome-design-md'})
-d=SRC+'/ko-design-md/services'
-for fn in sorted(os.listdir(d)):
-    if not fn.endswith('.md'): continue
-    t=open(f'{d}/{fn}',encoding='utf-8').read(); fm,body=front(t)
-    g=lambda k:(re.search(rf'^{k}:\s*"?(.*?)"?\s*$',fm,re.M) or [None,''])[1]
-    m=re.search(r'## Brand & Style\s*\n+(.+?)\n\n',body,re.S); desc=re.sub(r'\s+',' ',m.group(1)) if m else ''
-    desc=re.sub(r'[*`_]','',desc); desc=re.sub(r'\s*\[src:[^\]]*\](\[src:[^\]]*\])*','',desc); desc=desc[:140]+('…' if len(desc)>140 else '')
-    t2=re.sub(r'^logo:.*\n','',t,count=1,flags=re.M)  # drop third-party logo url
-    slug='ko-'+g('slug')
-    open(OUT+'md/'+slug+'.md','w',encoding='utf-8').write(t2)
-    items.append({'slug':slug,'name':g('name'),'region':'ko','category':g('category') or 'etc','desc':desc,'colors':pick(colors(fm)) or scan(t2),'bytes':len(t2.encode()),
-      'updated':g('last_updated'),'source':f'https://github.com/CaesiumY/ko-design-md/blob/main/services/{fn}','license':'CC BY 4.0 · ko-design-md by ChangSik Yoon'})
+KO_REPO='/home/claude/sylvialab-design-md'
+KO_CAT={'toss':'finance','daangn':'community','wanted':'career','channeltalk':'developer','line':'messenger','samsung-oneui':'device','krds':'gov','baemin':'delivery','kakao':'messenger','naver':'portal','coupang':'commerce','musinsa':'commerce','kurly':'commerce','yanolja':'travel','ohou':'commerce','zigbang':'proptech','upbit':'finance','banksalad':'finance','ridi':'content','29cm':'commerce'}
+for slug in sorted(os.listdir(KO_REPO+'/companies')):
+    f=f'{KO_REPO}/companies/{slug}/DESIGN.md'
+    if not os.path.exists(f): continue
+    t=open(f,encoding='utf-8').read()
+    name=re.match(r'#\s*(.+?)\s*디자인 시스템',t).group(1).strip()
+    m=re.search(r'디자인 인상 한 줄:\s*(.+)',t); desc=re.sub(r'[*`]','',m.group(1)).strip() if m else ''
+    sec=t.split('## 2.',1)[1].split('\n## 3.',1)[0] if '## 2.' in t else t
+    cols=[]
+    for line in sec.splitlines():
+        h=HEX.search(line)
+        if h and line.startswith('|') and '확인 필요' not in line and '확정 아님' not in line and h.group(0).lower() not in cols: cols.append(h.group(0).lower())
+        if len(cols)==6: break
+    basis=re.search(r'^> 근거:\s*(.+)$',t,re.M); basis=basis.group(1) if basis else ''
+    out=f'ko-{slug}'
+    open(OUT+'md/'+out+'.md','w',encoding='utf-8').write(t)
+    items.append({'slug':out,'name':name,'region':'ko','category':KO_CAT.get(slug,'etc'),'desc':desc,'colors':cols,'bytes':len(t.encode()),
+      'basis':'공개 문서' if basis.startswith('공개') else ('실측' if basis.startswith('관찰') else '공개 문서·실측'),
+      'source':f'https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/{slug}/DESIGN.md','license':'CC BY 4.0 · SylviaLab DESIGN.md'})
 cat={'generated':datetime.date.today().isoformat(),'categories':CAT_LABEL,'items':items}
 json.dump(cat,open(OUT+'catalog.json','w',encoding='utf-8'),ensure_ascii=False,indent=0)
 print(len(items),sum(1 for i in items if i['region']=='ko'),sum(1 for i in items if not i['colors']))

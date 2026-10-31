@@ -26,7 +26,7 @@
     $('#d-desc').textContent = it.desc;
     $('#d-region').textContent = it.region === 'ko' ? '국내' : '해외'; $('#d-region').className = 'tag ' + it.region;
     $('#d-cat').textContent = cats[it.category] || it.category;
-    $('#d-size').textContent = (it.bytes / 1024).toFixed(1) + ' KB';
+    $('#d-size').textContent = (it.basis ? '근거: ' + it.basis + ' · ' : '') + (it.bytes / 1024).toFixed(1) + ' KB';
     $('#d-pal').innerHTML = it.colors.map(function (c) { return '<button type="button" data-hex="' + c + '"><i style="background:' + c + '"></i>' + c + '</button>'; }).join('');
     $('#b-dl').href = 'md/' + it.slug + '.md';
     $('#b-dl').setAttribute('download', it.slug.replace(/^(ko|en)-/, '') + '-DESIGN.md');

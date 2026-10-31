@@ -8,6 +8,9 @@
 "commerce": "커머스·서비스",
 "media": "미디어·콘텐츠",
 "hardware": "하드웨어·테크",
+"portal": "포털",
+"proptech": "부동산",
+"device": "기기·OS",
 "mobility": "모빌리티",
 "career": "커리어",
 "community": "커뮤니티",
@@ -1533,498 +1536,348 @@
 "license": "MIT · VoltAgent/awesome-design-md"
 },
 {
-"slug": "ko-11st",
-"name": "11번가",
+"slug": "ko-29cm",
+"name": "29CM",
 "region": "ko",
 "category": "commerce",
-"desc": "11번가(11STREET)는 SK Group 계열사가 운영하는 모바일 우선의 종합 이커머스 마켓플레이스이며, 디자인 시스템의 목적은 \"고객에게 효율적인 커뮤니케이션과 일관되고 통일된 디자인으로 서비스 경험을 제공\"하는 데 있다. 브랜드 가치는 Tech…",
-"colors": [
-"#ff5a2e",
-"#ff0038",
-"#ff00ef",
-"#cc002d",
-"#ffebef",
-"#000000"
-],
-"bytes": 28910,
-"updated": "2026-08-02",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/11st.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"desc": "짧은 감성 문구가 붙은 큰 이미지 카드를 이어 놓은, 잡지에 가까운 쇼핑 화면. 색·크기 수치는 이번에 재지 못했다(아래 표 참고).",
+"colors": [],
+"bytes": 9230,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/29cm/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-baemin",
 "name": "배달의민족",
 "region": "ko",
 "category": "delivery",
-"desc": "배달의민족(배민)은 우아한형제들이 2010년부터 운영해 온 한국 점유율 1위 음식·생필품 배달 슈퍼앱이며, 디자이너 출신 김봉진 의장이 창업했다. 모회사·연혁은 우아한형제들 공식 사이트가 근거다. 음식배달을 주력으로 한그릇(최소주문금액 없는 1인분)·…",
+"desc": "민트(#0cefd3)를 넓은 면으로 깔고 검정 글자를 크게 올린다. 버튼은 민트 채움에 검정 글자, 또는 검정 채움에 흰 글자 두 가지다.",
 "colors": [
-"#0cefd3",
-"#5ebebb",
-"#2ac1bc"
+"#ffffff",
+"#f3f5f7",
+"#e4e6e8",
+"#d5d7d9",
+"#b1b3b5",
+"#97999b"
 ],
-"bytes": 62720,
-"updated": "2026-10-25",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/baemin.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 17694,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/baemin/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-banksalad",
 "name": "뱅크샐러드",
 "region": "ko",
 "category": "finance",
-"desc": "뱅크샐러드는 (주)뱅크샐러드가 운영하는 자산관리·금융상품 비교 서비스로, App Store 카테고리는 금융이고 부제는 「금융을 넘어 건강 자산까지」다. 웹 GNB 가 카드·대출·예적금에서 무료 건강 검사·건강 보험·자동차보험·머니피드까지 일곱 라벨을 …",
-"colors": [
-"#01110b",
-"#012216",
-"#02442b",
-"#04764c",
-"#06a96c",
-"#1fb27b"
-],
-"bytes": 71347,
-"updated": "2026-10-27",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/banksalad.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"desc": "금융과 건강을 함께 묶은 비교·추천 화면. 색·크기 수치는 이번에 재지 못했다(아래 표 참고).",
+"colors": [],
+"bytes": 8215,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/banksalad/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-bezier",
+"slug": "ko-channeltalk",
 "name": "채널톡",
 "region": "ko",
 "category": "developer",
-"desc": "Bezier는 채널톡의 사내 제품 UI를 외부에 그대로 공개한 드문 한국발 풀 디자인 시스템이다 — 라이선스는 Apache-2.0(© Channel Corp.)이며, 컴포넌트 59 + foundation 3 + utility(ReadMe·Changel…",
+"desc": "흰 면과 반투명 검정 회색 위에 보라빛 파랑(#6157ea) 하나로 행동을 표시하는, 촘촘하고 작은 업무용 화면.",
 "colors": [
-"#6b6eff",
-"#8082ff",
-"#242428",
-"#1d1d20"
-],
-"bytes": 46833,
-"updated": "2026-10-29",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/bezier.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-class101",
-"name": "클래스101",
-"region": "ko",
-"category": "education",
-"desc": "클래스101은 취미부터 커리어까지 25개 카테고리의 온라인 클래스를 다루는 플랫폼으로, 2022년 8월 말 \"클래스101+\"라는 이름의 월 구독 모델(25개 카테고리 무제한 수강)로 전환했다. 영문 사이트가 CLASS101+ 브랜드로 운영되는 글로벌 …",
-"colors": [
-"#ff5d00",
+"#6157ea",
 "#ffffff",
-"#fcf5f1",
-"#376dfa",
-"#f3f3fc",
-"#e30f32"
+"#000000",
+"#fbfbfb",
+"#f7f7f8",
+"#efeff0"
 ],
-"bytes": 41610,
-"updated": "2026-10-29",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/class101.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 14930,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/channeltalk/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-codeit",
-"name": "코드잇",
-"region": "ko",
-"category": "education",
-"desc": "코드잇은 프로그래밍 교육 서비스이며, design.codeit.com은 그 공개 디자인 시스템 사이트다(Framer 호스팅, 전 문서 한국어). 슬로건은 \"배움의 기쁨을 세상 모두에게\"이며, 시스템 자체를 \"'배움의 기쁨'을 일관되게 전하기 위한 약속…",
-"colors": [
-"#6500c3",
-"#ffffff",
-"#333236",
-"#20a7b1",
-"#080c14",
-"#d6173a"
-],
-"bytes": 64302,
-"updated": "2026-10-29",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/codeit.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-gmarket",
-"name": "지마켓",
+"slug": "ko-coupang",
+"name": "쿠팡",
 "region": "ko",
 "category": "commerce",
-"desc": "Gmarket Design System(GDS)은 지마켓(G마켓)의 디자인 시스템이며, 브랜드명(지마켓 / Gmarket)과 디자인 시스템명은 별개의 이름이다. 지마켓은 한국의 오픈마켓형 이커머스 서비스로, 고객과 상품·고객과 고객을 연결하는 쇼핑 경…",
-"colors": [
-"#00c400",
-"#00c01e",
-"#0028ac",
-"#067dfd",
-"#0231a6",
-"#ffffff"
-],
-"bytes": 45075,
-"updated": "2026-10-29",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/gmarket.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-greeting",
-"name": "그리팅",
-"region": "ko",
-"category": "career",
-"desc": "그리팅은 기업의 채용 담당자가 하루 여덟 시간 붙들고 있는 채용 관리 SaaS이고, 면접 진행 상태를 색 토큰으로 못 박아 도메인을 팔레트 층까지 끌어내린 흰 바탕·헤어라인의 업무 도구다. 사용자는 소비자가 아니라 기업의 채용 담당자이며, 제품은 가이…",
+"desc": "흰 바탕에 정보가 빽빽한 목록. 색은 가격·할인 빨강(#cb1400), 도착 예정 초록(#008c00), 카테고리 파랑(#346aff) 세 가지가 역할을 나눠 맡는다.",
 "colors": [
 "#ffffff",
 "#fafafa",
 "#f5f5f5",
 "#f0f0f0",
-"#d9d9d9",
-"#bfbfbf"
+"#eeeeee",
+"#dfe3e8"
 ],
-"bytes": 61777,
-"updated": "2026-10-29",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/greeting.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 10881,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/coupang/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-gs-retail",
-"name": "우리동네GS",
+"slug": "ko-daangn",
+"name": "당근",
 "region": "ko",
-"category": "commerce",
-"desc": "우리동네GS는 GS25·GS더프레시·와인25플러스를 한 앱에 모은 GS리테일의 O4O 앱이고, 흰 바탕 카드 위에 청록 브랜드면과 근접 검정 CTA 를 짝지어 쓰는 것이 시각 시그니처다. 2022년 10월 11일 출시하면서 흩어져 있던 GS25 '나만…",
+"category": "community",
+"desc": "흰 바탕에 짙은 회색 글자, 주황(#ff6600)은 화면에서 가장 중요한 행동 하나에만 쓴다.",
 "colors": [
-"#1e2530",
-"#00d4ea",
+"#ff6600",
+"#e14d00",
+"#fff2ec",
+"#ffe8db",
+"#ffd5c0",
+"#ffffff"
+],
+"bytes": 16956,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/daangn/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-kakao",
+"name": "카카오",
+"region": "ko",
+"category": "messenger",
+"desc": "노랑(#fee500 / #fae100)과 검정 두 색으로 브랜드를 말하고, 화면 자체는 흰 바탕·회색 글자·둥근 알약 버튼으로 담백하게 짠다.",
+"colors": [
+"#fee500",
+"#000000",
+"#191919",
+"#2439df",
 "#ffffff",
-"#f4f5fb",
-"#d6d9e1",
-"#c0c4cd"
+"#f3f3f3"
 ],
-"bytes": 37499,
-"updated": "2026-09-02",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/gs-retail.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-gs-shop",
-"name": "GS SHOP",
-"region": "ko",
-"category": "commerce",
-"desc": "GS SHOP은 TV 편성표와 모바일 라이브가 한 앱에 공존하는 홈쇼핑 커머스로, 2025년 BI 리뉴얼 뒤 계정 동선은 다이내믹 블루가, 구매 동선은 브라이트 핑크가 맡는 2색 대비 위에 서 있다.",
-"colors": [
-"#0f78ff",
-"#2c8afc",
-"#ecf4fe",
-"#ff2f93",
-"#ff63b5",
-"#fef1f8"
-],
-"bytes": 49443,
-"updated": "2026-09-03",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/gs-shop.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 11931,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kakao/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-krds",
-"name": "KRDS",
+"name": "KRDS(대한민국 정부)",
 "region": "ko",
 "category": "gov",
-"desc": "KRDS는 중앙행정기관·공공기관·지방자치단체가 공유하는 단일 시각 언어로, 신뢰·안정·접근성을 핵심 정서로 삼는다. 톤은 \"informational, neutral and respectful — not marketing\" — 정보 전달과 절차 안내가 …",
+"desc": "흰 바탕에 정부 파랑(#256ef4) 하나를 주색으로 쓰고, 큰 글자(본문 17px)와 넓은 행간(150%)으로 누구나 읽기 쉽게 만든 화면.",
 "colors": [
-"#fafafa",
-"#f4f5f6",
-"#e6e8ea",
-"#cdd1d5",
-"#b1b8be",
-"#8a949e"
+"#256ef4",
+"#ecf2fe",
+"#0b50d0",
+"#d63d4a",
+"#5917b8",
+"#ffffff"
 ],
-"bytes": 38793,
-"updated": "2026-08-17",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/krds.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 16747,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/krds/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-kyobobook",
-"name": "교보문고",
+"slug": "ko-kurly",
+"name": "컬리",
 "region": "ko",
 "category": "commerce",
-"desc": "Kyobo Design System(KDS)은 교보문고의 디자인 시스템이며, 브랜드명(교보문고 / KYOBO Book Centre)과 디자인 시스템명은 별개의 이름이다. 교보문고는 1980년 설립된 한국 최대 서점 체인으로, 오프라인 서점·온라인 서점…",
+"desc": "흰 바탕에 짙은 보라 한 가지를 브랜드 색으로 쓰고, 할인율만 주황으로 띄우는 차분한 상품 목록 화면.",
 "colors": [
-"#003477",
-"#45b035",
-"#5055b1",
-"#3f4391",
-"#2d3068",
-"#4dac27"
+"#222222",
+"#333333",
+"#464c52",
+"#565e67",
+"#666666",
+"#848f9a"
 ],
-"bytes": 31439,
-"updated": "2026-08-22",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/kyobobook.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 13636,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kurly/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-lg-electronics",
-"name": "LG전자",
-"region": "ko",
-"category": "etc",
-"desc": "LG전자는 에너지의 Active Red와 로고를 받치는 Heritage Red, 두 빨강을 Warm Grey·흰색·검정의 중립 위에 올리고, 제품의 둥근 형태에서 온 EI 폼과 자체 서체 LG EI로 \"기술에 미소를 담는\" Emotionally Int…",
-"colors": [
-"#fd312e",
-"#a50034",
-"#f0ece4",
-"#ffffff",
-"#000000",
-"#ea1917"
-],
-"bytes": 65297,
-"updated": "2026-10-05",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/lg-electronics.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-likelion",
-"name": "멋쟁이사자처럼",
-"region": "ko",
-"category": "education",
-"desc": "멋쟁이사자처럼은 코딩 교육 커뮤니티이자 취업·전직 부트캠프 브랜드다. 채도 높은 시그니처 오렌지 oklch(0.69 0.209 42)(#FF6000)와 쿨톤 그레이 뉴트럴을 맞세워 에너지 넘치는 색 인상을 만들고, 부담을 낮추는 격려형 어조로 친근함을…",
-"colors": [
-"#ffefe5",
-"#ffdfcc",
-"#ffbf99",
-"#ffa066",
-"#ff8033",
-"#ff6000"
-],
-"bytes": 21710,
-"updated": "2026-08-30",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/likelion.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-line-design-system",
-"name": "라인",
+"slug": "ko-line",
+"name": "LINE",
 "region": "ko",
 "category": "messenger",
-"desc": "라인의 디자인 시스템은 두 갈래로 나뉜다. LDSM(LINE Design System for Messenger)은 라인 메신저 본체의 시스템이고, LDSG(LINE Design System for Global Family Service)는 LY Cor…",
+"desc": "무채색 회색 단계 위에 LINE 초록(#06c755)을 상징으로 두고, 앱 상단 바는 짙은 남색 계열을 쓰는 다국어 메신저 화면.",
 "colors": [
-"#06c755",
-"#000000",
-"#e4e4e4",
-"#2a2a2a",
+"#202a43",
+"#262f4a",
+"#323b54",
+"#ffffff",
 "#fcfcfc",
 "#f5f5f5"
 ],
-"bytes": 58843,
-"updated": "2026-08-02",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/line-design-system.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 15388,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/line/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-nol",
-"name": "NOL",
+"slug": "ko-musinsa",
+"name": "무신사",
 "region": "ko",
-"category": "travel",
-"desc": "NOL은 흰 바탕 위에 채도 높은 파랑을 예약·선택·포커스에만 아껴 쓰고, 숙소와 공연 사진을 둥근 모서리로 크게 잘라 화면의 주인공으로 세우는 여행·여가 플랫폼이다.",
+"category": "commerce",
+"desc": "거의 검정(#1a1b1f) 상단 바 아래로 흰 바탕과 검정·회색 글자만 쓰고, 색은 할인 빨강(#f31110)과 쿠폰 파랑(#245eff)에만 준다. 글자는 11~13px로 작고 촘촘하다.",
 "colors": [
-"#3549ff",
-"#000000",
 "#ffffff",
-"#5085ff",
-"#4154ff",
-"#2432ad"
+"#fafafa",
+"#f5f5f5",
+"#f0f0f0",
+"#ebebeb",
+"#e0e0e0"
 ],
-"bytes": 57627,
-"updated": "2026-10-12",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/nol.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 11838,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/musinsa/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-remember",
-"name": "리멤버",
+"slug": "ko-naver",
+"name": "네이버",
 "region": "ko",
-"category": "career",
-"desc": "리멤버는 명함관리 앱에서 출발해 경력채용과 커뮤니티까지 끌어안은 직장인 플랫폼이며, 검정으로 덮은 무채색 화면 위에 오렌지 한 점만 남기는 절제가 그 시각적 서명이다.",
+"category": "portal",
+"desc": "네이버 그린(#03C75A) 하나를 브랜드 색으로 고정하고, 나머지는 흰 바탕과 짙은 남색 계열 글자(#1a1d24)로 정리한다(회사 사이트 기준).",
 "colors": [
-"#000000",
-"#ffffff",
-"#ff6a0d",
-"#424242",
-"#808080",
-"#bdbdbd"
+"#03c75a",
+"#4078ff",
+"#e8f6ff",
+"#f2f6ff",
+"#ebf4ff",
+"#ff5f00"
 ],
-"bytes": 39815,
-"updated": "2026-09-21",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/remember.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 10324,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/naver/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-ohou",
+"name": "오늘의집",
+"region": "ko",
+"category": "commerce",
+"desc": "흰 바탕과 거의 검정 글자(#141414) 위에 하늘색(#00a1ff) 하나로 선택·행동을 표시하고, 할인만 빨강(#ff4650)으로 띄우는 사진 중심 화면.",
+"colors": [
+"#141414",
+"#2f3438",
+"#222222",
+"#444444",
+"#5c5c5c",
+"#828c94"
+],
+"bytes": 15367,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ohou/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-ridi",
 "name": "리디",
 "region": "ko",
 "category": "content",
-"desc": "리디는 흰 바탕과 차가운 무채색 회색 위에 하늘색 리디 블루 oklch(0.683 0.176 248.3) 한 점으로 현재 탭·선택 알약·구매 버튼을 표시하고, 표지·카드는 4px 모서리로 정돈해 표지와 일러스트가 화면을 채우게 둔 웹툰·웹소설·전자책 …",
+"desc": "흰 바탕에 푸른 회색 글자, 파란색 하나(#1F8CE6)로 가격·주요 버튼을 짚는, 책 표지가 주인공인 차분한 서점 화면.",
 "colors": [
-"#fafafa",
-"#f5f5f5",
-"#e6e6e6",
-"#cccccc",
-"#a5a5a5",
-"#787878"
+"#1e9eff",
+"#f2f4f5",
+"#e6e8eb",
+"#d1d5d9",
+"#b8bfc4",
+"#9ea7ad"
 ],
-"bytes": 89078,
-"updated": "2026-10-20",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/ridi.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 17677,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ridi/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-samsung-one-ui",
+"slug": "ko-samsung-oneui",
 "name": "삼성 One UI",
 "region": "ko",
-"category": "developer",
-"desc": "One UI의 목표는 폰·태블릿·워치·이어버드·PC 어느 디바이스에서나 \"즐겁고 편안한(joyful and comfortable)\" 경험을 만드는 것이다. 삼성 디자인 포털은 같은 지향을 \"여러 디바이스를 연결해 심리스한 경험을 제공하고, 단순함으로 …",
+"category": "device",
+"desc": "화면 위쪽은 보는 곳, 아래쪽은 누르는 곳. 차분한 단색 면 위에 파랑 하나로 조작 요소를 표시하고, 버튼과 아이콘은 둥글게 굴린다.",
 "colors": [
-"#0381fe",
 "#0072de",
-"#3e91ff",
-"#fafafa",
-"#000000",
-"#080808"
+"#0381fe",
+"#3e91ff"
 ],
-"bytes": 46444,
-"updated": "2026-09-14",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/samsung-one-ui.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-seed-design",
-"name": "당근",
-"region": "ko",
-"category": "community",
-"desc": "당근은 주황 하나를 브랜드 축으로 붙들고, 사용자 신뢰를 10단계 온도 램프로 색칠해 UI 안에 박아 넣은 디자인 언어를 쓴다. SEED는 그 언어를 \"당근 제품을 위한 통합 디자인 언어\"로 정의하며, 디자인과 코드가 하나의 소스를 바라보게 만들어 누…",
-"colors": [
-"#ffffff",
-"#f7f8f9",
-"#f3f4f5",
-"#eeeff1",
-"#dcdee3",
-"#d1d3d8"
-],
-"bytes": 81253,
-"updated": "2026-09-29",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/seed-design.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-socar",
-"name": "쏘카",
-"region": "ko",
-"category": "mobility",
-"desc": "SOCAR Frame 2.0(쏘카프레임 2.0)는 쏘카의 디자인 시스템이며, 브랜드명(쏘카 / SOCAR)과 디자인 시스템명은 별개의 이름이다. 쏘카는 한국 최대 카셰어링 서비스이며, 전국의 쏘카존(공용 차량 거점)을 기반으로 단기·왕복 차량 대여를 …",
-"colors": [
-"#0078ff",
-"#0069ff",
-"#0052e0",
-"#0033a9",
-"#ebf5ff",
-"#d6ebff"
-],
-"bytes": 50276,
-"updated": "2026-08-22",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/socar.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
-},
-{
-"slug": "ko-teamsparta",
-"name": "팀스파르타",
-"region": "ko",
-"category": "education",
-"desc": "스파르타클럽은 팀스파르타의 통합 소비자 브랜드로, 내일배움캠프, AI 입문/실무 강의, 재직자 캠프, 기업교육을 한 학습 여정 안에 묶는다. 디자인 시스템의 기준 surface는 마케팅 페이지가 아니라 수강생과 운영자가 쓰는 인증 대시보드이며, cat…",
-"colors": [
-"#fa0030",
-"#d80028",
-"#f94015",
-"#003cdc"
-],
-"bytes": 22708,
-"updated": "2026-09-24",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/teamsparta.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 15939,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/samsung-oneui/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-toss",
 "name": "토스",
 "region": "ko",
 "category": "finance",
-"desc": "토스는 자신을 \"은행에 다니는 유능한 친구\" 로 포지셔닝한다 — 조용히 일을 처리하고, 사용자의 시간을 낭비시키지 않는다는 어조다. 슬로건과 카피 곳곳에 \"투자, 모두가 할 수 있도록\", \"수수료 걱정 없이\"와 같이 진입 장벽을 제거하는 메시지가 반복…",
+"desc": "흰 바탕, 푸른 회색 글자, 파랑(#3182f6) 하나. 큰 글자와 넉넉한 둥근 버튼으로 한 화면에 한 가지 일만 시킨다.",
 "colors": [
 "#3182f6",
+"#2272eb",
+"#4593fc",
 "#e8f3ff",
-"#191f28",
-"#333d4b",
-"#4e5968",
-"#6b7684"
+"#f9fafb",
+"#f2f4f6"
 ],
-"bytes": 61914,
-"updated": "2026-09-24",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/toss.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 14671,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/toss/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-vapor-ui",
-"name": "구름",
+"slug": "ko-upbit",
+"name": "업비트",
 "region": "ko",
-"category": "developer",
-"desc": "Vapor는 시스템 자체의 정체성을 opinionated, light-first, very token-driven, proudly Korean-bilingual 로 정의한다. opinionated는 디자인 결정이 토큰 레벨에서 강하게 박혀 있다는 뜻이…",
-"colors": [
-"#f7f7f7",
-"#e1e1e1",
-"#c6c6c6",
-"#a3a3a3",
-"#959595",
-"#767676"
-],
-"bytes": 70999,
-"updated": "2026-09-08",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/vapor-ui.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"category": "finance",
+"desc": "확인 필요. 이번 작업에서는 화면을 직접 열지 못했다.",
+"colors": [],
+"bytes": 6417,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/upbit/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-wanted",
 "name": "원티드",
 "region": "ko",
 "category": "career",
-"desc": "원티드는 한국 디자인-엔지니어링 씬에서 정밀 스케일 토큰 시스템 + 자체 브랜드 서체 + 시그너처 그라디언트 로고의 조합으로 알려진다. 공식 문서는 이 시스템을 몽타주(Montage)로 명명하고 Extensibility·Consistency·Effic…",
+"desc": "아주 연한 푸른 회색 위에 선명한 파랑(#0066ff) 하나, 테두리와 면은 회색의 투명도로 얇게 그린다.",
 "colors": [
 "#0066ff",
-"#ff53c0",
-"#ff5e00",
-"#feecec",
-"#d9ffe6",
-"#fef4e6"
+"#005eeb",
+"#0054d1",
+"#000000",
+"#171719",
+"#989ba2"
 ],
-"bytes": 93626,
-"updated": "2026-10-27",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/wanted.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 15615,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wanted/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
-"slug": "ko-yeogi",
-"name": "여기어때",
+"slug": "ko-yanolja",
+"name": "놀 NOL (야놀자)",
 "region": "ko",
 "category": "travel",
-"desc": "여기어때는 GC COMPANY가 운영하는 여행·숙박 플랫폼이고, 그 디자인 시스템 YDS는 지도 위 가격 마커와 활기찬 Lively red를 시그니처로 삼는다. Design Library는 컴포넌트 라이브러리가 아니라 디자인 시스템 + 비주얼 시스템 …",
+"desc": "거의 검정에 가까운 글자(#1b1c1f)와 흰 면 위에 파란 보라(#4154ff)를 행동 색으로, 빨강(#e5000f)을 할인 색으로 쓰는 둥근 카드 화면.",
 "colors": [
-"#f7323f",
-"#000000",
-"#ffffff",
-"#fff5f5",
-"#ffedea",
-"#fedfde"
+"#1b1c1f",
+"#6e6f73",
+"#8b8d92",
+"#dadbdf",
+"#e9eaef",
+"#f2f3f7"
 ],
-"bytes": 69243,
-"updated": "2026-08-02",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/yeogi.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 13621,
+"basis": "실측",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/yanolja/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
 {
 "slug": "ko-zigbang",
 "name": "직방",
 "region": "ko",
-"category": "etc",
-"desc": "직방 ZUIX는 순흑 대신 짙은 회색 잉크로 짠 무채색 램프 위에 따뜻한 오렌지 한 색만 강조로 올리고, 4px 안팎의 작은 모서리와 Pretendard로 조밀한 모바일 화면을 짜는 부동산 플랫폼의 공통 컴포넌트 언어다.",
+"category": "proptech",
+"desc": "흰 바탕과 #1a1a1a 글자에 주황(#ff6905) 하나를 주 버튼·선택 색으로 쓰고, 모서리 4px로 단단하게 맞춘 화면.",
 "colors": [
 "#1a1a1a",
 "#4d4d4d",
@@ -2033,10 +1886,10 @@
 "#b3b3b3",
 "#cccccc"
 ],
-"bytes": 57487,
-"updated": "2026-10-25",
-"source": "https://github.com/CaesiumY/ko-design-md/blob/main/services/zigbang.md",
-"license": "CC BY 4.0 · ko-design-md by ChangSik Yoon"
+"bytes": 14000,
+"basis": "공개 문서",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigbang/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 }
 ]
 }

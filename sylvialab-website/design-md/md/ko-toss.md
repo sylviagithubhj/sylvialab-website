@@ -1,711 +1,233 @@
----
-name: 토스
-slug: toss
-category: finance
-last_updated: "2026-09-24"
-created_at: "2026-05-11"
-lang: ko
-colors:
-  fill-brand: "{colors.blue-500}"
-  fill-primary: "{colors.grey-900}"
-  fill-secondary: "{colors.grey-100}"
-  fill-weak: "{colors.grey-50}"
-  fill-danger: "{colors.red-500}"
-  fill-success: "{colors.green-500}"
-  fill-warning: "{colors.orange-500}"
-  text-primary: "{colors.grey-900}"
-  text-secondary: "{colors.grey-700}"
-  text-tertiary: "{colors.fg-tertiary}"
-  text-placeholder: "{colors.fg-quaternary}"
-  text-alt: "{colors.white}"
-  text-brand: "{colors.blue-500}"
-  text-danger: "{colors.red-500}"
-  border-primary: "{colors.blue-500}"   # focused input
-  border-secondary: "{colors.grey-200}"   # default divider
-  border-strong: "{colors.grey-400}"
-  border-subtle: "{colors.line-subtle}"
-  overlay-scrim: "{colors.bg-overlay}"
-  overlay-press: "{colors.press-overlay}"
-  tds-fg-primary: "{colors.text-primary}"   # grey-900
-  tds-fg-secondary: "{colors.text-secondary}"   # grey-700
-  tds-fg-tertiary: "{colors.fg-tertiary}"   # navy-900 @ 58%
-  tds-fg-quaternary: "{colors.fg-quaternary}"   # navy-900 @ 28%
-  tds-fg-disabled: "{colors.grey-400}"
-  tds-fg-inverse: "{colors.text-alt}"   # white
-  tds-fg-brand: "{colors.text-brand}"
-  tds-fg-danger: "{colors.text-danger}"
-  tds-fg-success: "{colors.green-500}"
-  tds-bg-primary: "{colors.white}"
-  tds-bg-secondary: "{colors.fill-secondary}"   # grey-100
-  tds-bg-tertiary: "{colors.grey-200}"
-  tds-bg-elevated: "{colors.white}"
-  tds-bg-overlay: "{colors.overlay-scrim}"
-  tds-bg-brand: "{colors.fill-brand}"
-  tds-bg-brand-weak: "{colors.blue-50}"
-  tds-bg-danger: "{colors.fill-danger}"
-  tds-line-default: "{colors.border-secondary}"   # grey-200
-  tds-line-subtle: "{colors.border-subtle}"
-  tds-line-strong: "{colors.border-strong}"   # grey-400
-  tds-press-overlay: "{colors.overlay-press}"   # 검정 26%
-  ## Brand
-  primary: "{colors.blue-500}"   # 명세의 대표색 역할 — TDS 의 fill-primary·text-primary(grey-900)와 다른 축
-  blue-500: oklch(0.620 0.191 258)   # #3182F6 — TDS 발행값 blue500, 카노니컬 Toss Blue, 화면당 하나의 primary CTA
-  blue-600: oklch(0.522 0.176 257)   # pressed-blue 단계 — 번들 고유값, TDS blue600과 다른 색: 명도가 blue700과 blue800 사이이고 가장 가까운 blue700과도 ΔE 0.023
-  blue-700: oklch(0.476 0.174 259)   # pressed gradient stop — 번들 고유값, TDS blue700과 다른 색: 가장 가까운 발행 step은 blue800(ΔE 0.012)
-  blue-50: oklch(0.959 0.020 250)   # #E8F3FF — TDS 발행값 blue50, brand-weak background
-  ## Greyscale
-  grey-900: oklch(0.237 0.020 258)   # #191F28 — TDS 발행값 grey900, primary text, never pure black
-  grey-800: oklch(0.357 0.028 257)   # #333D4B — TDS 발행값 grey800
-  grey-700: oklch(0.460 0.028 256)   # #4E5968 — TDS 발행값 grey700, secondary text
-  grey-600: oklch(0.562 0.025 254)   # #6B7684 — TDS 발행값 grey600
-  grey-500: oklch(0.666 0.021 253)   # #8B95A1 — TDS 발행값 grey500
-  grey-400: oklch(0.779 0.016 251)   # #B0B8C1 — TDS 발행값 grey400, disabled text, strong line
-  grey-300: oklch(0.874 0.009 248)   # #D1D6DB — TDS 발행값 grey300
-  grey-200: oklch(0.930 0.005 248)   # #E5E8EB — TDS 발행값 grey200, default divider/border
-  grey-150: oklch(0.918 0.007 247)   # 번들 고유 step — TDS에는 150이 없다. grey-200을 발행값으로 옮긴 뒤로 grey-200보다 어둡다(명도 역전)
-  grey-100: oklch(0.966 0.003 248)   # #F2F4F6 — TDS 발행값 grey100, secondary surface
-  grey-50: oklch(0.985 0.002 248)   # #F9FAFB — TDS 발행값 grey50
-  white: oklch(1.000 0.000 0)
-  ## Toss yellow & orange
-  yellow-500: oklch(0.850 0.154 82)   # #FFC342 — TDS 발행값 yellow500, illustration / emoji body
-  yellow-400: oklch(0.893 0.123 85)   # 번들 고유값, TDS yellow400과 다른 색: 번들 yellow-300과 거의 같고 가장 가까운 발행 step은 yellow300(ΔE 0.019)
-  yellow-300: oklch(0.906 0.126 91)   # #FFDD78 — TDS 발행값 yellow300
-  yellow-600: oklch(0.840 0.171 87)   # 번들 고유값, TDS yellow600과 다른 색: 가장 가까운 발행 step은 yellow500(ΔE 0.024)
-  yellow-700: oklch(0.872 0.169 87)   # 번들 고유값, TDS yellow700과 다른 색: yellow-600보다 밝아 발행 순서와 반대이고 가장 가까운 발행 step은 yellow400(ΔE 0.025)
-  orange-500: oklch(0.748 0.183 56)   # semantic warning — 번들 고유값, TDS orange500과 다른 색: 가장 가까운 발행 step은 orange600(ΔE 0.011)
-  orange-400: oklch(0.828 0.108 52)   # 번들 고유값, TDS orange400과 다른 색: 같은 명도대 발행 step보다 채도가 낮고 가장 가까운 orange300과도 ΔE 0.065
-  orange-300: oklch(0.870 0.078 51)   # 번들 고유값, TDS orange300과 다른 색: 가장 가까운 발행 step은 orange200(ΔE 0.054)
-  ## Semantic palette
-  red-500: oklch(0.641 0.208 21)   # #F04452 — TDS 발행값 red500, error / danger
-  red-600: oklch(0.626 0.216 22)   # 번들 고유값, TDS red600과 다른 색: 번들 red-500과 거의 같은 색이라 가장 가까운 발행 step은 red500(ΔE 0.017)
-  green-500: oklch(0.493 0.143 154)   # success — 번들 고유값, TDS green500과 다른 색: 명도 0.49로 발행 green500(0.67)보다 훨씬 어둡고 가장 가까운 발행 step은 green900(ΔE 0.028)
-  navy-900: oklch(0.155 0.060 261)   # text-shadow base, source of overlay rgba
-  ## Illustration warms
-  brown-900: oklch(0.359 0.083 39)
-  brown-700: oklch(0.444 0.062 30)
-  brown-500: oklch(0.535 0.073 39)
-  brown-400: oklch(0.659 0.097 41)
-  ## Semantic alpha tokens
-  fg-tertiary: oklch(0.155 0.060 261 / 0.58)   # 흐린 본문 텍스트
-  fg-quaternary: oklch(0.155 0.060 261 / 0.28)   # placeholder
-  line-subtle: oklch(0.000 0.000 0 / 0.08)   # 그레이 배경 위 카드 보더
-  bg-overlay: oklch(0.000 0.000 0 / 0.56)   # bottom-sheet scrim
-  press-overlay: oklch(0.000 0.000 0 / 0.26)   # 보편 pressed-state tint
-  ## Dark palette (TDS adaptive)
-  dark-blue-500: oklch(0.630 0.192 258)   # #3485FA — TDS 발행값 blue500 (colors.dark.css)
-  dark-blue-50: oklch(0.300 0.062 267)   # #202C4D — TDS 발행값 blue50 (colors.dark.css)
-  dark-grey-900: oklch(1.000 0.000 0)   # #FFFFFF — TDS 발행값 grey900 (colors.dark.css), 다크 primary text
-  dark-grey-800: oklch(0.919 0.001 286)   # #E4E4E5 — TDS 발행값 grey800 (colors.dark.css)
-  dark-grey-700: oklch(0.818 0.004 286)   # #C3C3C6 — TDS 발행값 grey700 (colors.dark.css), 다크 secondary text
-  dark-grey-600: oklch(0.701 0.009 286)   # #9E9EA4 — TDS 발행값 grey600 (colors.dark.css)
-  dark-grey-500: oklch(0.596 0.014 286)   # #7E7E87 — TDS 발행값 grey500 (colors.dark.css)
-  dark-grey-400: oklch(0.500 0.017 286)   # #62626D — TDS 발행값 grey400 (colors.dark.css)
-  dark-grey-300: oklch(0.425 0.020 286)   # #4D4D59 — TDS 발행값 grey300 (colors.dark.css)
-  dark-grey-200: oklch(0.361 0.019 285)   # #3C3C47 — TDS 발행값 grey200 (colors.dark.css)
-  dark-grey-100: oklch(0.297 0.016 285)   # #2C2C35 — TDS 발행값 grey100 (colors.dark.css)
-  dark-grey-50: oklch(0.247 0.013 285)   # #202027 — TDS 발행값 grey50 (colors.dark.css)
-  dark-yellow-500: oklch(0.816 0.158 74)   # #FFB134 — TDS 발행값 yellow500 (colors.dark.css)
-  dark-yellow-300: oklch(0.724 0.159 62)   # #EB8B1E — TDS 발행값 yellow300 (colors.dark.css)
-  dark-red-500: oklch(0.639 0.209 21)   # #F04251 — TDS 발행값 red500 (colors.dark.css)
-typography:
-  display-1:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 56px
-    fontWeight: 700
-    lineHeight: 1.30
-    letterSpacing: -0.005em
-  display-2:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 40px
-    fontWeight: 700
-    lineHeight: 1.20
-    letterSpacing: -0.020em
-  h1:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 28px
-    fontWeight: 700
-    lineHeight: 1.30
-    letterSpacing: -0.020em
-  h2:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 24px
-    fontWeight: 700
-    lineHeight: 1.30
-    letterSpacing: -0.020em
-  h3:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 22px
-    fontWeight: 700
-    lineHeight: 1.30
-    letterSpacing: -0.015em
-  h4:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 20px
-    fontWeight: 700
-    lineHeight: 1.35
-    letterSpacing: -0.015em
-  title-1:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 18px
-    fontWeight: 600
-    lineHeight: 1.45
-    letterSpacing: -0.010em
-  title-2:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 17px
-    fontWeight: 600
-    lineHeight: 1.45
-    letterSpacing: -0.010em
-  body-1:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 17px
-    fontWeight: 400
-    lineHeight: 1.50
-    letterSpacing: -0.005em
-  body-2:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 15px
-    fontWeight: 400
-    lineHeight: 1.50
-    letterSpacing: -0.005em
-  body-3:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 13px
-    fontWeight: 400
-    lineHeight: 1.50
-    letterSpacing: 0em
-  label-l:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 17px
-    fontWeight: 700
-    lineHeight: 1.25
-    letterSpacing: -0.005em
-  label-m:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 15px
-    fontWeight: 600
-    lineHeight: 1.25
-    letterSpacing: -0.005em
-  label-s:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 13px
-    fontWeight: 600
-    lineHeight: 1.25
-    letterSpacing: 0em
-  caption:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 12px
-    fontWeight: 500
-    lineHeight: 1.40
-    letterSpacing: 0em
-  caption-s:
-    fontFamily: "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"SF Pro\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: 11px
-    fontWeight: 500
-    lineHeight: 1.40
-    letterSpacing: 0em
-spacing:
-  space-1: 4px
-  space-2: 8px
-  space-3: 12px
-  space-4: 16px
-  space-5: 20px
-  space-6: 24px
-  space-7: 28px
-  space-8: 32px
-  space-10: 40px
-  space-12: 48px
-  space-16: 64px
-  space-20: 80px
-rounded:
-  radius-xs: 4px   # small badges
-  radius-s: 8px   # inline tags
-  radius-m: 12px   # text inputs
-  radius-l: 14px   # L button (48px)
-  radius-xl: 16px   # XL button (56px), cards
-  radius-2xl: 20px   # sheets, dialogs
-  radius-3xl: 24px   # big cards / sections
-  radius-4xl: 32px   # hero blocks
-  radius-full: 999px   # chips, pills, capsules
-elevation:
-  shadow-1: 0 1px 2px oklch(0.155 0.060 261 / 0.04), 0 1px 1px oklch(0.155 0.060 261 / 0.04)   # menu
-  shadow-2: 0 4px 12px oklch(0.155 0.060 261 / 0.06), 0 1px 2px oklch(0.155 0.060 261 / 0.04)   # tooltip
-  shadow-3: 0 12px 32px oklch(0.155 0.060 261 / 0.10), 0 2px 6px oklch(0.155 0.060 261 / 0.06)   # dialog
-  shadow-toast: 0 8px 24px oklch(0.155 0.060 261 / 0.16)   # toast
-opacity:
-  disabled-opacity: 0.30   # 컴포넌트 전체 노드에 적용
-  tds-disabled-opacity: 0.30
-fonts:
-  font-family-emoji: "Tossface"
----
-
-# 토스 (Toss) — design.md
-
-> 비바리퍼블리카가 운영하는 한국 최대 핀테크 슈퍼앱. 송금·결제·은행·증권·보험·세금·부동산·자동차 관리 등 금융 전반을 단일 모바일 셸로 묶고, "Apps in Toss" 미니앱 플랫폼까지 같은 디자인 시스템 위에 얹는다 [src:2]. 본 문서는 Toss Design System 핸드오프 번들(`TDS_Mobile_for_Apps_in_Toss_(2602-3-2).fig` export → `toss-design-system/{README, chats/chat1, project/{README, SKILL, colors_and_type.css, preview/ 41 cards, ui_kits/mobile/{Components.jsx, Screens.jsx, Send-Money Flow.html, ios-frame.jsx}, assets/toss-logo.png}}`)을 1차 출처로 합성한 결과이며, 공개된 toss.tech 보고서 [src:1]와 toss.im 미니앱 가이드, TDS Mobile docs를 보조 출처로 사용했다.
-
-## Brand & Style
-
-토스는 자신을 **"은행에 다니는 유능한 친구"** 로 포지셔닝한다 — 조용히 일을 처리하고, 사용자의 시간을 낭비시키지 않는다는 어조다. 슬로건과 카피 곳곳에 "투자, 모두가 할 수 있도록", "수수료 걱정 없이"와 같이 진입 장벽을 제거하는 메시지가 반복되며, "토스가 알아서"라는 위임형 표현이 사용자 부담을 줄이는 톤으로 일관된다 [src:11]. 이는 단순한 마케팅 카피가 아니라 인터페이스 전반의 의사결정 기준이다 — 정보 밀도보다 가독성과 행동 유도를 우선하고, "한번에 볼 수 있어요" 같은 통합 뷰 패턴이 반복되는 이유다 [src:11].
-
-대상 사용자는 일반 소비자 전 연령대이지만, 디자인 시스템(TDS) 자체는 약 **2,000명 규모의 메이커**가 단일 시스템 위에서 일한다는 전제로 설계되었다 [src:2]. 일관성과 확장성은 디자인 가이드라인 차원이 아니라 인프라 차원에서 다뤄지며, 컴포넌트는 "**레고 블록**"으로 비유된다 [src:2]. 새 컴포넌트 결정은 디자이너 직관이 아니라 A/B 테스트 결과로 검증된다 — 예를 들어 Menu 컴포넌트는 10일간의 A/B 테스트에서 Android item-click rate가 10% 더 높게 나온 뒤에야 정식 채택되었다 [src:4]. Apps-in-Toss 미니앱 플랫폼은 제3자 미니앱을 토스 셸 안에서 돌리되 토스와의 경계를 흐리지 못하게 한다 — 탭바가 필요하면 토스가 제공하는 플로팅 탭바를 써야 하고, 토스 메인 화면의 기본 하단 탭과 형태가 겹치는 탭바는 사용자가 현재 위치를 헷갈린다는 이유로 허용하지 않으며, 브랜드 로고·이름·컬러를 노출해 "사용자가 토스와 앱인토스를 혼동하지 않도록" 하라고 요구한다 [src:6].
-
-전체 무드는 **차갑고 절제된, 거의 무채색에 가까운 화이트 캔버스 + 선명한 토스 블루 단일 강조색**으로 요약된다. 깊은 한기 어린 cool-blue 중성색(`grey-900`부터 `grey-100`까지)이 표면 전체를 차지하고, 채도가 높은 브랜드 블루(`blue-500`)는 화면당 하나의 가장 중요한 액션에만 예약된다. 모서리는 **공격적으로 둥글지만 결코 귀엽지 않다** — 버튼·카드·hero 블록에 16~32px 라운드, chips·primary CTA에 999px full pill을 쓰며, iOS류 squircle/blob 라운드는 `Templates/Squircle` 전용 페이지를 제외하면 명시적으로 회피된다. 배경은 평면이 기본이며, 그라디언트는 (1) bottom CTA 위쪽 `white → transparent` 보호 그라디언트, (2) 로딩 버튼 내부의 미세한 pressed-blue radial glow, (3) yellow→orange 일러스트 그라디언트 — 세 가지 문서화된 예외만 허용된다. 텍스처·노이즈·전면 사진은 chrome에 사용되지 않는다.
-
-Voice는 **해요체(대화형 존댓말) + 위임형 + 일상어**로 요약된다 [src:10]. 종결어미 `-요`로 통일되며 격식체(~니다/~합니다)도, 방송 헤드라인의 단정형 `-다`도 사용하지 않는다 — 한 문장은 목적을 말하고, 다음 한 문장은 *언제 쓰는지*를 말하는 패턴이 표준이다. 토스가 잘못해 발생한 에러 화면에서조차 격식체가 아닌 해요체를 유지하며, 반복되는 시스템 상황은 Figma preset과 개발자 에러 메시지 라이브러리로 템플릿화되어 좋은 카피가 기본 선택지가 되도록 운영된다 [src:10]. 본 카탈로그 메타 문서는 토스 자체 카피와 달리 `~다` 평서체로 기술하며, 토스의 해요체 정책은 product surface 카피에 한해 적용되는 규칙임을 분리해 둔다.
-
-## Colors
-
-> **팔레트 정정(2026-09-24).** 토스는 색 토큰을 발행한다 — npm `@toss/tds-colors` 0.1.0이 `colors.light.css`·`colors.dark.css`로 팔레트 hex를 싣고, TDS Mobile Colors 문서가 라이트 팔레트를 같은 이름·값으로 보여 준다 [src:12][src:13]. 이 절이 전에 적었던 "토큰 패키지도 값 표도 공개되지 않았다"는 틀렸다. base 팔레트에서 발행본에 같은 이름의 step이 있는 25개를 대조하되, 값을 고치기 전에 이름이 같은 색을 가리키는지부터 판정했다 — 번들 값에서 **가장 가까운 발행 step이 같은 이름의 step일 때만** 대응한다고 보았다. 대응하는 15개(`blue-500`·`blue-50`, `grey-50`~`grey-900` 10개, `yellow-300`·`yellow-500`, `red-500`)는 발행값으로 바꾸고 토큰 줄에 hex를 병기했다. 그중 `blue-500`은 번들값이 ΔE 0.020 어긋나 있었고, 미니앱 가이드의 `brand.primaryColor` 입력 예시도 발행값과 같은 hex다 [src:6]. 나머지 10개(`blue-600`·`blue-700`, `yellow-400`·`yellow-600`·`yellow-700`, `orange-300`·`orange-400`·`orange-500`, `red-600`, `green-500`)는 번들이 같은 이름을 다른 색에 붙인 경우라 값을 그대로 두고, 각 토큰 줄에 가장 가까운 발행 step을 적었다 — 번들 `yellow-700`은 `yellow-600`보다 밝고, `green-500`은 발행 `green500`보다 `green900`에 가깝다. 가장 가까운 step도 10개 모두 허용 오차(ΔE 0.01) 밖이라 이름을 그 step으로 옮기지도 않았다. 다크 값은 대응하는 15개만 `colors.dark.css`에서 `dark-` 토큰으로 옮겼다.
-
-TDS 컬러 시스템은 **4계층 구조**로 운영된다 [src:3]:
-
-1. **Target** — 토큰이 칠해지는 표면. `fill`, `text`, `border`.
-2. **Role** — 의미 역할. `brand`, `neutral`, `primary`, `secondary`, `weak`, `alt`.
-3. **Variant** — 강도 변형. `weak`, `alt`.
-4. **Level** — 토큰의 추상화 단계. `base`(원시 팔레트) → `semantic`(역할 alias) → `component`(컴포넌트 전용 alias).
-
-토스는 2025년 production 토큰을 HSL에서 OKLCH로 마이그레이션한다고 공식 발표했으며, 같은 numeric scale(50, 100, …, 900)이 모든 hue에서 동등한 perceived brightness를 갖도록 OKLCH 균질화를 도입한다 [src:3]. 핸드오프 번들 자체는 light 모드 카노니컬 hex 값으로 ship되며, 원본 hex는 `colors_and_type.css`에 정의되어 있다. 본 문서는 그중 TDS 발행 step과 이름이 대응하는 값을 발행값으로 바꾸고(위 감사 메모), 모든 값을 catalog 규약에 따라 OKLCH로 변환해 표기한다.
-
-### Brand
-
-카노니컬 앵커 `blue-500`과 brand-weak 배경 `blue-50`은 TDS가 발행하는 `blue500`·`blue50` 값을 따른다 [src:12][src:13]. pressed 단계 `blue-600`·`blue-700`은 번들 `colors_and_type.css`의 값이고, TDS의 같은 이름 step보다 한 단계쯤 어두워 같은 색이 아니다. 미니앱 UI/UX 가이드가 `brand.primaryColor` 입력 예시로 드는 hex도 같은 값이다 [src:6].
-
-### Greyscale (cool-blue tinted neutrals)
-
-`grey-50`~`grey-900` 10단계는 TDS 발행값이다 [src:12][src:13]. `grey-150`은 TDS에 없는 번들 고유 step이라 번들값을 두었고, 그 결과 발행값으로 옮긴 `grey-200`보다 약간 어둡다. 두 이웃 사이로 보간하면 번들에도 발행본에도 없는 값을 지어내게 되어 역전을 그대로 기록한다 — 프리뷰의 다크 `grey-150`만 보간한 것은 그 값이 애초에 md 토큰이 아닌 프리뷰 파생값이기 때문이다. `grey-900`은 순수 검정이 아니라 미세하게 차가운 navy 톤이며, `grey-100`은 거의 인지되지 않는 cool 그레이로 화면 보조 표면으로 사용된다.
-
-### Toss yellow & orange (illustration warms)
-
-`yellow-300`·`yellow-500`은 TDS 발행값이고 [src:12][src:13], 나머지 yellow·orange step은 번들 `colors_and_type.css`의 값이다 — TDS의 같은 이름 step과 다른 색이라 토큰 줄마다 가장 가까운 발행 step을 적어 두었다. Toss yellow는 표면 색이 아니라 일러스트/이모지 자산의 face 색이며, orange는 시맨틱 warning에 한정된다.
-
-### Semantic palette
-
-`red-500`은 TDS 발행값이다 [src:12][src:13]. `red-600`·`green-500`·`navy-900`은 번들 `colors_and_type.css`의 값이다. `red-600`은 번들에서 `red-500`과 거의 같은 색이고, 시맨틱 success인 `green-500`은 발행 `green500`보다 훨씬 어두워 같은 색이 아니다.
-
-### Illustration warms (brown facial features)
-
-원본 hex는 `colors_and_type.css`에 정의되어 있으며, 본 문서는 OKLCH로 변환해 표기한다. brown 패밀리는 yellow-faced 일러스트 자산의 facial feature 색이며 UI 표면에는 사용되지 않는다.
-
-### Semantic alpha tokens
-
-원본 정의는 `colors_and_type.css`의 RGBA 토큰이며, 본 문서는 OKLCH alpha 표기로 변환한다. navy-900을 베이스로 한 투명도 계열은 본문 보조 텍스트·헤어라인·스크림에 사용된다.
-
-### Dark palette (TDS adaptive)
-
-`@toss/tds-colors`는 다크 팔레트를 **같은 이름**으로 발행한다 — `colors.dark.css`의 `grey900`은 흰색이고 `grey50`은 가장 어두운 회색이라, 이름이 역할(텍스트·표면)을 따르고 명도는 테마에 맞춰 뒤집힌다 [src:12]. 본 문서는 라이트에서 이름이 대응한다고 판정한 15개만 `dark-` 접두로 옮겼다. 다크 grey는 라이트 grey(색상각 248~258)와 달리 색상각 285~286에 채도 0.02 이하인, 무채색에 가까운 중성색이다.
-
-### Semantic alias
-
-product-facing 색은 시맨틱·컴포넌트 토큰으로 호출하고 base 팔레트는 새 role을 만들 때만 직접 참조한다 [src:3].
-
-새 번들(`HI3LORQulbJJqdr-BrZGMQ`)의 `colors_and_type.css`는 같은 카노니컬 값에 매핑되는 **4-카테고리 정식 변수명**(`--tds-fg-*` / `--tds-bg-*` / `--tds-line-*` / `--tds-press-overlay` / `--tds-disabled-opacity`)을 함께 export한다 — 위 단축 alias가 catalog 문서 관행이라면, 아래 매핑은 prototype에 그대로 inline할 수 있는 CSS custom property 이름이다.
-
-색 대비 자동 보정 — 미니앱이 자체 brand 컬러를 등록할 때, 등록된 색이 색 대비 기준을 충족하지 못하면 원래 색을 최대한 유지하는 선에서 자동 보정된다 [src:6]. 토큰 빌드는 Token Studio(Figma 플러그인) → GitHub PR → 플랫폼별 코드 자동 생성 파이프라인을 거친다 [src:3].
-
-## Typography
-
-본문/UI 서체는 **Toss Product Sans (TPS)**다 [src:8]. 토스가 산돌(2020)과 공동 제작한 자체 서체이며, iOS의 SF, Windows의 맑은 고딕, Android 기본 서체로 플랫폼별 파편화되어 있던 토스 화면을 단일 서체로 통합하기 위해 만들어졌다 [src:8]. 한글 자형은 산돌의 고딕 Neo1을 기반으로 미세 조정되었고, 라틴·문장부호·기타 글리프는 한글 디자인에 맞춰 새로 그려졌다 [src:8]. 디자인 3대 기준은 (1) **밸런스** — 라틴/숫자가 통상 본문 서체보다 크게 그려져 한글과 시각적으로 화합한다, (2) **금융 맥락** — 특수문자(%, comma, 화살표)는 텍스트가 아니라 UI 요소로 재설계되었다, (3) **중립 형태** — "글자 대신 글이, 형태 대신 내용이 보일 수 있도록" 콘텐츠를 가리지 않는 형태를 지향한다 [src:8].
-
-TPS는 자체 라이선스가 적용되어 외부 재배포가 불가능하다. 핸드오프 번들과 토스의 외부 권장 사항은 **Pretendard**를 가장 가까운 무료 한+영 neogrotesque 대체 서체로 명시한다 — 메트릭·한글 자형·tabular figure가 TPS와 거의 1:1로 일치한다. 번들의 폰트 스택:
-
-### Type ramp (모든 값 `colors_and_type.css`에서 직접 추출)
-
-display 웨이트는 Bold 700에 tight -1.5%~-2% 트래킹으로 무게감을 잡고, 본문은 15px Regular + 1.5 line-height — 한글 가독성을 위해 1.5가 표준이다. 버튼은 XL/L에서 Bold 700 17px, M/S에서 Semibold 15~13px을 쓴다 — "토스 버튼은 장식이 아니라 문장처럼 읽힌다". 카드 타이틀은 `title-1`(18/600), 카드 본문은 `body-2`(15/400)다.
-
-### 숫자/기호 처리
-
-TPS는 variable·fixed-width 두 폭을 모두 제공하며, 실시간 금융 데이터(주가·환율·잔액)는 tabular figure로, 강조 시 proportional figure를 사용한다 [src:8]:
-
-`tabular-nums`는 실시간 금융 데이터에, `proportional-nums`는 강조 시 — 한국 핀테크 앱에서 보기 드문 본격적 숫자 타이포 분리다 [src:8]. 글자 수는 초기 2,350자에서 한글 완성형 전체 11,172자로 확장되어 인앱 타이핑·메시징을 지원한다 [src:8].
-
-### Tossface (이모지 서체)
-
-`{fonts.font-family-emoji}`는 Unicode v14.0 전체 셋을 커버하는 자체 이모지 폰트로, TTF/OTF/WOFF/WOFF2로 제공되며 "단순한 형태와 최소한의 묘사"를 지향한다 [src:7]. 작은 사이즈에서도 의미가 분명히 읽히도록 설계되었다.
-
-숫자 표기는 `font-feature-settings`로 가른다 — 표·금액에는 고정폭, 산문에는 비례폭이다:
-
-- `font-feature-numeric-tabular`: "tabular-nums"
-- `font-feature-numeric-proportional`: "proportional-nums"
-
-## Spacing
-
-베이스 단위는 4px이며, 토큰 사다리는 4~80px 12단계로 정의된다:
-
-작은 영역(4~32)에서는 모든 4의 배수 단계를 갖고 있으며, 큰 영역(40 이상)은 섹션 구분을 위한 generous한 간격으로 운영된다. 시스템 룰 오브 섬: **24px** 화면 outer padding, **16px** list-row 간 간격, **8px** 밀접 결합 요소(label + input) 사이.
-
-## Rounded
-
-라운드 토큰은 4~32px 8단계 + `full`(999px) 한 단계로 정의되며, 토스 시스템은 "**프로덕션에서 가장 둥근 모바일 시스템 중 하나**"로 분류된다:
-
-버튼 라운드는 사이즈에 따라 스케일된다 — XL 16 / L 14 / M 12 / S 10, `buttons.html` preview로 확인된다. iOS류 squircle/blob 라운드는 `Templates/Squircle` 전용 페이지를 제외하면 사용되지 않는다.
-
-## Elevation & Depth
-
-토스는 평면이 기본이며 그림자는 floating/modal 표면에서만 등장한다. shadow offset과 blur 값은 `colors_and_type.css`에서 직접 인용되며, 색은 모두 navy-900 베이스의 낮은 알파(0.04~0.16)로 통일된다.
-
-bottom-sheet shadow는 README에 명시된 컨벤션이지만 토큰은 아니다 — `0 -2px 12px oklch(0.155 0.060 261 / 0.06)`. inner-shadow 시스템은 없으며, pressed state는 `{colors.press-overlay}`(검정 26% overlay)를 resting fill 위에 얹는 방식으로 구현된다 — 그림자가 아니라 overlay다.
-
-### Motion
-
-```text
-ease:     cubic-bezier(0.22, 0.61, 0.36, 1)   # 기본 ease-out-expo
-ease-out: cubic-bezier(0.16, 1,    0.3,  1)   # 더 snappy, sheet 진입
-dur-fast: 120                                  # button press
-dur-base: 200                                  # toggle, hover
-dur-slow: 320                                  # sheet, dialog
-```
-
-"바운스 오버슈트 없음, 320ms 초과 fade 없음, parallax 없음, skeleton shimmer 없음 — 토스는 3-dot loader를 대신 쓴다". 모든 모션은 위 5개 토큰 안에서 운용된다.
-
-## Shapes
-
-기하학은 **공격적 라운드 + 평면 표면 + 헤어라인 보더**로 요약된다. 차분한 화이트 캔버스 위에 16~32px 라운드 카드/버튼을 얹고, chips와 primary CTA에는 999px full pill을 적용한다. 강조는 색(토스 블루)과 위계로 표현하며 장식은 절제된다.
-
-기본 보더는 **1px `{colors.grey-200}` 헤어라인**이며, focused input은 1.5px `{colors.blue-500}` 보더로 한 단계 강해진다. 2px 장식용 보더는 사용되지 않고, 컬러 left-rail accent 카드도 사용되지 않는다. 배경은 평면이 기본이며 그라디언트는 세 가지 문서화된 예외(bottom CTA 위쪽 보호 그라디언트, 로딩 버튼 내부 radial glow, yellow→orange 일러스트 그라디언트)에만 허용된다.
-
-**Iconography (TDS Icon system)** — 아웃라인(`*-mono`) + 필드(`*-fill`) 두 종 변형, kebab-case 명명(`icon-x-mono`, `icon-setting-mono`, `icon-user-circle-blue-fill`), 사이즈 16/20/24/32. 24px가 워크호스이며, stroke는 24px 그리드 기준 1.5~1.67px, corner는 부드럽게 라운드된다. 필드 변형은 active tab-bar 아이콘에만 사용되고, 모든 아이콘은 `currentColor`를 상속한다 — 외부 컬러 직접 주입은 금지다. 번들이 명시한 production runtime은 단일 SVG sprite로 서빙되며, Figma에서 가장 많이 인스턴스화된 아이콘은 `icon-x-mono`(96회), `icon-setting-mono`(48회), `icon-user-circle-blue-fill`(96회)이다. Apps-in-Toss 미니앱이 외부에서 prototype을 작성할 때는 TDS 아이콘 SVG를 직접 들고 올 수 없으므로 새 번들 ui_kits는 **Lucide**(24px 그리드, 1.5px stroke, rounded line caps)를 동일 격자의 임시 대체로 사용한다 — production 마이그레이션 시 실제 TDS sprite로 교체한다는 substitution 약속이 README에 명시되어 있다.
-
-**Tossface illustration asset set** — `{colors.yellow-500}` body + `{colors.brown-900}`·`{colors.brown-700}` facial features의 yellow-faced 평면 이모지 글리프 [src:7]. 빈 상태·성공 화면·bottom sheet 헤더에 시각 자산 컴포넌트로 사용되며, 텍스트 inline punctuation으로는 사용되지 않는다.
-
-## Components
-
-본 섹션은 핸드오프 번들 Figma 라이브러리의 **41개 컴포넌트 페이지**를 functional kind 별로 분해한다. 정확한 token 값(`{spacing.*}`, `{rounded.*}`, `{colors.*}`)이 모두 surface되어 있으므로 prose 본문에서 `{group.name}` 토큰 참조로 호출한다.
-
-### button
-
-토스 Button은 **XL/L/M/S** 4단으로 운영되며, height·radius·label font가 각 사이즈에서 함께 변한다:
-
-| 사이즈 | height | radius | label |
+# 토스 디자인 시스템
+
+> 근거: 공개 문서 기반 (앱인토스 개발자 문서 + npm 공개 패키지 @toss/tds-colors 0.1.0, @toss/tds-typography 0.0.3, @toss/tds-mobile 2.5.1)
+> 작성: SylviaLab · 최종 수정 2026-10-31
+
+## 1. 개요
+- 서비스 성격: 송금·결제·자산관리를 한 앱에서 하는 금융 슈퍼앱. 외부 파트너가 토스 안에 넣는 미니앱(앱인토스)도 같은 시스템을 쓴다.
+- 디자인 인상 한 줄: 흰 바탕, 푸른 회색 글자, 파랑(#3182f6) 하나. 큰 글자와 넉넉한 둥근 버튼으로 한 화면에 한 가지 일만 시킨다.
+- 공식 시스템 이름: TDS (Toss Design System). 미니앱용 React 구현은 TDS Mobile.
+- 특징
+  - 색 이름이 `adaptive`로 시작한다. 같은 토큰이 라이트·다크에서 다른 값을 낸다.
+  - 글자 크기 토큰이 11~30px을 1px 단위로 20단계 촘촘히 나눈다(t1~t7 + st1~st13).
+  - 글자 크기가 OS 글자 크기 설정(iOS 접근성 크기, Android fontScale)을 따라 커진다.
+  - 버튼 색은 primary·danger·dark·light 네 가지, 채움(fill)과 연한(weak) 두 변형뿐이다.
+
+## 2. 색상
+값은 npm `@toss/tds-colors`의 `colors.light.css`, `colors.dark.css`에서 읽었다.
+
+### 브랜드
+| 토큰 | 라이트 | 다크 | 쓰임 |
 |---|---|---|---|
-| XL | 56 | `{rounded.radius-xl}` (16) | `{typography.label-l}` (17px Bold) |
-| L  | 48 | `{rounded.radius-l}` (14)  | `{typography.label-l}` (17px Bold) |
-| M  | 40 | `{rounded.radius-m}` (12)  | `{typography.label-m}` (15px Semibold) |
-| S  | 32 | 10                         | `{typography.label-s}` (13px Semibold) |
-
-pressed state는 `{colors.overlay-press}` (검정 26%)를 fill 위에 얹는 방식이고, disabled state는 컴포넌트 전체 노드에 `{opacity.disabled-opacity}` (0.30)를 적용한다 — 부분 회색 처리하지 않는다.
-
-```tsx
-<Button variant="primary" size="xl">송금하기</Button>
-<Button variant="ghost" size="m">취소</Button>
-```
-
-### button-primary
-
-`{colors.fill-brand}` (blue-500) 배경 + `{colors.text-alt}` (흰 텍스트). 화면당 단 하나의 가장 중요한 액션에만 사용된다.
-
-### button-secondary
-
-`{colors.fill-secondary}` (grey-100) 배경 + `{colors.text-primary}` (grey-900) 텍스트. 같은 화면의 보조 액션을 표현할 때 사용된다.
-
-### button-danger
-
-`{colors.fill-danger}` (red-500) 배경 + `{colors.text-alt}` 텍스트. 파괴적 액션 전용.
-
-### button-ghost
-
-투명 배경 + `{colors.text-brand}` (blue-500) 라벨, 보더 없음. 텍스트 링크에 가까운 약한 위계.
-
-### bottom-cta
-
-화면 최하단 고정 56pt 버튼. 좌우 16px padding, 24~32px의 `white → transparent` 보호 그라디언트가 위쪽에 적용되어 스크롤되는 콘텐츠와 시각적으로 충돌하지 않도록 한다. `env(safe-area-inset-*)`로 safe area를 자동 인식한다.
-
-```tsx
-<BottomCTA onClick={handleNext}>다음</BottomCTA>
-```
-
-### text-field
-
-48px height, `{rounded.radius-m}` (12) radius, `{colors.fill-secondary}` (grey-100) resting 배경, 1px `{colors.border-secondary}` (grey-200) 보더. focus 상태에서 흰 배경 + 1.5px `{colors.border-primary}` (blue-500) 보더로 전환된다. error 상태는 1.5px `{colors.fill-danger}` (red-500) 보더와 그 아래 `{colors.text-danger}` 컬러의 헬퍼 텍스트로 표현된다.
-
-### chip
-
-34px 높이의 full pill (`{rounded.radius-full}`). resting은 1px `{colors.border-secondary}` 보더 + 흰 배경, active 변형은 `{colors.fill-primary}` (grey-900) 배경 + 흰 텍스트로 flip되며, brand 변형은 `{colors.blue-50}` 배경 + `{colors.text-brand}` (blue-500) 텍스트다.
-
-### badge
-
-22px 높이, 6px radius — chip보다 작고 더 정보 밀도 높은 표면에 사용된다. 시맨틱 색에 매핑된 washed 배경과 페어링된다 (예: red badge는 옅은 분홍 배경 + `{colors.text-danger}` 텍스트; green badge는 옅은 민트 배경 + `{colors.green-500}` 텍스트). 핸드오프 번들의 `colors_and_type.css`는 시맨틱 base step(`red-500/600`, `green-500`)만 정의하고 badge 전용 washed 배경 step은 노출하지 않으므로, washed 톤은 base hue에서 lightness를 끌어올린 추정값으로 운용한다 — red badge ≈ `oklch(0.940 0.040 18)` (정식 토큰 없음, 추정).
-
-### list-row
-
-토스 홈·계좌 목록·거래 내역의 표준 단위. 좌우 padding 14×24, 14px gap으로 44px 아바타(radius 14) + 타이틀/서브 스택 + 우측 정렬 amount/timestamp/arrow 슬롯을 갖는다. amount는 Bold 700 15px이며, 양수는 `{colors.text-brand}` (예: `+50,000원`), 음수는 `{colors.text-primary}` (예: `−12,300원`)로 표시된다.
-
-```tsx
-<ListRow
-  left={<Asset name="bank-account" />}
-  title="토스뱅크"
-  subtitle="잔액"
-  right={<Amount value={1234567} positive />}
-/>
-```
-
-### list-header
-
-list-row 그룹의 헤더 — 섹션 타이틀과 우측 액션 슬롯(예: "전체보기")을 함께 노출한다.
-
-### tab-bar
-
-미니앱의 floating tab-bar 변형 — 420px max-width, `{rounded.radius-3xl}` (24) radius, 흰 배경 + 1px `{colors.border-secondary}` 보더, 2~5개 destination [src:9]. active 아이콘은 filled 변형 + `{colors.text-primary}`, inactive는 outline + `{colors.text-tertiary}`다.
-
-### top-app-bar
-
-56pt 높이, 좌측 정렬 타이틀, 우측 옵션 아이콘 버튼 슬롯.
-
-### toast
-
-`{colors.fill-primary}` (grey-900) 표면 + 흰 라벨, `{rounded.radius-l}` (14) radius, `{elevation.shadow-toast}`. 성공 아이콘은 20px `{colors.green-500}` 원 + 흰 체크다.
-
-```tsx
-<Toast>송금이 완료되었어요</Toast>
-```
-
-### dialog
-
-흰 표면, `{rounded.radius-2xl}` (20) radius, 24px inner padding, `{elevation.shadow-3}`. 타이틀은 18/700, 본문은 15/400 `{colors.text-secondary}`, primary blue + secondary grey-100 CTA 두 개가 각 48px 높이로 stack된다.
-
-```tsx
-<Dialog
-  title="송금을 취소할까요?"
-  body="취소하면 작성하던 내용이 사라져요."
-  primary="취소"
-  secondary="계속하기"
-/>
-```
-
-### bottom-sheet
-
-토스 모바일에서 dialog의 1차 대체 — `shadow-bottom-sheet` (`0 -2px 12px oklch(0.155 0.060 261 / 0.06)`) shadow, `{colors.overlay-scrim}` scrim, 20~24px top corner radius. yellow-faced 일러스트 글리프가 sheet 상단에 anchored되는 패턴이 빈번하다.
-
-### keypad
-
-전용 Figma 페이지 — 금액 입력과 PIN 입력에 사용되는 숫자 키패드. backdrop-filter blur는 iOS 네이티브 시트가 카메라/키패드 위에 떴을 때만 적용된다.
-
-### loading
-
-라벨이 0으로 페이드되고 같은 색의 3개 dot이 펄스하면서, 미세한 radial highlight가 버튼을 가로지른다. skeleton shimmer는 의도적으로 사용되지 않는다.
-
-### menu
-
-trigger 위치에 즉시 펼쳐지는 셀렉터 컴포넌트 [src:4]. "버튼은 위에서 눌렀는데 응답이 하단 bottom sheet에서 오면 인지 부하가 커진다"는 문제 의식을 바탕으로 시각적 거리(physical distance)를 최적화한 컴포넌트다. 10일 A/B 테스트에서 Android item-click rate 10% 개선이 검증된 뒤 정식 채택되었다 [src:4].
-
-```tsx
-<Menu trigger={<Button variant="ghost">정렬</Button>}>
-  <Menu.Item>최신순</Menu.Item>
-  <Menu.Item>가나다순</Menu.Item>
-</Menu>
-```
-
-### icon
-
-TDS Icon system — outline (`*-mono`) + filled (`*-fill`) 두 종 변형, 16/20/24/32 사이즈, `currentColor` 상속. filled 변형은 active tab-bar 아이콘에만 사용된다.
-
-### asset (Tossface illustration)
-
-`{colors.yellow-500}` body + `{colors.brown-900}`·`{colors.brown-700}` facial features의 평면 일러스트 자산 [src:7]. 빈 상태·성공 화면·bottom-sheet 헤더에 시각 자산 컴포넌트로 사용되며, 텍스트 inline에 emoji 대용으로 절대 사용되지 않는다.
-
-### error-message-library
-
-가이드라인이 아닌 **시스템 형태**의 에러 카피 인프라 [src:10]. 개발자용 라이브러리(코드 컴포넌트 검색 기반)와 디자이너용 프리셋 템플릿(Framering) 두 채널을 갖는다. 핵심 원칙은 **"Navigating error"** — 에러 메시지의 역할은 사용자를 다음 화면으로 옮겨주는 것이며 멈춰 세우는 것이 아니다 [src:10]. 토스가 잘못해 발생한 에러조차 해요체를 유지하며, 반복 시스템 상황은 템플릿화되어 좋은 카피가 기본 선택지가 된다 [src:10].
-
-### checkbox · switch
-
-checkbox는 22px 정사각 + 6px radius, resting은 1.5px `{colors.border-strong}` (grey-300) 보더 + 흰 배경, checked는 `{colors.fill-brand}` (blue-500) 배경 + 흰 체크 글리프로 flip된다. switch는 44×26px 트랙 + 20px 흰 knob, off는 `{colors.grey-300}` 트랙, on은 `{colors.fill-brand}` 트랙으로 전환되며 knob은 `dur-base` (200ms) `ease`로 18px translate된다.
-
-### segmented-control
-
-여러 옵션 중 하나를 고르는 분절형 컨트롤 [src:9]. 트랙은 `{colors.fill-secondary}` (grey-100) 배경 + `{rounded.radius-m}`~`radius-l` 라운드, 선택된 분절은 흰 배경 + `{elevation.shadow-1}`로 떠오르고, 미선택 라벨은 `{colors.text-secondary}`다. chip이 다중 필터라면 segmented-control은 상호 배타적 단일 선택이다.
-
-### search-field
-
-`{component.text-field}`의 변형 — 좌측에 search 아이콘을 둔 48px 높이 입력, `{rounded.radius-m}` (12) radius, `{colors.fill-secondary}` (grey-100) resting 배경. focus 시 흰 배경 + 1.5px `{colors.border-primary}` (blue-500)로 전환되는 규칙은 text-field와 동일하다.
-
-### slider
-
-트랙 + thumb 단일 값 선택 컨트롤. 트랙은 `{colors.grey-200}` baseline 위에 `{colors.fill-brand}` (blue-500) active fill, thumb는 흰 원 + 미세한 그림자다. 값 변화는 `dur-base` 안에서만 운용되고 바운스 오버슈트는 없다.
-
-### rating
-
-별점 표시·입력 컴포넌트. 채워진 별은 `{colors.yellow-500}`(일러스트 warm), 빈 별은 `{colors.grey-200}`이며, 반 칸(half) 상태를 지원한다. 숫자 평점은 `{typography.label-m}` Bold로 별 옆에 붙는다.
-
-### progress-bar · progress-stepper
-
-progress-bar는 `{colors.grey-200}` 트랙 + `{colors.fill-brand}` (blue-500) fill의 선형 진행 표시이며, 우측에 `{typography.label-s}` tabular 퍼센트를 둔다. progress-stepper는 26px 원형 node를 segment로 연결한 다단계 표시로, 완료 node는 `{colors.fill-brand}` + 흰 체크, 현재 node는 `{colors.fill-brand}` + `{colors.blue-50}` 4px 글로우 링, 미도달 node는 `{colors.grey-200}` + `{colors.text-tertiary}`다.
-
-### numeric-spinner · stepper
-
-numeric-spinner는 `−  값  +` 가로 캡슐(`{rounded.radius-full}` 보더 + 흰 배경)로 금액·수량 미세 조정에 쓰이며, 값은 tabular figure, ± 버튼은 `{colors.text-brand}` (blue-500)다. stepper는 같은 역할의 세로 변형(`▲ 값 ▼`)으로 `{rounded.radius-m}` 보더 컨테이너 안에서 값 행을 1px 헤어라인으로 분리한다. 비활성 버튼은 `{colors.text-placeholder}`로 흐려진다.
-
-### tooltip · bubble
-
-tooltip은 `{colors.fill-primary}` (grey-900) 표면 + 흰 라벨 + caret을 가진 짧은 보조 설명으로 `{elevation.shadow-2}`를 쓴다. bubble은 채팅 말풍선으로, 상대 발화는 `{colors.grey-200}` 배경 + 좌하단 4px 꼬리(`radius 14/14/14/4`), 본인 발화는 `{colors.fill-brand}` (blue-500) 배경 + 흰 텍스트 + 우하단 4px 꼬리(`radius 14/14/4/14`)다.
-
-### post · board-row · table-row · grid-list
-
-피드·랭킹·표·격자 등 콘텐츠 표시 단위. post는 28px 아바타 + 작성자/시간 헤더 + `{typography.body-3}` 본문 + 반응 strip(♥·💬, active는 `{colors.text-brand}`)으로 구성된다. board-row는 순위 숫자(`{colors.text-brand}`, 1위는 `{colors.text-primary}`) + 36px 원형 아바타 + 우측 tabular 점수의 리더보드 행이다. table-row는 라벨/값/증감 3열을 1px `{colors.border-secondary}` 헤어라인으로 구분하며 수치는 tabular, 등락은 시맨틱 색을 쓴다. grid-list는 2열 격자에 흰 카드(`{rounded.radius-m}` + `{colors.blue-50}` 아이콘 칩)를 배치한다.
-
-### bar-chart
-
-막대형 데이터 시각화. 막대는 `{colors.grey-200}` 기본 + 강조 막대만 `{colors.fill-brand}` (blue-500)이며, 상단만 6px 라운드된다. **axis line·divider를 두지 않는다** — 막대가 차분한 표면 위에 그대로 떠 있는 것이 토스 차트의 규칙이다.
-
-### bottom-info · list-footer
-
-bottom-info는 `{component.bottom-cta}` 위에 얹히는 보조 안내 — `{colors.blue-50}` 배경 + `{colors.text-brand}`의 full pill 칩으로 "수수료 없이 보내요" 같은 한 줄 컨텍스트를 전한다. list-footer는 목록 하단의 "더보기" 액션 행으로 44px 높이 + 1px `{colors.border-secondary}` 보더 + 우측 chevron(grey-400)을 둔다.
-
-### result · text-button · icon-button · tab · navigation
-
-result는 성공/실패 종료 화면 — 중앙 정렬된 시맨틱 원형 아이콘(성공은 `{colors.green-500}`) + 타이틀 + 보조 카피 + yellow-faced 일러스트 anchor로 구성된다. text-button은 `{component.button-ghost}`에 가까운 보더 없는 텍스트 액션이며, icon-button은 40px 정사각 hit-area 안에 24px 아이콘만 둔 컨트롤이다. tab은 하단 2.5px `{colors.fill-brand}` 언더라인으로 활성 상태를 표시하는 인라인 탭(floating `{component.tab-bar}`와 구분된다). navigation(앱인토스)은 화면 상단에 고정되는 앱인토스 전용 내비게이션 바다 [src:6]. 미니앱이 토스 셸 안에서 실행 중임을 알리는 상단 inset 바로, 호스트 표기에 토스 심볼을 작게 동반한다.
-
-### Full component coverage (41 Figma pages)
-
-새 번들 `project/preview/` 디렉터리는 Figma 46개 페이지 중 컴포넌트 페이지 41개를 1:1로 카드화한다. 위 prose 정의 12개는 가장 자주 인용되는 핵심 set이고, 아래 매트릭스는 전체 surface를 한 줄씩 노출한다 — 각 row의 `preview/*.html`은 production 토큰을 inline한 self-contained 데모이며, `Components.jsx` 컬럼은 새 번들의 `ui_kits/mobile/Components.jsx`에 live React 컴포넌트로 추출된 것을 표시한다.
-
-| Figma page | preview card | Components.jsx |
+| blue500 | #3182f6 | #3485fa | 주요 버튼(primary fill), 강조 |
+| blue600 | #2272eb | #449bff | 연한 버튼 글자(라이트) |
+| blue400 | #4593fc | #2970d9 | 연한 버튼 글자(다크) |
+| blue700 | #1b64da | 확인 필요 | light 버튼 글자 |
+| blue50 | #e8f3ff | #202c4d | 연한 파랑 면 |
+| disabledBlue500 | #c9e2ff | 확인 필요 | 비활성 파랑 |
+
+파랑 전체 단계(라이트): 50 #e8f3ff · 100 #c9e2ff · 200 #90c2ff · 300 #64a8ff · 400 #4593fc · 500 #3182f6 · 600 #2272eb · 700 #1b64da · 800 #1957c2 · 900 #194aa6
+
+### 중립(회색 단계)
+| 토큰 | 라이트 HEX | 다크 HEX | 쓰임 |
+|---|---|---|---|
+| grey50 | #f9fafb | #202027 | 가장 옅은 면 |
+| grey100 | #f2f4f6 | #2c2c35 | 회색 바탕(greyBackground), 구획 면 |
+| grey200 | #e5e8eb | #3c3c47 | 얇은 구분선(hairlineBorder) |
+| grey300 | #d1d6db | #4d4d59 | 비활성 테두리 |
+| grey400 | #b0b8c1 | #62626d | 비활성 글자·아이콘 |
+| grey500 | #8b95a1 | #7e7e87 | 흐린 보조 글자 |
+| grey600 | #6b7684 | #9e9ea4 | 보조 글자, 설명 문단 |
+| grey700 | #4e5968 | #c3c3c6 | 본문 글자, dark 버튼 채움 |
+| grey800 | #333d4b | #e4e4e5 | 진한 글자 |
+| grey900 | #191f28 | #ffffff | 제목·가장 진한 글자 |
+| background | #ffffff | #17171c | 기본 화면 바탕 |
+| layeredBackground | #ffffff | #202027 | 한 층 올라간 면 |
+| floatBackground | #ffffff | #2c2c35 | 떠 있는 면(시트·팝오버) |
+| backgroundLevelB01 | #f2f4f6 | #101013 | 회색 계열 바탕 |
+| pcScreenBg | #f6f7f9 | 확인 필요 | PC 화면 바깥 바탕 |
+| dimmedBackground | rgba(0,0,0,0.2) | 확인 필요 | 시트·모달 뒤 딤 |
+
+- 회색은 순수 회색이 아니라 푸른 기가 섞여 있다(#191f28, #4e5968). 다크 모드 회색은 반대로 거의 무채색이다.
+- 투명 회색 단계도 있다: greyOpacity50 rgba(0,23,51,0.02) ~ greyOpacity900 rgba(2,9,19,0.91). 100은 0.05, 200은 0.1, 500은 0.46.
+- 글자 역할별(본문·보조) 공식 매핑 표는 공개 문서에서 찾지 못했다. 위 쓰임 열의 글자 역할은 컴포넌트 코드에서 쓰인 위치로 정리했다.
+
+### 상태
+| 토큰 | HEX(라이트) | 다크 | 쓰임 |
+|---|---|---|---|
+| success (green500) | #03b26c | #16bb76 | 완료, 수익 |
+| warning (orange500) | #fe9800 | #f18600 | 주의 |
+| error (red500) | #f04452 | #f04251 | 오류, danger 버튼 |
+| info (blue500) | #3182f6 | #3485fa | 안내 |
+
+그 밖의 색 단계(500 기준): yellow #ffc342, teal #18a5a5, purple #a234c7. 모두 50~900 10단계다.
+- red: 50 #ffeeee · 100 #ffd4d6 · 300 #fb8890 · 500 #f04452 · 600 #e42939 · 700 #d22030
+- green: 50 #f0faf6 · 100 #aeefd5 · 300 #3fd599 · 500 #03b26c · 700 #029359
+- orange: 50 #fff3e0 · 300 #ffbd51 · 500 #fe9800 · 700 #f57800
+- yellow: 50 #fff9e7 · 300 #ffdd78 · 500 #ffc342 · 700 #faa131
+
+## 3. 타이포그래피
+- 글꼴: Toss Product Sans (토스 전용 글꼴, 외부 배포용 라이선스 확인 필요). 이모지는 Tossface.
+- 대체 글꼴: 'SF Pro KR', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', sans-serif
+- 굵기: regular 400, medium 500, semibold 600, bold 700.
+- 행간: 작은 글자는 1.5배, 큰 글자로 갈수록 좁아져 30px에서 약 1.33배.
+- 아래는 OS 기본 글자 크기(iOS Large) 기준이다. 사용자가 글자를 키우면 단계별로 커진다.
+
+| 단계 | 크기(px) | 굵기 | 행간(px) | 쓰임 |
+|---|---|---|---|---|
+| t1 | 30 | 확인 필요 | 40 | 가장 큰 제목·숫자, large 배지 기준 |
+| st1 | 29 | - | 38 | 보조 단계 |
+| st2 | 28 | - | 37 | 보조 단계 |
+| st3 | 27 | - | 36 | 보조 단계 |
+| t2 | 26 | 확인 필요 | 35 | 큰 제목 |
+| st4 | 25 | - | 34 | 보조 단계 |
+| st5 | 24 | - | 33 | 보조 단계 |
+| st6 | 23 | - | 32 | 보조 단계 |
+| t3 | 22 | 확인 필요 | 31 | 화면 제목급 |
+| st7 | 21 | - | 30 | 보조 단계 |
+| t4 | 20 | 700 | 29 | 큰 목록 머리말(ListHeader large) |
+| st8 | 19 | - | 28 | 보조 단계 |
+| st9 | 18 | - | 27 | 보조 단계 |
+| t5 | 17 | 400·700 | 25.5 | 기본 본문, large·xlarge 버튼, ListHeader medium |
+| st10 | 16 | 400 | 24 | 본문(Text 기본값), 말풍선 |
+| t6 | 15 | 500·600 | 22.5 | medium 버튼, 보조 본문 |
+| st11 | 14 | 500 | 21 | 작은 설명 |
+| t7 | 13 | 400·500·600 | 19.5 | small 버튼, 캡션 |
+| st12 | 12 | 600 | 18 | 아주 작은 라벨 |
+| st13 | 11 | 500 | 16.5 | 최소 크기 설명 |
+
+- 이름 규칙: t(title)는 큰 단계, st(sub title)는 그 사이를 메우는 단계다.
+- 글자 크기는 고정 px이 아니라 접근성 설정 표를 거친다. 예: iOS xxxLarge 설정에서 t1은 42px까지 커진다.
+
+## 4. 간격·레이아웃
+- 기본 단위: 확인 필요 (공개 문서와 패키지에서 간격 토큰 표를 찾지 못했다. `Spacing` 컴포넌트만 있다.)
+- 간격 단계: 확인 필요
+- 컴포넌트 안에서 실제로 쓰는 여백: 4, 8, 10, 12, 16, 20, 28px (버튼·말풍선 코드 값)
+- 화면 좌우 여백(모바일/데스크톱): 확인 필요
+- 미니앱 논리 해상도: 세로 약 360×640 ~ 420×740, 가로 약 640×360 ~ 740×420 중 하나를 고른다.
+- 노치·다이내믹 아일랜드·하단 홈 바는 Safe Area로 피한다. 레터박스(빈 띠)를 남기지 않는다.
+- 에셋은 1x·2x면 충분하고, 세밀한 그래픽만 3x.
+- 테스트는 비율이 다른 기기 3~5대로 한다.
+- 그리드: 확인 필요
+
+## 5. 모서리·그림자·테두리
+| 토큰 | 값 | 쓰임 |
 |---|---|---|
-| Asset | `asset.html` | — |
-| Badge | `badge.html` | — |
-| Bar-Chart | `bar-chart.html` | — |
-| Board-Row | `board-row.html` | — |
-| Border | `border.html` | — |
-| Bottom-CTA | `bottom-cta.html` | ✅ `BottomCTA` |
-| Bottom-Info | `bottom-info.html` | — |
-| Bottom-Sheet | `bottom-sheet.html` | — |
-| Bubble | `bubble.html` | — |
-| Button | `buttons.html` | ✅ `TButton` |
-| Checkbox | `checkbox.html` | — |
-| Chip | `chip.html` | — |
-| Dialog | `dialog.html` | — |
-| Grid-List | `grid-list.html` | — |
-| Icon-Button | `icon-button.html` | — |
-| Keypad | `keypad.html` | (inline in AmountScreen) |
-| List-Footer | `list-header-footer.html` | — |
-| List-Header-V3 | `list-header-footer.html` | — |
-| List-Row | `list-rows.html` | ✅ `ListRow` |
-| Loader | `loader.html` | — |
-| Menu | `menu.html` | — |
-| Navigation---AppsinToss | `navigation-apps-in-toss.html` | — |
-| Numeric-Spinner | `numeric-spinner.html` | — |
-| Post | `post.html` | — |
-| Progress-Bar | `progress-bar.html` | — |
-| Progress-Stepper | `progress-stepper.html` | — |
-| Rating | `rating.html` | — |
-| Result | `result.html` | (inline in DoneScreen) |
-| Search-Field | `search-field.html` | — |
-| Segmented-Control | `segmented-control.html` | — |
-| Slider | `slider.html` | — |
-| Stepper | `stepper-spinner.html` | — |
-| Switch | `switch.html` | — |
-| Tab | `tab.html` | — |
-| Tab-Bar | `tab-bar.html` | ✅ `TabBar` |
-| Table-Row | `table-row.html` | — |
-| Text-Button | `text-button.html` | — |
-| Text-Field | `inputs.html` | ✅ `TextField` |
-| Toast | `toasts-dialogs.html` | ✅ `Toast` |
-| Tooltip | `tooltip.html` | — |
-| Top | `top.html` | ✅ `TopBar` |
+| 버튼 small | 8px | 높이 32px 버튼 |
+| 버튼 medium | 10px | 높이 38px 버튼 |
+| 버튼 large | 14px | 높이 48px 버튼 |
+| 버튼 xlarge | 16px | 높이 56px 버튼 |
+| 버튼 full | 0px | 화면 가로 전체 버튼 |
+| 말풍선(Bubble) small·medium·large | 12px · 16px · 18px | 말풍선 |
+| 배지 | 9~13px | 크기별, 6절 참고 |
+| hairlineBorder | 1px #e5e8eb (다크 #3c3c47) | 목록 구분선 |
+| 그림자 | 확인 필요 | 다크 모드는 그림자 대신 면 밝기(background → layered → float)로 층을 나눈다 |
 
-위 매트릭스는 번들 기준이라 공개 문서와 범위가 다르다. **공개 TDS Mobile 문서가 다루는 컴포넌트는 그중 일부** — `TextField` · `Modal` · `Toast` · `Dialog` · `Bottom Sheet`이며, 오버레이는 컴포넌트뿐 아니라 `useDialog` · `useToast` · `useBottomSheet` 훅으로도 열려 있다 [src:5]. 다운스트림이 공개 표면만으로 구현한다면 이 목록이 검증 가능한 범위다.
+- 모서리는 컴포넌트 크기에 따라 따로 정해져 있고, 공통 radius 토큰 표는 공개되지 않았다.
 
-### Live JSX kit & Send-Money click-through
+## 6. 주요 컴포넌트
+TDS Mobile이 내보내는 주요 컴포넌트: Button, TextButton, IconButton, BottomCTA·FixedBottomCTA, ListRow, ListHeader, ListFooter, Top, TopNavigation, Tab, SegmentedControl, Chip, Badge, TextField, SearchField, BottomSheet, AlertDialog, ConfirmDialog, Toast, Tooltip, Switch, Checkbox, Skeleton, ProgressBar, NumberKeypad 등.
 
-`ui_kits/mobile/Components.jsx`는 위 매트릭스 중 production 흐름에서 가장 자주 쓰이는 **7개**를 plain React 컴포넌트로 추출한다: `TopBar`(56pt 상단바), `BottomCTA`(56pt 하단 고정 액션 + 위쪽 보호 그라디언트), `TButton`(XL/L/M/S × primary/neutral/danger/ghost), `TextField`(48pt resting → focus 1.5px blue), `ListRow`(44pt 아바타 + amount 슬롯), `TabBar`(4-tab floating), `Toast`(grey-900 surface + green-500 check 아이콘). 모두 build 의존성 없이 `<script type="text/babel">`로 inline 컴파일되며, 토큰은 `colors_and_type.css`의 CSS custom property를 직접 참조한다.
+### 버튼
+| 크기 | 최소 높이 | 최소 폭 | 좌우 여백 | 모서리 | 글자 |
+|---|---|---|---|---|---|
+| small | 32px | 52px | 10px | 8px | t7 13px |
+| medium | 38px | 64px | 16px | 10px | t6 15px |
+| large | 48px | 80px | 16px | 14px | t5 17px |
+| xlarge(기본) | 56px | 96px | 28px | 16px | t5 17px |
 
-`ui_kits/mobile/Send-Money Flow.html`은 위 7개 컴포넌트와 `ios-frame.jsx`(390×780pt iOS bezel)를 조합해 **5-screen 송금 click-through**를 제공한다. 순서와 각 화면의 1차 액션:
-
-| 단계 | 화면 (`Screens.jsx`) | 1차 액션 (`BottomCTA` 라벨) |
+| 색 | fill(채움) | weak(연한) |
 |---|---|---|
-| 01 · 홈 | `HomeScreen` | "송금하기" → `select` |
-| 02 · 받는 사람 | `SelectScreen` | (목록에서 행 선택 → `amount`) |
-| 03 · 금액 입력 | `AmountScreen` | "{금액}원 보내기" (amount 없으면 "보내기" + disabled) → `confirm` |
-| 04 · 확인 | `ConfirmScreen` | "{금액}원 보내기" → `done` |
-| 05 · 완료 | `DoneScreen` | "확인" → `home`(stack reset) |
+| primary(기본) | 바탕 #3182f6, 흰 글자 | 바탕 #64a8ff 15% 투명, 글자 #2272eb |
+| danger | 바탕 #f04452, 흰 글자 | 바탕 #fb8890 15% 투명, 글자 #e42939 |
+| dark | 바탕 #4e5968, 흰 글자 | 바탕 greyOpacity100, 글자 #4e5968 |
+| light | 흰 바탕, 글자 #1b64da | 흰색 투명 바탕, 흰 글자 |
 
-흐름 전체가 단일 React `useState` 스택으로 관리되어 back-navigation이 평탄하게 동작하며, `AmountScreen`은 입력값 0일 때 CTA를 disabled로 잠가 토스의 **"버튼은 일어날 일을 직접 말한다"** 원칙( Don'ts 절)을 잡음 없이 구현한다.
+- 다크 모드 weak는 600 단계 22% 투명 바탕에 400 단계 글자.
+- 놓는 방식: inline(옆에 나란히), block(컨테이너 폭), full(가로 전체, 모서리 0).
+- 로딩: 점 세 개가 차례로 움직이고 버튼 폭은 그대로 둔다. 화면 낭독기에는 바쁨 상태를 알린다.
+- 비활성: 누를 수 없고 흐리게 보인다. 로딩과 비활성을 함께 쓸 수 있다.
+- 파트너 브랜드 색을 primary로 넣으면 버튼 색이 그 색으로 바뀐다.
 
-## Do's and Don'ts
+### 입력창
+- TextField, SplitTextField, SearchField, TextArea가 있다. 높이·모서리 수치: 확인 필요.
 
-**Do**
+### 카드·리스트
+- ListRow: 왼쪽(아이콘·이미지) · 가운데(제목·설명) · 오른쪽(값·화살표) 세 칸 구조. 세부 여백 수치는 확인 필요.
+- ListHeader 제목: large 20px 굵게, medium 17px 굵게, small 15px 중간 굵기, xsmall 13px 보통.
+- ListHeader 설명: large 13px, medium 12px.
+- 구분선은 1px hairline(#e5e8eb).
 
-- product-facing 색은 시맨틱·컴포넌트 alias(`{colors.fill-brand}`, `{colors.text-primary}`, `{colors.border-primary}`, `{colors.fill-secondary}`)로만 호출하고, base 팔레트(`{colors.blue-500}`, `{colors.grey-900}` 등)는 새 role을 만들 때만 직접 참조한다 [src:3].
-- 화면당 단일 강조색 정책을 유지한다 — primary CTA는 `{colors.fill-brand}` 하나로 통일하고, 보조 액션은 `{colors.fill-secondary}` 또는 ghost 변형으로 분리한다 [src:3].
-- 화면 최하단 강제 액션은 `{component.bottom-cta}`로, 화면 내부 액션은 `{component.button-primary}`로 분리한다 — 두 컴포넌트의 역할이 다르다.
-- 버튼 라운드는 사이즈와 페어로 운영한다 — XL→`{rounded.radius-xl}` (16), L→`{rounded.radius-l}` (14), M→`{rounded.radius-m}` (12), S→10.
-- 실시간 금융 데이터(잔액·환율·차트)는 `tabular-nums`로, 강조 숫자는 `proportional-nums`로 분리한다 [src:8].
-- 본문은 `{typography.body-2}` (15px / 1.5 line-height)로 기본화한다 — 한글 가독성을 위한 표준값이다.
-- product 카피는 **해요체**로 작성한다 — 토스가 잘못해 발생한 에러에도 격식체가 아닌 해요체를 유지한다 [src:10].
-- 에러 메시지는 "Navigating error" 원칙을 따른다 — 사용자를 멈춰 세우지 않고 다음 화면으로 안내한다 [src:10].
-- 금액은 한국식 표기를 따른다 — `1,000원` 처럼 세 자리 구분 + `원` 직접 붙임(공백 없음); 퍼센트도 `12%`로 붙여쓴다.
-- 미니앱 브랜드명은 한국어 표기를 우선한다 — `Toss`보다 `토스`를 권장한다 [src:6].
-- 미니앱이 자체 brand 컬러를 등록할 때는 색 대비 자동 보정을 전제한다 — 기준에 못 미치는 색은 원래 색을 최대한 유지하는 선에서 바뀌므로, 등록한 hex가 그대로 렌더된다고 가정하지 않는다 [src:6].
-- 아이콘은 `currentColor`를 상속하게 둔다 — 외부 컬러 직접 주입은 금지다.
-- pressed state는 `{colors.overlay-press}` (검정 26%) overlay로, disabled state는 컴포넌트 전체 노드에 `{opacity.disabled-opacity}` (0.30)를 적용한다 — 부분 회색 처리하지 않는다.
+### 상단 바·탭 바
+- Top: 화면 위쪽 큰 제목 영역. TopNavigation: 뒤로 가기·아이콘·텍스트 버튼을 담는 내비게이션 바.
+- 미니앱 탭 바는 선택 사항이다. 쓰면 토스가 주는 떠 있는(floating) 형태만 쓰고, 탭은 2~5개.
+- Tab, SegmentedControl은 화면 안 전환용.
 
-**Don't**
+### 바텀시트·모달
+- BottomSheet, AlertDialog, ConfirmDialog. 뒤 딤은 검정 20%.
+- 대화상자 왼쪽 버튼은 "취소" 대신 "닫기"로 쓴다. 지금 하던 일을 취소한다는 오해를 막기 위해서다.
+- 진입하자마자 홍보·알림 바텀시트를 띄우지 않는다(다크 패턴으로 본다).
+- 시트 모서리 수치: 확인 필요.
 
-- 챗봇 톤("~해보세요!", "~할까요?")이나 마케팅 과장("혁신적", "최고의", "차세대")을 product 카피에 사용하지 않는다 [src:10].
-- 격식체(~십시오/~합니다)를 product 카피에 사용하지 않는다 — 토스가 잘못한 에러 화면에서도 해요체를 유지한다 [src:10].
-- 단정형 `-다`나 방송 헤드라인 톤을 사용하지 않는다 — 해요체가 표준이다.
-- 한 화면에 강조색을 둘 이상 사용하지 않는다 — `{colors.fill-brand}`는 단일 primary CTA에 예약된다.
-- 그라디언트를 chrome에 사용하지 않는다 — 세 가지 문서화된 예외(bottom CTA 보호 그라디언트, 로딩 버튼 radial glow, yellow→orange 일러스트)만 허용된다.
-- iOS류 squircle/blob 라운드를 사용하지 않는다 — `Templates/Squircle` 전용 페이지를 제외하고는 표준 9단 `{rounded.*}` ladder만 사용한다.
-- 2px 장식용 보더, 컬러 left-rail accent 카드를 사용하지 않는다 — 기본 보더는 1px `{colors.border-secondary}` 헤어라인이다.
-- skeleton shimmer를 사용하지 않는다 — 로딩 상태는 3-dot loader와 미세 radial highlight로 처리한다.
-- 320ms 초과 fade·바운스 오버슈트·parallax를 사용하지 않는다 — 모션은 `dur-fast`/`dur-base`/`dur-slow` (120/200/320ms) 안에서만 운용한다.
-- inner shadow를 사용하지 않는다 — pressed state는 `{colors.overlay-press}` overlay이지 shadow가 아니다.
-- 이모지를 product 카피에 inline으로 사용하지 않는다 — "emoji" 컨텐츠는 큐레이트된 `{component.asset}` 일러스트 세트로 다뤄지고, 텍스트 punctuation으로 쓰이지 않는다.
-- `{component.button-primary}`와 `{component.bottom-cta}`를 같은 화면에 동시에 두지 않는다 — 액션 위계가 무너지고 강조점이 분산된다.
-- 영문 UI 라벨에 ALL CAPS, 헤딩에 `!`, 한국어 문장 중간에 em-dash를 사용하지 않는다; "여기를 눌러주세요" 같은 디렉티브 라벨은 금지된다 — 버튼은 일어날 일을 직접 말한다(`송금하기`, `다음`, `시작하기`).
-- 토스의 금융 제품 도메인(송금·결제·계좌·증권 흐름, 슈퍼앱 셸 구조, `Send-Money Flow` 같은 화면 시퀀스)을 성격이 다른 제품에 그대로 이식하지 않는다 — TDS에서 차용할 것은 시각 언어(단일 강조색 규율·공격적 라운드 ladder·해요체 카피 운용·tabular 숫자 분리)이지 토스의 금융 서비스 개념이 아니다; 미니앱조차 토스 하단 네비게이션 복제와 브랜드 혼동이 금지된다 [src:6].
+### 토스트·스낵바
+- Toast, PointToast 컴포넌트가 있다. 크기·위치 수치: 확인 필요.
 
-## Responsive Behavior
+### 배지
+| 크기 | 글자 | 굵기 | 여백(상하×좌우) | 모서리 |
+|---|---|---|---|---|
+| xsmall | 10px | 600 | 3×7px | 9px |
+| small | 12px | 700 | 3×7px | 11px |
+| medium | 13px | 700 | 3×7px | 12px |
+| large | 14px | 700 | 4×8px | 13px |
 
-토스는 **mobile-first** 슈퍼앱이며, TDS Mobile / 앱인토스 TDS가 정식 문서화의 1차 표면이다 [src:9]. 데스크톱 surface는 부수적이며 모바일 인터랙션 패턴을 그대로 옮기지 않는다. README에 명시된 정책 — "토스는 모바일에서 다중 컬럼 레이아웃을 거의 사용하지 않는다".
+- 색: blue, green, yellow, orange, red, grey. fill과 weak 변형.
 
-### Breakpoints
+## 7. 아이콘·이미지·모션
+- 아이콘·이모지 크기: 24~40px. 한 번에 하나만 쓰고 두 개 이상 묶지 않는다.
+- 이모지 글꼴은 Tossface.
+- 그래픽은 뜻을 돕는 용도로만 쓴다. 한 화면에 핵심 그래픽 하나. 입자·과한 그라데이션·효과는 피한다.
+- 그래픽 색은 라이트·다크 둘 다에서 보이는 중간 밝기로 고른다.
+- 앱 로고: 600×600px 정사각형, 모서리 없이 제출(라운드는 플랫폼이 처리).
+- 모션: 기본 이징 cubic-bezier(.25,.1,.25,1), 기본 길이 0.5초. 그 밖에 ease(.6,0,0,.6), expo(.16,1,.3,1), back(.34,1.56,.64,1) 곡선과 스프링 프리셋이 있다.
+- 3D·모션 리소스는 토스가 주는 모듈 것만 쓴다(미니앱 규칙).
 
-공식 breakpoint 토큰 표는 핸드오프 번들에서 별도로 surface되지 않았다 — 아래는 mobile-first 정책 기반의 권장 분기점이며 토스 공식 토큰은 아니다.
+## 8. 글쓰기 톤(UX 라이팅)
+- 말투: 모든 상황에서 해요체.
+- 능동문을 쓴다. 수동문은 서비스 종료·만료 안내나 안심시키는 말처럼 꼭 필요할 때만.
+- 부정형 대신 할 수 있는 것을 말한다. 안 되는 이유가 있으면 이유를 함께 쓴다.
+- 과한 높임을 줄인다. "~시겠어요?", "~께" 대신 "~에게".
+- 명사를 겹쳐 쓰지 않는다. 한자어 명사는 동사로 풀어 쓴다.
+- "되어요" 대신 "돼요".
+- 버튼 문구는 다음 행동을 바로 말한다. 혜택만 반복하거나 버튼 위에 부풀린 설명을 붙이지 않는다.
+- 예시 구조: [무엇이] [어떻게 됐어요] / 버튼은 [동사 + 기] 또는 [동사 + 요] 형태의 짧은 행동.
 
-| Name | Width | Key Changes |
-|---|---|---|
-| Mobile | ≤ 640px | 기본 환경 — `{component.bottom-cta}`로 화면 최하단 액션, `{component.bottom-sheet}`를 dialog 기본 대체로 사용 [src:9] |
-| Tablet | 641–1023px | 단일 컬럼 유지 권장 — 토스는 모바일에서 multi-column을 거의 사용하지 않는 정책을 가짐 |
-| Desktop | ≥ 1024px | 부수적 surface — 별도 위계 재설계 권장 |
+## 9. AI에 넣을 때
+```
+토스(TDS) 스타일로 모바일 화면을 디자인해 줘.
+- 주색: #3182f6 (다크 #3485fa), 오류 #f04452, 성공 #03b26c
+- 배경: #ffffff, 회색 구획 #f2f4f6, 다크 바탕 #17171c
+- 글자: 제목 #191f28, 본문 #4e5968, 보조 #6b7684, 흐린 글자 #8b95a1
+- 글꼴: Toss Product Sans 대신 시스템 산스(SF Pro, Apple SD Gothic Neo, Noto Sans KR)
+- 크기: 제목 22~26px 굵게, 본문 17px, 보조 15px, 캡션 13px
+- 모서리: 하단 큰 버튼 16px, 중간 버튼 10px, 작은 버튼 8px
+- 버튼: 높이 56px 가로 꽉 찬 파랑 버튼 하나, 보조는 연한 파랑(weak)
+- 구분: 그림자 대신 #f2f4f6 면과 1px #e5e8eb 선
+- 문구: 해요체, 짧게, 한 화면에 한 가지 일
+```
 
-### Touch Targets
+## 10. 참고 자료
+- https://developers-apps-in-toss.toss.im/design/components (TDS 소개·컴포넌트 목록, 확인 2026-10-31)
+- https://developers-apps-in-toss.toss.im/design/consumer-ux-guide.md (미니앱 UI/UX·UX 라이팅 규칙, 확인 2026-10-31)
+- https://developers-apps-in-toss.toss.im/llms.txt (문서 색인, 확인 2026-10-31)
+- https://tossmini-docs.toss.im/tds-mobile/components/button/ (Button 속성, 확인 2026-10-31)
+- https://www.npmjs.com/package/@toss/tds-colors (0.1.0, colors.light.css·colors.dark.css, 확인 2026-10-31)
+- https://www.npmjs.com/package/@toss/tds-typography (0.0.3, 글자 크기·행간 표, 확인 2026-10-31)
+- https://www.npmjs.com/package/@toss/tds-mobile (2.5.1, 버튼·배지·목록 머리말·모션 값, 확인 2026-10-31)
 
-모든 인터랙티브 표면은 **최소 44×44px** hit area를 보장한다. `{component.list-row}`는 한 줄 전체가 hit area이며, `{component.button}` 사이즈는 S(32)도 손가락 터치를 전제로 충분한 padding을 갖는다. `{component.bottom-cta}`는 56pt 높이로 한 손 엄지 도달성을 최적화한다.
-
-### Collapsing Strategy
-
-- **Dialog → BottomSheet**: 모바일에서는 `{component.dialog}` 대신 `{component.bottom-sheet}`를 1차로 사용한다 [src:9].
-- **Menu over BottomSheet**: 선택지가 짧으면 `{component.menu}`를 trigger 근처에 펼친다 — 하단 sheet로 떨어뜨리지 않는다 (시각 거리 최적화 정책) [src:4].
-- **BottomCTA**: 화면 최하단에 safe-area inset을 고려한 고정 액션 영역으로 운용한다.
-- **Single column**: 모바일·태블릿 모두 단일 컬럼 유지를 권장한다.
-
-### Image Behavior
-
-토스 시스템은 `{component.asset}`을 통해 일러스트·아이콘을 일관된 컨테이너 안에서 노출한다. chrome에는 full-bleed 사진이 사용되지 않으며, 일러스트 자산은 `{colors.yellow-500}` body의 평면 톤을 유지한다.
-
-## Known Gaps
-
-- **다크 모드 alias 테이블** — 핸드오프 번들은 light 모드 카노니컬 hex만 제공하고, 2025년 OKLCH 마이그레이션 발표에도 시맨틱 다크 alias 테이블은 실리지 않았다 [src:3]. 다크 팔레트는 `@toss/tds-colors`의 `colors.dark.css`가 발행하며 [src:12], 본 문서는 이름이 대응하는 15개를 `dark-` 토큰으로 옮겼다. 번들 고유 step 11개(`blue-600`·`blue-700`, `grey-150`, `yellow-400`·`yellow-600`·`yellow-700`, `orange-300`·`orange-400`·`orange-500`, `red-600`, `green-500`)와 알파 토큰(`fg-tertiary` 등)은 발행된 다크 짝이 없어, 프리뷰가 그중 쓰는 값은 여전히 라이트 값에서 파생한 것이다. 시맨틱 alias(`text-primary` 등)의 다크 매핑도 문서화하지 않았다.
-- **다크 모드 텍스트 대비** — `colors.dark.css`의 `blue500`·`red500`을 다크 표면 위 본문 크기 텍스트로 쓰면 WCAG 4.5:1에 못 미친다. 프리뷰에서 잰 값으로 `dark-blue-500` 텍스트는 `dark-blue-50` 위 3.84:1, `dark-grey-100` 위 3.87:1이고, `dark-red-500` 텍스트는 `dark-grey-100` 위 3.69:1이다. 토스가 다크 텍스트에 어느 step을 쓰는지는 시맨틱 다크 alias가 공개되지 않아 확인하지 못했으므로, 본 문서와 프리뷰는 발행값을 그대로 둔다.
-- **전체 컬러 step ladder** — `colors_and_type.css`에 노출된 step은 brand(blue 50/500/600/700), grey(50~900 + 150), yellow(300~700), orange(300~500), red(500/600), green(500), navy-900, brown(400~900)이다. 그 외 hue별 step(예: blue-100~400, green-50~400, red-50~400 등)과 teal·purple 팔레트는 `@toss/tds-colors`가 발행하지만 [src:12] 본 문서는 번들이 쓰는 step만 싣고 옮기지 않았다.
-- **철회된 부재 주장 2건 (2026-09-24)** — 「토큰 패키지도 값 표도 공개되지 않았다」(`## Colors` 이전 감사 메모)와 「나머지 hue별 step은 surface되지 않았다」(위 step ladder 항목의 이전 문구)는 번들 기준으로만 참이었다. 토스는 `@toss/tds-colors`로 라이트·다크 팔레트 값과 각 hue의 50~900 step을 발행한다 [src:12]. 위 다크 모드 항목의 alias 테이블 공백은 철회 대상이 아니다 — 그 패키지는 평면 hex 값만 싣고, semantic alias가 테마별로 어느 base step을 참조하는지는 싣지 않는다.
-- **Toss Product Sans 라이선스** — TPS는 자체 라이선스로 외부 재배포가 금지된다 [src:8]. 본 카탈로그를 적용하는 host 앱은 Pretendard로 substitute해야 하며, 메트릭은 거의 일치하지만 글리프 디테일(특수문자 디자인, fixed-width 숫자)에서는 차이가 발생할 수 있다.
-- **Token Studio 빌드 산출물 포맷** — 토큰은 Token Studio → GitHub PR → 플랫폼별 코드 자동 생성을 거치며 출력은 RGB/RGBA 포맷이다 [src:3]. 본 카탈로그는 OKLCH로 변환해 표기하나, 자동 생성 산출물의 정확한 포맷·툴체인 디테일은 공개되지 않았다.
-- **공식 breakpoint 토큰** — TDS Mobile은 mobile-first 정책상 breakpoint 토큰 자체가 공식 surface되지 않았다 [src:9]. 본 문서의 Responsive Behavior 분기점은 권장값이며 토스 공식 토큰이 아니다.
-
-## References
-
-1. https://toss.tech — Toss Tech 블로그 인덱스.
-2. https://toss.tech/article/toss-design-system — TDS 디자인 시스템 개요. LEGO-block 비유, 2,000명 메이커 전제, 3-pillar 개선 모델.
-3. https://toss.tech/article/tds-color-system-update — TDS 컬러 시스템 OKLCH 마이그레이션, 4계층 토큰 구조(Target/Role/Variant/Level), base/semantic/component 명명.
-4. https://toss.tech/article/tds-component-making — 컴포넌트 설계 방법론. Menu 컴포넌트 10일 A/B 테스트, "Will people use this well? Will metrics improve?" 검증 원칙.
-5. https://tossmini-docs.toss.im/tds-mobile/ — TDS Mobile foundation, TextField/Modal/Toast/Dialog 및 `useDialog`/`useToast`/`useBottomSheet` 훅.
-6. https://developers-apps-in-toss.toss.im/design/consumer-ux-guide — 앱인토스 UI/UX 가이드(구 미니앱 브랜딩 가이드 — 옛 `/design/miniapp-branding-guide.html`은 `/design`으로 리다이렉트된다). `brand.primaryColor: #3182F6` 입력 예시, 브랜드 컬러 대비 자동 보정 정책, 한국어 표기 권장, 탭바 형태 규칙. 같은 경로에 `.md`를 붙이면 마크다운 사본이 나온다.
-7. https://github.com/toss/tossface — Tossface 이모지 폰트 공식 레포. Unicode 14.0 전체 셋, TTF/OTF/WOFF/WOFF2.
-8. https://toss.im/tossfeed/article/beginning-of-tps — Toss Product Sans 개발기. 산돌 공동 제작, 7 weight, 한글 11,172자 완성형, tabular/proportional 숫자 분리, 디자인 3대 기준.
-9. https://developers-apps-in-toss.toss.im/design/components.html — 앱인토스 TDS 컴포넌트 목록 (Badge, Border, BottomCTA, Button, Asset, ListRow, ListHeader, Navigation, Paragraph, Tab, Top).
-10. https://toss.tech/article/introducing-toss-error-message-system — Toss 에러 메시지 시스템. Navigating error 원칙, 해요체 채택 의사결정, 개발자 라이브러리 + 디자이너 Framering.
-11. https://toss.im — 토스 공식 홈페이지. 슬로건·카피·비주얼 톤 보조 출처.
-12. https://www.npmjs.com/package/@toss/tds-colors — TDS 색 토큰 npm 패키지. `colors.light.css`·`colors.dark.css`가 `--adaptive*` 커스텀 프로퍼티로 팔레트 hex를 싣는다(blue·grey·green·red·orange·yellow·purple·teal 각 50~900).
-13. https://tossmini-docs.toss.im/tds-mobile/foundation/colors/ — TDS Mobile Colors 문서. `@toss/tds-colors` 사용법과 기본·배경 색상 팔레트를 이름과 hex로 보여 준다.
+### 근거와 한계
+- 색은 tds-colors 패키지 CSS에서, 글자 크기·행간은 tds-typography와 tds-mobile 패키지 코드에서, 버튼·배지·말풍선 수치는 tds-mobile 배포 코드에서 읽었다.
+- UX 라이팅·그래픽·해상도 규칙은 앱인토스 개발자 문서에서 읽고 내 말로 바꿔 적었다.
+- tossmini-docs의 대부분 페이지는 수집 차단으로 열지 못했다. 그래서 간격 단위, 화면 여백, 입력창·시트·토스트 수치, 그림자는 확인하지 못했다.
+- 이 값은 미니앱용 TDS Mobile 기준이다. 토스 앱 내부 화면이 같은 값을 쓰는지는 확인 필요.
+- TDS UI Kit는 토스의 라이선스가 걸려 있다. 이 문서는 사실 값만 옮겼다.
+- 서비스 이름과 브랜드는 각 권리자의 것이며, 이 문서는 식별·학습용 참고 자료로 SylviaLab이 독자적으로 작성했다.
